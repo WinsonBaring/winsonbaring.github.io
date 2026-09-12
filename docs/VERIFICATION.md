@@ -1,0 +1,7 @@
+# Verification
+
+Local lint passed; 12 interaction/content tests passed. Production build prerendered 14 routes plus 404. Static verification passed for 181 local links/assets. Native WebKit reviewed Home, Posts, Links, BendMe and Resume AI at desktop/mobile widths; sampled pages had no horizontal overflow or missing images. Home light/dark toggle was exercised and produced no JavaScript errors. Mobile hero fits within the 844px tested viewport; portrait aspect and primary CTA contrast were corrected. Six primary/muted/accent text combinations passed 4.5:1 contrast calculations. Full assistive-technology and cross-engine certification is not claimed. Live Pages validation remains pending.
+
+Content sources: current BendMe repo; owner clarification; existing portfolio project descriptions; GitHub profile. Legacy generated product mockups were reviewed and excluded. Resume AI’s old URLs did not resolve during this session, so its link leads to the local case study. Arsenal and YABS product URLs returned HTTP 200. No claim is made that all external social services permit automated HTTP checks.
+
+Posts are explicit samples authorized by the owner; actual profile/post URLs will be provided later. No fictitious publication dates, performance metrics, testimonials or social engagement counts are shown.
