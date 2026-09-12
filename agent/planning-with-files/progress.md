@@ -9,3 +9,5 @@
 - Published b15b0ac via Pages workflow 34678968377. All 14 live routes and static assets verified; runtime/media/font hashes match local build. Custom 404 and existing BendMe landing intact. Source and content-editing docs committed.
 
 2026-09-13: Issue #2. Confirmed portfolio CNAME resolves to GitHub; Pages cname was null and TLS hostname failed. Assigned requested subdomain and updated site URLs.
+
+2026-09-13: Issue #2 verified complete. Local check and 14-route/181-link validation passed; deployment 34711319356 succeeded. HTTPS and live canonical verified; HTTP returns 301.

@@ -12,4 +12,4 @@ Design: developer portfolio; DESIGN_VARIANCE 7, MOTION_INTENSITY 3, VISUAL_DENSI
 ## Issue #2: Custom domain
 - [x] Verify DNS and assign portfolio.winson.codes in Pages.
 - [x] Update portfolio metadata and share URLs.
-- [ ] Verify deployment and HTTPS enforcement.
+- [x] Verify deployment and HTTPS enforcement. Workflow 34711319356 succeeded; HTTPS 200 and HTTP 301 verified.
