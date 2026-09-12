@@ -38,3 +38,5 @@ verification/render http://127.0.0.1:4173/ 1440 1000 verification/home.png
 ```
 
 This opens a temporary renderer window and exits after saving. Local render output is ignored by Git. A clipboard denial falls back to displaying the share URL; theme selection works in memory if storage is unavailable.
+
+Custom domain: `portfolio.winson.codes`. Vercel DNS holds a `portfolio` CNAME pointing to `winsonbaring.github.io`. GitHub Pages settings hold the custom domain (Actions deployment does not require a CNAME file). Enable HTTPS after certificate provisioning. Leave the root domain, nameservers and other app records unchanged.

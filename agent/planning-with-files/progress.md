@@ -7,3 +7,5 @@
 - Initial ten tests and 14-route build passed. Final checks/rendering and deployment underway.
 - Final local lint/12 tests and static checks passed. Native rendering reviewed at 1440px and 390px; no observed overflow/missing images. Corrected mobile typography, portrait aspect and link/button contrast. Pages deployment next.
 - Published b15b0ac via Pages workflow 34678968377. All 14 live routes and static assets verified; runtime/media/font hashes match local build. Custom 404 and existing BendMe landing intact. Source and content-editing docs committed.
+
+2026-09-13: Issue #2. Confirmed portfolio CNAME resolves to GitHub; Pages cname was null and TLS hostname failed. Assigned requested subdomain and updated site URLs.

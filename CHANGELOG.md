@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Connect portfolio.winson.codes and update canonical, sitemap, social image and share URLs.
+
 ## 1.0.0
 
 - Published and verified the standalone GitHub Pages portfolio.

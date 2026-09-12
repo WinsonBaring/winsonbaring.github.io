@@ -8,3 +8,8 @@
 - [x] Pages workflow 34678968377 deployed b15b0ac. All 14 live routes returned 200; JS/CSS/images/media/fonts matched local build. Custom 404 and existing BendMe landing verified.
 
 Design: developer portfolio; DESIGN_VARIANCE 7, MOTION_INTENSITY 3, VISUAL_DENSITY 3. Monochrome/blue; custom editorial composition atop genuine shadcn components. Rounded 16px media, 8px controls, pill filters. Default light with site-wide dark preference/toggle. No fake metrics or employment claims.
+
+## Issue #2: Custom domain
+- [x] Verify DNS and assign portfolio.winson.codes in Pages.
+- [x] Update portfolio metadata and share URLs.
+- [ ] Verify deployment and HTTPS enforcement.

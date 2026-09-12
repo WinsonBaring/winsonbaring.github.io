@@ -14,7 +14,7 @@ for (const route of [...routes, "/404/"]) {
     .replace("<title>Winson Baring</title>", `<title>${escape(title)}</title>`)
     .replace(
       "<!--meta-->",
-      `<meta name="description" content="${escape(description)}"><link rel="canonical" href="https://winsonbaring.github.io${route}"><meta property="og:title" content="${escape(title)}"><meta property="og:description" content="${escape(description)}"><meta property="og:url" content="https://winsonbaring.github.io${route}">`,
+      `<meta name="description" content="${escape(description)}"><link rel="canonical" href="https://portfolio.winson.codes${route}"><meta property="og:title" content="${escape(title)}"><meta property="og:description" content="${escape(description)}"><meta property="og:url" content="https://portfolio.winson.codes${route}">`,
     );
   const dir = route === "/404/" ? "dist" : `dist${route}`;
   await mkdir(dir, { recursive: true });
@@ -25,6 +25,6 @@ for (const route of [...routes, "/404/"]) {
 }
 await writeFile(
   "dist/sitemap.xml",
-  `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${routes.map((p) => `<url><loc>https://winsonbaring.github.io${p}</loc></url>`).join("")}</urlset>`,
+  `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${routes.map((p) => `<url><loc>https://portfolio.winson.codes${p}</loc></url>`).join("")}</urlset>`,
 );
 console.log(`Prerendered ${routes.length} routes and custom 404.`);

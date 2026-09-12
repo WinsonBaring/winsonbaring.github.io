@@ -40,7 +40,7 @@ import { BendPreview, ResumePreview } from "@/components/use-case-preview";
 import { useTheme } from "@/hooks/use-theme";
 import "./App.css";
 const asset = (name: string) => `/images/${name}`;
-const site = "https://winsonbaring.github.io";
+const site = "https://portfolio.winson.codes";
 export const routes = [
   "/",
   "/work/",
@@ -641,7 +641,7 @@ function Links() {
         </Button>
         <p role="status" className="copy-status">
           {copyError
-            ? "Copy this address: https://winsonbaring.github.io/links/"
+            ? "Copy this address: https://portfolio.winson.codes/links/"
             : copied
               ? "Ready to share."
               : ""}
