@@ -7,3 +7,5 @@ Implemented: ten use-case stories; distinct BendMe artwork and Resume AI example
 Owner explicitly deferred actual social posts/URLs and authorized samples. Archive entries are labeled samples and ready to replace through src/data/content.ts. Known profiles are linked; no fabricated handles. Resume AI is a product case study; its old domains did not resolve, so visitors see the local story. App availability is not invented. See docs/VERIFICATION.md.
 
 Issue #2 complete: custom domain assigned, valid certificate approved and HTTPS enforced. Workflow 34711319356 deployed 3cb45f3; live canonical uses the custom domain. HTTP redirects to HTTPS. BendMe legacy URL redirects to the custom domain /bendme/ and returns 200 with v0.1.5. Existing Vercel DNS records were not modified.
+
+Issue #3: Fixed local BendMe preview image overflow. Native WebKit at 1440px and 390px verified both lid states contained, controls below the image, no horizontal overflow or JS errors. Screenshots inspected. Lint/tests/build and 14-route verification passed. Local development server remains on port 5173.

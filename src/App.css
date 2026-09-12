@@ -1245,10 +1245,13 @@ h2 {
 }
 .bend-preview-image {
   height: 350px;
-  display: grid;
-  place-items: center;
+  position: relative;
+  overflow: hidden;
 }
 .bend-preview-image img {
+  position: absolute;
+  inset: 0;
+  display: block;
   height: 100%;
   width: 100%;
   object-fit: contain;
@@ -1274,7 +1277,7 @@ h2 {
   gap: 8px;
 }
 .bend-preview > p {
-  font-size: 10px;
+  font-size: 13px;
   text-align: right;
   color: var(--muted-foreground);
   margin: 6px 10px 0;

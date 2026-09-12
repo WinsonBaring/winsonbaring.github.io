@@ -22,7 +22,26 @@ class Capture:NSObject,WKNavigationDelegate {
   }
  }
  func capture(_ webView:WKWebView){
-  webView.evaluateJavaScript("JSON.stringify({title:document.title,width:innerWidth,dark:document.documentElement.classList.contains('dark'),overflow:document.documentElement.scrollWidth>innerWidth,errors:window.__errors,images:[...document.images].filter(i=>!i.complete||i.naturalWidth===0).map(i=>i.src),hero:document.querySelector('.hero')?.getBoundingClientRect().height})"){value,error in
+  webView.evaluateJavaScript("""
+  (() => {
+    const frame = document.querySelector('.bend-preview-image');
+    if (!frame) return;
+    window.__previewChecks = [];
+    const check = () => {
+      const image = frame.querySelector('img').getBoundingClientRect();
+      const box = frame.getBoundingClientRect();
+      const controls = document.querySelector('.bend-preview-controls').getBoundingClientRect();
+      window.__previewChecks.push({contained:image.top>=box.top-1 && image.bottom<=box.bottom+1 && image.left>=box.left-1 && image.right<=box.right+1, controlsBelow:controls.top>=box.bottom});
+    };
+    check();
+    document.querySelector('[aria-label="Preview lid position"] button')?.click();
+    setTimeout(check,100);
+  })();
+  """)
+  DispatchQueue.main.asyncAfter(deadline:.now()+0.3){self.snapshot(webView)}
+ }
+ func snapshot(_ webView:WKWebView){
+  webView.evaluateJavaScript("JSON.stringify({previewChecks:window.__previewChecks,title:document.title,width:innerWidth,dark:document.documentElement.classList.contains('dark'),overflow:document.documentElement.scrollWidth>innerWidth,errors:window.__errors,images:[...document.images].filter(i=>!i.complete||i.naturalWidth===0).map(i=>i.src),hero:document.querySelector('.hero')?.getBoundingClientRect().height})"){value,error in
    print(value ?? "No metrics")
    if let error=error{print(error)}
    let config=WKSnapshotConfiguration();config.rect=webView.bounds

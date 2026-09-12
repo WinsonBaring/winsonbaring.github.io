@@ -11,3 +11,5 @@
 2026-09-13: Issue #2. Confirmed portfolio CNAME resolves to GitHub; Pages cname was null and TLS hostname failed. Assigned requested subdomain and updated site URLs.
 
 2026-09-13: Issue #2 verified complete. Local check and 14-route/181-link validation passed; deployment 34711319356 succeeded. HTTPS and live canonical verified; HTTP returns 301.
+
+2026-09-13: Issue #3. Replaced intrinsic grid sizing with a bounded positioned image frame; caption raised to 13px. Native desktop/mobile checks passed in both lid states; full project checks passed.

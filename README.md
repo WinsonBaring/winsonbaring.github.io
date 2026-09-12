@@ -9,3 +9,5 @@ A personal portfolio organized around what projects help people do. Built with R
 [Live portfolio](https://portfolio.winson.codes/) · [Links page](https://portfolio.winson.codes/links/)
 
 See [SETUP.md](SETUP.md) for running and publishing, [PROJECT.md](PROJECT.md) for architecture and design, and [src/data/README.md](src/data/README.md) for adding projects, profiles and real posts. Verification evidence lives in [docs/VERIFICATION.md](docs/VERIFICATION.md).
+
+BendMe preview artwork stays inside its media frame; controls and caption remain below it. The native renderer checks containment in both lid states.

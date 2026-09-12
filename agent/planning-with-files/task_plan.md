@@ -13,3 +13,7 @@ Design: developer portfolio; DESIGN_VARIANCE 7, MOTION_INTENSITY 3, VISUAL_DENSI
 - [x] Verify DNS and assign portfolio.winson.codes in Pages.
 - [x] Update portfolio metadata and share URLs.
 - [x] Verify deployment and HTTPS enforcement. Workflow 34711319356 succeeded; HTTPS 200 and HTTP 301 verified.
+
+## Issue #3: BendMe preview overflow
+- [x] Bound the image within its frame and increase caption readability.
+- [x] Verify desktop/mobile lid states and commit.

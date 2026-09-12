@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Fix BendMe preview artwork overlapping controls and case-study text; improve caption readability.
+
 - Connect portfolio.winson.codes and update canonical, sitemap, social image and share URLs.
 
 ## 1.0.0
