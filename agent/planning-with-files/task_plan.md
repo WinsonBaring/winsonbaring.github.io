@@ -85,3 +85,8 @@ Design: developer portfolio; DESIGN_VARIANCE 7, MOTION_INTENSITY 3, VISUAL_DENSI
 ## Issue #20: Social logos
 - [x] Replace text names with local SVG logos and retain accessible names.
 - [x] Verify rendering and build.
+
+## Issue #21: Owner notes and Iconnek Work entry
+- [x] Read projects-info and human-voice prompt.
+- [x] Feature Iconnek with route/logo; align three supplied product stories.
+- [x] Preserve visuals/BendMe and verify tests/build.

@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Feature Iconnek in Work and align Iconnek, Affiliatour and Resume AI copy with owner project notes.
+
 - Show GitHub, TikTok and LinkedIn logos in social links.
 
 - Open the Links hub at the portfolio root; retain the previous introduction at /home/.

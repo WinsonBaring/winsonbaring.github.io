@@ -56,31 +56,31 @@ The promise is specific to the project's described input or interaction. No user
 ### A. Positioning
 
 - User and situation: For people whose experience goes beyond what fits in a single resume.
-- Central promise: Keep the full story of your work. Choose what fits the job.
-- Concrete experience: Your notes can include projects, responsibilities and the things you did within each job, without having to make them sound like resume bullets. The goal is to keep that context available, even when it doesn’t belong in the resume you’re writing today.
+- Central promise: Resume AI uses your full experience to help you write for a particular job.
+- Concrete experience: Write down what you did within each job and project, without trying to turn it all into resume bullets. Something that seems unrelated today might be useful for another role, and recording it means you don’t have to remember it all later.
 - Payoff: You don’t have to rely on what you remember or what made it into your last resume.
 - Reason to believe: The example shows how details from different parts of someone’s experience could support one application. It’s an illustration of the intended workflow, not output from a live AI request.
 - Main objection: The draft should use experience you actually recorded. Review what it selects, check the wording and adjust the emphasis before applying. A relevant resume can explain your fit, but it can’t guarantee an interview.
 
 ### B. Three hero directions
 
-1. **Keep the full story of your work. Choose what fits the job.** You can’t fit everything you’ve done into one resume. Resume AI starts with detailed, unstructured notes about your experience, then uses the job description and how you want to present yourself to shape a relevant draft.
-2. **Your work experience, ready for a first draft.** Your notes can include projects, responsibilities and the things you did within each job, without having to make them sound like resume bullets. The goal is to keep that context available, even when it doesn’t belong in the resume you’re writing today.
-3. **Start your next application with the work you have done.** The idea is for Resume AI to read your experience alongside the job description and select the details that support your application. If a role needs technical and communication skills, relevant work might come from a technical project and a separate customer-support job. You can also explain how you want to position yourself to guide the emphasis.
+1. **Resume AI uses your full experience to help you write for a particular job.** You can’t put everything you’ve done into one resume, but you can keep detailed notes about it. Resume AI is designed to use that unstructured record, the job description and how you want to position yourself to create a relevant draft.
+2. **Your work experience, ready for a first draft.** Write down what you did within each job and project, without trying to turn it all into resume bullets. Something that seems unrelated today might be useful for another role, and recording it means you don’t have to remember it all later.
+3. **Start your next application with the work you have done.** A job might ask for technical knowledge and communication skills. Relevant examples could come from a science project and a separate call-center job. The idea is for Resume AI to select that context from your notes and use your positioning rationale to guide what the draft emphasizes.
 
 Recommended: direction 1. It gives the reader the clearest observable action and result at the scope supported by the project information. The other directions emphasize the recurring use situation and the product mechanism.
 
 ### C. Page copy
 
-**Hero:** Keep the full story of your work. Choose what fits the job.
+**Hero:** Resume AI uses your full experience to help you write for a particular job.
 
-You can’t fit everything you’ve done into one resume. Resume AI starts with detailed, unstructured notes about your experience, then uses the job description and how you want to present yourself to shape a relevant draft.
+You can’t put everything you’ve done into one resume, but you can keep detailed notes about it. Resume AI is designed to use that unstructured record, the job description and how you want to position yourself to create a relevant draft.
 
 **Primary CTA:** See the writing example. Jumps to the on-page walkthrough; does not imply public product access.
 
-**Write down the details before you forget them:** Your notes can include projects, responsibilities and the things you did within each job, without having to make them sound like resume bullets. The goal is to keep that context available, even when it doesn’t belong in the resume you’re writing today.
+**Keep details that might matter in a later application:** Write down what you did within each job and project, without trying to turn it all into resume bullets. Something that seems unrelated today might be useful for another role, and recording it means you don’t have to remember it all later.
 
-**How it works:** The idea is for Resume AI to read your experience alongside the job description and select the details that support your application. If a role needs technical and communication skills, relevant work might come from a technical project and a separate customer-support job. You can also explain how you want to position yourself to guide the emphasis. The existing project steps are displayed as the short workflow.
+**How it works:** A job might ask for technical knowledge and communication skills. Relevant examples could come from a science project and a separate call-center job. The idea is for Resume AI to select that context from your notes and use your positioning rationale to guide what the draft emphasizes. The existing project steps are displayed as the short workflow.
 
 **What you can inspect:** The example shows how details from different parts of someone’s experience could support one application. It’s an illustration of the intended workflow, not output from a live AI request.
 
@@ -460,3 +460,13 @@ The promise is specific to the project's described input or interaction. No user
 ## Affiliatour
 
 For creators preparing short product videos. Central promise: create a reviewable batch from intro hooks and product clips. The App Store listing supports project organization, local preview/rendering and timing controls. The page links to the actual listing; it does not imply automatic posting or guaranteed content performance.
+
+## Iconnek
+
+Iconnek is for finding people you have something in common with.
+
+I want to build a business, and I’ve found it hard to meet people with similar goals. That’s where Iconnek started: describe who you are and what matters to you, then find people you’d like to talk with.
+
+The idea is to use AI to bring people into small groups based on what they share about themselves. I also want the matching to learn from conversations and reactions over time; that is part of the direction, not a claim that every part is already available.
+
+More specific people filters and guided profile questions are planned. Check the current app before relying on a particular matching feature.

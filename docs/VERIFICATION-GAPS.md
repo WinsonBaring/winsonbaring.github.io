@@ -46,3 +46,7 @@ Authentication, data access policies, supported edit operations, import/export a
 ## Affiliatour
 
 App Store metadata verified through Apple lookup for app 6769322267. Rendering behavior was not exercised in this portfolio task.
+
+## Owner-note revision
+
+Iconnek conversation/reaction-based grouping and advanced profile filters are product direction, not verified live capabilities. Affiliatour sales, search-ranking and another creator’s earnings claims are not substantiated here and were omitted. YABS source note is empty; previous facts retained.

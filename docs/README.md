@@ -12,3 +12,5 @@ PROJECT-POSITIONING.md includes the current human-voice revision of the nine non
 Resume AI positioning and verification gaps incorporate the owner’s full-experience-record clarification.
 
 Affiliatour source and verification limits are recorded in the positioning and gaps documents.
+
+Positioning reflects owner project notes for Affiliatour, Iconnek and Resume AI.

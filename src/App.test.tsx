@@ -26,7 +26,7 @@ describe("Portfolio visitor paths", () => {
     ).toBeInTheDocument();
     expect(
       screen.queryByRole("heading", {
-        name: "Keep the full story of your work. Choose what fits the job.",
+        name: "Resume AI uses your full experience to help you write for a particular job.",
       }),
     ).not.toBeInTheDocument();
   });
@@ -81,7 +81,7 @@ describe("Portfolio visitor paths", () => {
   it("provides the links hub and project stories", () => {
     render(<App initialPath="/links/" />);
     expect(
-      screen.getByRole("link", { name: /Resume AI: Keep/ }),
+      screen.getByRole("link", { name: /Resume AI: Resume AI/ }),
     ).toHaveAttribute("href", "/work/resume-ai/");
     expect(
       screen.getByRole("button", { name: "Copy this page" }),
@@ -162,18 +162,18 @@ it("gives every project an honest next step and decision context", () => {
 it("hides archived projects until requested and resets the category when hiding them", async () => {
   const user = userEvent.setup();
   render(<App initialPath="/work/" />);
-  expect(screen.getByRole("status")).toHaveTextContent("3 projects");
+  expect(screen.getByRole("status")).toHaveTextContent("4 projects");
   expect(
     screen.queryByRole("heading", { name: /YABS Visualizer/ }),
   ).not.toBeInTheDocument();
   await user.click(screen.getByRole("button", { name: "Show all projects" }));
-  expect(screen.getByRole("status")).toHaveTextContent("11 projects");
+  expect(screen.getByRole("status")).toHaveTextContent("12 projects");
   await user.click(screen.getByRole("button", { name: "Learning & research" }));
   expect(screen.getByRole("status")).toHaveTextContent("3 projects");
   await user.click(
     screen.getByRole("button", { name: "Show featured projects only" }),
   );
-  expect(screen.getByRole("status")).toHaveTextContent("3 projects");
+  expect(screen.getByRole("status")).toHaveTextContent("4 projects");
   expect(
     screen.queryByRole("button", { name: "Learning & research" }),
   ).not.toBeInTheDocument();
@@ -200,4 +200,9 @@ it("opens the Links hub at the portfolio root", () => {
  render(<App initialPath="/" />);
  expect(screen.getByRole('heading', { name: 'Try something I made' })).toBeInTheDocument();
  expect(screen.getByRole('link', { name: /Iconnek/ })).toBeInTheDocument();
+});
+
+it("features Iconnek in Work with its own project page", () => {
+ render(<App initialPath="/work/" />);
+ expect(document.querySelector('a[href="/work/iconnek/"]')).toBeTruthy();
 });

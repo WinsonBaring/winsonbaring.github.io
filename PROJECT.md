@@ -11,3 +11,5 @@ Privacy: no analytics, forms, third-party embeds or runtime API calls. A local t
 See SETUP.md for execution and src/data/README.md for content maintenance. No external service credentials required.
 
 Product messaging lives in src/data/positioning.json and is combined with project facts in content.ts. Shared page composition keeps unverified products as walkthroughs and retains existing labeled previews. No new dependencies.
+
+Iconnek is a default featured project with a prerendered /work/iconnek/ page and the existing app icon. No new dependencies.

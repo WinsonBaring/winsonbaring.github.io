@@ -96,7 +96,7 @@ function ProjectImage({ project }: { project: Project }) {
       <ResumeLogo /><span>Resume AI</span>
     </div>
   );
-  if (project.slug === "affiliatour" && !failed) return <div className="affiliatour-brand-cover"><img src={asset("affiliatour-logo.jpg")} alt="Affiliatour app icon" onError={() => setFailed(true)} /></div>;
+  if ((project.slug === "affiliatour" || project.slug === "iconnek") && !failed) return <div className="affiliatour-brand-cover"><img src={asset(project.image!)} alt={`${project.name} app icon`} onError={() => setFailed(true)} /></div>;
   return project.image && !failed ? (
     <img
       src={asset(project.image)}
@@ -268,7 +268,7 @@ function Home() {
           </p>
         </div>
         <div className="featured-grid">
-          {activeProjects.slice(0, 3).map((p, i) => (
+          {activeProjects.map((p, i) => (
             <ProjectCard key={p.slug} project={p} index={i} />
           ))}
         </div>
@@ -392,6 +392,7 @@ function CaseStudy({ project: p }: { project: Project }) {
         <div className="product-identity">
           {p.slug === "resume-ai" && <ResumeLogo />}
           {p.slug === "affiliatour" && <img className="affiliatour-logo" src={asset("affiliatour-logo.jpg")} alt="" width="40" height="40" />}
+          {p.slug === "iconnek" && <img className="iconnek-logo" src={asset("iconnek-logo.png")} alt="" width="40" height="40" />}
           <span>{p.name}</span>
           <Badge variant="outline">{message.status}</Badge>
         </div>
@@ -746,11 +747,11 @@ function Links() {
           <h2 className="featured-links-heading">Try something I made</h2>
           <a className="link-tile" href="https://apps.apple.com/ph/app/affiliatour/id6769322267">
             <img className="affiliatour-logo" src={asset("affiliatour-logo.jpg")} alt="" width="46" height="46" />
-            <div><strong>Affiliatour</strong><span>Make a batch of product videos from your clips.</span></div><ArrowUpRight />
+            <div><strong>Affiliatour</strong><span>Make several product videos without repeating every edit.</span></div><ArrowUpRight />
           </a>
           <a className="link-tile" href="https://iconnek-landing.vercel.app">
             <img className="iconnek-logo" src={asset("iconnek-logo.png")} alt="" width="46" height="46" />
-            <div><strong>Iconnek</strong><span>Meet people who share your interests and goals.</span></div>
+            <div><strong>Iconnek</strong><span>{positioning.iconnek.headline}</span></div>
             <ArrowUpRight />
           </a>
           <a

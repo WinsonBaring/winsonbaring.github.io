@@ -23,3 +23,5 @@ Iconnek’s Links tile uses the existing green leaf app icon with rounded corner
 Root renders Links directly for immediate entry without a redirect. /home/ retains the previous Home component.
 
 Social links display locally hosted platform logos with accessible alt names; descriptions and destinations are retained.
+
+All active projects appear in the introduction’s featured collection; Iconnek has a case-study route.

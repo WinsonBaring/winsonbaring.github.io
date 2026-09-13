@@ -47,3 +47,5 @@ Issue #19: Links is now the root page with matching title/navigation. Former hom
 Issue #19 complete: 77d4d86 deployed via 34736449966. Live root and /links/ return 200 with Links; /home/ returns 200 with former introduction.
 
 Issue #20: Social platform names replaced by logos; descriptions and links retained, dark-mode contrast handled. Local only.
+
+Issue #21 complete locally: four featured projects including Iconnek, twelve total. Updated Affiliatour/Resume AI/Iconnek messaging from owner notes; YABS empty so unchanged. Preserved current visuals and BendMe. Tests/build and 17-route/246-link validation passed. Not published.

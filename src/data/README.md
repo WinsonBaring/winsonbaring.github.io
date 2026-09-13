@@ -38,3 +38,5 @@ Resume AI product intent is supplied in the parent prompts/projects-info/resume-
 Set `archived: true` on project facts to hide a project from default collections. `activeProjects` drives Home and featured next-project links. Work can reveal all projects; this is a display filter, not access control or search-engine removal.
 
 Affiliatour facts are based on Apple’s Philippines listing for app 6769322267, retrieved 2026-09-13 through the Apple lookup endpoint. Keep promotional claims within that source.
+
+Current source notes: projects-info/affiliatour, iconnek and resume-ia. YABS notes are empty. Apply the parent prompts/human-voice.md without implying planned functionality has shipped.
