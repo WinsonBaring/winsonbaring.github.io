@@ -42,3 +42,8 @@ Design: developer portfolio; DESIGN_VARIANCE 7, MOTION_INTENSITY 3, VISUAL_DENSI
 - [x] Archive eight projects; feature BendMe and Resume AI.
 - [x] Add Show all projects toggle and keep direct routes.
 - [x] Test filtering, reset and featured navigation.
+
+## Issue #10: Existing Resume AI mark
+- [x] Locate brand in sibling Resume AI project.
+- [x] Reuse on cards, project identity and Links.
+- [x] Verify build and mobile rendering.

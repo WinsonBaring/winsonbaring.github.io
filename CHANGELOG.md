@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Reuse Resume AI’s existing brand mark across portfolio cards, project header and Links.
+
 - Feature BendMe and Resume AI by default; reveal archived projects with Show all projects.
 
 - Clarify Resume AI’s full experience record, role-specific selection and positioning rationale; align illustrative preview.

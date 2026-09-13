@@ -5,3 +5,5 @@ React pages and hydration entry points. App.tsx composes Work, stories, Posts an
 CaseStudy renders product-specific positioning, labeled previews or workflow explanations, evidence, decision barriers and an appropriate next step. Cards and the Links hub share the same headlines.
 
 Work has a reversible Show all projects toggle. Category resets to All when visibility changes; new visits start with featured projects only.
+
+ResumeLogo reuses the existing Resume AI mark: Lucide FileText, cream #f3f0e8 on #1d1d1d. Source: sibling resume-ai/apps/frontend/src/components/block/landing-page.tsx and app-sidebar.tsx. No new asset or dependency.

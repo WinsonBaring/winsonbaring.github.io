@@ -19,3 +19,5 @@ Issue #7 complete locally: applied prompts/human-voice.md to nine projects’ me
 Issue #8 complete locally: Resume AI centers on detailed unstructured experience, job-description relevance and positioning rationale. Existing UI retained; illustrative preview copy now combines technical and customer-support experience. Checks passed. Not published.
 
 Issue #9 complete locally: only BendMe and Resume AI appear by default on Home/Work and in featured next-project navigation. Work can reveal all ten and reset to featured. Direct archived routes remain. Tests/build and static route validation passed. Not published.
+
+Issue #10: Reused existing Resume AI FileText brand mark from sibling app source. Applied to cards, project header and Links; wording/preview unchanged. Checks passed. Local only.

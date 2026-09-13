@@ -21,3 +21,5 @@ The current project copy follows the owner’s human-voice prompt: complete expl
 Resume AI messaging reflects the owner’s full-experience-record concept: unstructured detail, job-description relevance and positioning rationale. The preview remains explicitly illustrative.
 
 Only BendMe and Resume AI are featured by default. Work’s Show all projects button reveals the eight archived projects. Archive pages remain available by direct URL.
+
+Resume AI uses the existing document-on-dark-square brand mark from its application in project cards, project identity and Links.

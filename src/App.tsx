@@ -1,5 +1,6 @@
 import { useState } from "react";
 import {
+  FileText,
   ArrowUpRight,
   ArrowRight,
   ArrowLeft,
@@ -84,8 +85,16 @@ function External({
     </a>
   );
 }
+function ResumeLogo() {
+  return <span className="resume-brand-mark" aria-hidden="true"><FileText /></span>;
+}
 function ProjectImage({ project }: { project: Project }) {
   const [failed, setFailed] = useState(false);
+  if (project.slug === "resume-ai") return (
+    <div className="resume-brand-cover" aria-label="Resume AI">
+      <ResumeLogo /><span>Resume AI</span>
+    </div>
+  );
   return project.image && !failed ? (
     <img
       src={asset(project.image)}
@@ -379,6 +388,7 @@ function CaseStudy({ project: p }: { project: Project }) {
       </a>
       <div className="case-intro">
         <div className="product-identity">
+          {p.slug === "resume-ai" && <ResumeLogo />}
           <span>{p.name}</span>
           <Badge variant="outline">{message.status}</Badge>
         </div>
@@ -747,7 +757,7 @@ function Links() {
             href="/work/resume-ai/"
             aria-label={`Resume AI: ${positioning["resume-ai"].headline}`}
           >
-            <span className="link-initial">R</span>
+            <ResumeLogo />
             <div>
               <strong>Resume AI</strong>
               <span>{positioning["resume-ai"].headline}</span>
