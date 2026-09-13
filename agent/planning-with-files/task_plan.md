@@ -97,4 +97,4 @@ Design: developer portfolio; DESIGN_VARIANCE 7, MOTION_INTENSITY 3, VISUAL_DENSI
 
 ## Issue #23: Publish portfolio
 - [x] Verify local checks.
-- [ ] Deploy and verify live pages/assets.
+- [x] Deploy and verify live pages/assets.
