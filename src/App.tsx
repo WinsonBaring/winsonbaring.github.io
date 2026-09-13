@@ -95,6 +95,7 @@ function ProjectImage({ project }: { project: Project }) {
       <ResumeLogo /><span>Resume AI</span>
     </div>
   );
+  if (project.slug === "affiliatour" && !failed) return <div className="affiliatour-brand-cover"><img src={asset("affiliatour-logo.jpg")} alt="Affiliatour app icon" onError={() => setFailed(true)} /></div>;
   return project.image && !failed ? (
     <img
       src={asset(project.image)}
@@ -389,6 +390,7 @@ function CaseStudy({ project: p }: { project: Project }) {
       <div className="case-intro">
         <div className="product-identity">
           {p.slug === "resume-ai" && <ResumeLogo />}
+          {p.slug === "affiliatour" && <img className="affiliatour-logo" src={asset("affiliatour-logo.jpg")} alt="" width="40" height="40" />}
           <span>{p.name}</span>
           <Badge variant="outline">{message.status}</Badge>
         </div>
@@ -763,6 +765,10 @@ function Links() {
               <span>{positioning["resume-ai"].headline}</span>
             </div>
             <ArrowRight />
+          </a>
+          <a className="link-tile" href="https://apps.apple.com/ph/app/affiliatour/id6769322267">
+            <img className="affiliatour-logo" src={asset("affiliatour-logo.jpg")} alt="" width="46" height="46" />
+            <div><strong>Affiliatour</strong><span>Make a batch of product videos from your clips.</span></div><ArrowUpRight />
           </a>
           <a className="link-tile" href="/work/">
             <span className="link-initial">

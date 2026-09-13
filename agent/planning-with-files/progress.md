@@ -35,3 +35,5 @@
 2026-09-13: Issue #14. User authorized publication. Checked clean worktree, remote ancestry and custom-domain configuration; release checks passed.
 
 2026-09-13: Issue #14 complete. Deployment succeeded and live HTML/assets verified against build.
+
+2026-09-13: Issue #15. Apple web-tool page failed; official Apple lookup endpoint returned listing and icon successfully. Added Affiliatour from verified listing facts. Tests/build/route checks passed.

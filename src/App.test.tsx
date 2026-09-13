@@ -162,18 +162,18 @@ it("gives every project an honest next step and decision context", () => {
 it("hides archived projects until requested and resets the category when hiding them", async () => {
   const user = userEvent.setup();
   render(<App initialPath="/work/" />);
-  expect(screen.getByRole("status")).toHaveTextContent("2 projects");
+  expect(screen.getByRole("status")).toHaveTextContent("3 projects");
   expect(
     screen.queryByRole("heading", { name: /YABS Visualizer/ }),
   ).not.toBeInTheDocument();
   await user.click(screen.getByRole("button", { name: "Show all projects" }));
-  expect(screen.getByRole("status")).toHaveTextContent("10 projects");
+  expect(screen.getByRole("status")).toHaveTextContent("11 projects");
   await user.click(screen.getByRole("button", { name: "Learning & research" }));
   expect(screen.getByRole("status")).toHaveTextContent("3 projects");
   await user.click(
     screen.getByRole("button", { name: "Show featured projects only" }),
   );
-  expect(screen.getByRole("status")).toHaveTextContent("2 projects");
+  expect(screen.getByRole("status")).toHaveTextContent("3 projects");
   expect(
     screen.queryByRole("button", { name: "Learning & research" }),
   ).not.toBeInTheDocument();
@@ -185,6 +185,6 @@ it("keeps archived projects out of the home and featured next-project links", ()
   render(<App initialPath="/work/resume-ai/" />);
   expect(document.querySelector(".next-project a")).toHaveAttribute(
     "href",
-    "/work/bendme/",
+    "/work/affiliatour/",
   );
 });

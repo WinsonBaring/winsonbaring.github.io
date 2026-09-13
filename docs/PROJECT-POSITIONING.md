@@ -456,3 +456,7 @@ Contact Manager is an application project for browsing contact records and maint
 
 The promise is specific to the project's described input or interaction. No user counts, success figures, testimonials or unverified availability are introduced. Research and team status remain visible. Planned evidence is not rendered as a working demo.
 
+
+## Affiliatour
+
+For creators preparing short product videos. Central promise: create a reviewable batch from intro hooks and product clips. The App Store listing supports project organization, local preview/rendering and timing controls. The page links to the actual listing; it does not imply automatic posting or guaranteed content performance.

@@ -23,3 +23,5 @@ Resume AI messaging reflects the owner’s full-experience-record concept: unstr
 Only BendMe and Resume AI are featured by default. Work’s Show all projects button reveals the eight archived projects. Archive pages remain available by direct URL.
 
 Resume AI uses the existing document-on-dark-square brand mark from its application in project cards, project identity and Links.
+
+Affiliatour joins BendMe and Resume AI as a featured project, with its official App Store link and icon.

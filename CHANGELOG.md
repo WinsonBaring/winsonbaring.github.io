@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Add Affiliatour as a featured project with official App Store icon, project page and Links entry.
+
 - Published approved portfolio revisions to portfolio.winson.codes; verified live pages and assets.
 
 - Center the featured-links heading on mobile.

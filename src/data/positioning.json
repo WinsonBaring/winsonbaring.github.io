@@ -218,5 +218,27 @@
       "Return to the contact record you need.",
       "Give contact records a focused workspace."
     ]
+  },
+  "affiliatour": {
+    "slug": "affiliatour",
+    "headline": "Make a batch of product videos from the clips you already have.",
+    "summary": "Affiliatour combines intro hooks and product clips into short videos. Organize your clips by project, adjust the timing and render a batch you can review on your device.",
+    "audience": "For creators preparing short product videos.",
+    "experienceTitle": "Prepare several videos in one batch",
+    "experience": "Bring your intro hooks and product footage together, preview the clips and create a batch of videos to review.",
+    "mechanism": "The app combines imported clips with timing controls and renders the videos on your device.",
+    "payoff": "You can work through a batch of videos using the material you’ve already recorded.",
+    "cta": "View on the App Store",
+    "status": "Available on the App Store",
+    "flowTitle": "From clips to a batch of videos",
+    "evidence": "The App Store listing describes batches of up to 100 short videos and on-device preparation, rendering and review.",
+    "barrier": "Review the rendered videos before posting. Check the App Store listing for compatibility and current availability.",
+    "demoStatus": "Use existing evidence",
+    "demo": "Use the official App Store listing and app icon.",
+    "gap": "Capabilities summarized from Apple lookup API for app 6769322267, Philippines storefront. End-to-end rendering was not tested in this portfolio task.",
+    "alternatives": [
+      "Turn your product clips into a batch you can review.",
+      "Prepare product videos together in Affiliatour."
+    ]
   }
 }

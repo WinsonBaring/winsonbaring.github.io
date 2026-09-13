@@ -5,3 +5,5 @@
 - bendme-fold.png and bendme-open.png: actual BendMe shader renders of built-in artwork, copied from its website assets. These are rendered previews, not live desktop screenshots.
 
 Other projects use typographic treatments until a verified screenshot is supplied. Old generated portfolio mockups were deliberately excluded.
+
+`affiliatour-logo.jpg`: official 512px app icon from Apple lookup metadata for app 6769322267, supplied by the owner as their project. Copied unmodified from Apple’s artwork URL on 2026-09-13.

@@ -61,3 +61,8 @@ Design: developer portfolio; DESIGN_VARIANCE 7, MOTION_INTENSITY 3, VISUAL_DENSI
 ## Issue #14: Publish portfolio updates
 - [x] Run checks and confirm remote history/domain.
 - [x] Push and verify Pages deployment and live content. Run 34734034804 succeeded for 46ae07c.
+
+## Issue #15: Feature Affiliatour
+- [x] Read Apple listing and download official icon.
+- [x] Add featured project, route, Links entry and update collection counts.
+- [x] Verify build/tests and mobile rendering.

@@ -13,3 +13,5 @@ At widths up to 639px, Links centers its portrait and badge and hides the profil
 Resume AI marks share a 10px corner radius across their placements.
 
 The featured-links heading is centered on mobile only.
+
+Affiliatour appears in featured cards, its case-study route and Links, using its official App Store icon.

@@ -36,3 +36,5 @@ Voice source: owner-provided prompts/human-voice.md in the parent workspace. Nam
 Resume AI product intent is supplied in the parent prompts/projects-info/resume-ia/readme.md. Do not reduce it to polishing an existing resume or imply unlimited storage as a verified feature.
 
 Set `archived: true` on project facts to hide a project from default collections. `activeProjects` drives Home and featured next-project links. Work can reveal all projects; this is a display filter, not access control or search-engine removal.
+
+Affiliatour facts are based on Apple’s Philippines listing for app 6769322267, retrieved 2026-09-13 through the Apple lookup endpoint. Keep promotional claims within that source.

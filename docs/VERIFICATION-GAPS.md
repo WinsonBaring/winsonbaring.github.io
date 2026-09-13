@@ -42,3 +42,7 @@ Supported categories, training data, evaluation and public access require verifi
 
 Authentication, data access policies, supported edit operations, import/export and live availability need verification.
 
+
+## Affiliatour
+
+App Store metadata verified through Apple lookup for app 6769322267. Rendering behavior was not exercised in this portfolio task.

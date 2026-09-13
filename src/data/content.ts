@@ -50,6 +50,17 @@ const projectFacts: Omit<Project, "headline" | "summary">[] = [
     note: "Resume AI is a product project, not my personal CV. Product availability and features can change.",
   },
   {
+    slug: "affiliatour",
+    name: "Affiliatour",
+    category: "Less busywork",
+    why: "Affiliatour brings clip organization, timing and batch rendering into one project workflow. It focuses on preparing several short product videos from intro hooks and product footage.",
+    steps: ["Import your intro hooks and product clips.", "Organize the clips by project, preview them and adjust the timing.", "Render a batch and review the videos on your device."],
+    result: "An app for preparing and reviewing batches of short product videos, available on the App Store.",
+    tags: ["Video creation", "On-device rendering", "App Store"],
+    image: "affiliatour-logo.jpg",
+    url: "https://apps.apple.com/ph/app/affiliatour/id6769322267",
+  },
+  {
     slug: "yabs",
     archived: true,
     name: "YABS Visualizer",
