@@ -13,5 +13,3 @@ See [SETUP.md](SETUP.md) for running and publishing, [PROJECT.md](PROJECT.md) fo
 BendMe preview artwork stays inside its media frame; controls and caption remain below it. The native renderer checks containment in both lid states.
 
 Project pages now follow an experience-first product narrative. See [positioning and copy](docs/PROJECT-POSITIONING.md), [verification gaps](docs/VERIFICATION-GAPS.md), and [content editing](src/data/README.md).
-
-Nine project stories now use short conversational explanations without visual walkthroughs. BendMe retains its approved demonstration and copy.

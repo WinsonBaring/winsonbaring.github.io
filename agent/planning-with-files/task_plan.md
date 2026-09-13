@@ -22,8 +22,3 @@ Design: developer portfolio; DESIGN_VARIANCE 7, MOTION_INTENSITY 3, VISUAL_DENSI
 - [x] Read supplied prompt; preserve factual boundaries and differentiate product availability.
 - [x] Draft positioning and three hero directions for each project.
 - [x] Update shared project UI and cards; verify all routes, links and responsive layouts.
-
-## Issue #5: Conversational project stories
-- [x] Preserve BendMe data and presentation.
-- [x] Rewrite nine stories as natural prose; remove their visual panels and captions.
-- [x] Check project routes, content boundaries and responsive presentation.

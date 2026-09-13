@@ -28,5 +28,3 @@ The initial dataset is an archive preview, explicitly authorized as sample conte
 Do not use sample summaries as quotations from real posts. A group can have multiple platforms or multiple entries on one platform. Filters apply before grouping, so a LinkedIn search shows only matching LinkedIn versions. Published entries show original-post links in the dialog. The preview notice disappears once all samples are replaced. Test fixtures may need updating as the published dataset replaces the initial samples.
 
 Positioning fields drive the hero, audience, experience, mechanism, proof, limitations and CTA. `alternatives`, `demo`, and `gap` are editorial notes; do not display uncreated demonstrations as proof. Full copy directions are in ../../docs/PROJECT-POSITIONING.md.
-
-For non-BendMe projects, `headline`, `summary`, `conversation` and `cta` are the visible page copy. The remaining positioning fields are editorial history.

@@ -342,47 +342,7 @@ function Work() {
     </div>
   );
 }
-function ConversationalProject({ project: p }: { project: Project }) {
-  const message = positioning[p.slug];
-  if (!("conversation" in message)) return null;
-  return (
-    <article className={`wrap conversation-page project-${p.slug}`}>
-      <a className="text-link back" href="/work/">
-        <ArrowLeft size={16} /> All work
-      </a>
-      <header>
-        <p className="conversation-name">{p.name}</p>
-        <h1>{message.headline}</h1>
-        <p className="conversation-intro">{message.summary}</p>
-      </header>
-      <div className="conversation-body">
-        {message.conversation.map((paragraph) => (
-          <p key={paragraph}>{paragraph}</p>
-        ))}
-        {(p.url || p.source) && (
-          <div className="case-actions">
-            {p.url && (
-              <External href={p.url} className={buttonVariants()}>
-                {message.cta}
-              </External>
-            )}
-            {p.source && (
-              <External href={p.source} className="text-link">
-                Look through the code
-              </External>
-            )}
-          </div>
-        )}
-      </div>
-      <a className="text-link conversation-back" href="/work/">
-        See what else I’m building
-        <ArrowRight size={17} />
-      </a>
-    </article>
-  );
-}
 function CaseStudy({ project: p }: { project: Project }) {
-  if (p.slug !== "bendme") return <ConversationalProject project={p} />;
   const message = positioning[p.slug as keyof typeof positioning];
   const primary = p.url ? (
     <External href={p.url} className={buttonVariants()}>
