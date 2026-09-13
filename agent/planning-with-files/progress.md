@@ -29,3 +29,5 @@
 2026-09-13: Issue #11. Added mobile-scoped Links profile CSS and verified native 390px screenshot.
 
 2026-09-13: Issue #12. Rounded shared Resume AI mark to 10px; existing sizes and colors retained.
+
+2026-09-13: Issue #13. Added scoped class and mobile alignment rule for featured-links heading.

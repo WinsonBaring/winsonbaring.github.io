@@ -11,3 +11,5 @@ ResumeLogo reuses the existing Resume AI mark: Lucide FileText, cream #f3f0e8 on
 At widths up to 639px, Links centers its portrait and badge and hides the profile name, introduction and copy controls. Desktop keeps the full profile.
 
 Resume AI marks share a 10px corner radius across their placements.
+
+The featured-links heading is centered on mobile only.

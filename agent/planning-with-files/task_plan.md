@@ -54,3 +54,6 @@ Design: developer portfolio; DESIGN_VARIANCE 7, MOTION_INTENSITY 3, VISUAL_DENSI
 
 ## Issue #12: Resume AI logo corners
 - [x] Apply 10px radius to shared brand mark.
+
+## Issue #13: Center mobile featured heading
+- [x] Center only the requested heading below 640px.

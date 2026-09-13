@@ -740,7 +740,7 @@ function Links() {
       </div>
       <div className="link-collection">
         <section>
-          <h2>Try something I made</h2>
+          <h2 className="featured-links-heading">Try something I made</h2>
           <a
             className="link-tile featured-link"
             href="https://winsonbaring.github.io/bendme/"

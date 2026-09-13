@@ -25,3 +25,5 @@ Issue #10: Reused existing Resume AI FileText brand mark from sibling app source
 Issue #11 complete locally: mobile Links profile shows centered photo/badge, with name, intro, copy button and status space hidden below 640px. Native 390px render inspected, no overflow or JS errors. Desktop styles retained. Not published.
 
 Issue #12: Shared Resume AI mark now has 10px rounded corners. Local only.
+
+Issue #13: Try something I made is centered on mobile. Desktop and other headings retain existing alignment. Local only.

@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Center the featured-links heading on mobile.
+
 - Round Resume AI logo corners across the portfolio.
 
 - Center and simplify the Links profile on mobile; retain full desktop profile.
