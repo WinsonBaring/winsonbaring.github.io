@@ -37,11 +37,11 @@ const projectFacts: Omit<Project, "headline" | "summary">[] = [
     slug: "resume-ai",
     name: "Resume AI",
     category: "Less busywork",
-    why: "A general resume can hide the experience that matters for a particular job. I built Resume AI around that problem: start with what someone has actually done, then help them organize it for an application.",
+    why: "I wanted to help people explain the work they’ve already done. Resume AI starts there, then helps organize that experience for the job they want to apply for.",
     steps: [
-      "Bring your experience together from your existing documents.",
-      "Use AI-assisted drafting to organize relevant work and skills.",
-      "Review the details and tailor the resume before applying.",
+      "Start with the experience in your notes and existing documents.",
+      "Let AI-assisted writing help you organize your work and skills.",
+      "Read through the draft and make it fit the job before you apply.",
     ],
     result:
       "A resume-building workflow focused on making unstructured experience easier to work with. The person applying stays responsible for checking every claim.",
@@ -52,11 +52,11 @@ const projectFacts: Omit<Project, "headline" | "summary">[] = [
     slug: "yabs",
     name: "YABS Visualizer",
     category: "Clearer decisions",
-    why: "Server specifications do not tell the whole story. I wanted a way to understand YABS benchmark output visually, so comparing machines would not mean repeatedly scanning terminal logs.",
+    why: "I kept coming back to terminal logs when comparing servers. I built this to give the YABS results a visual home, so I could spend more time understanding the measurements.",
     steps: [
       "Start with YABS benchmark output.",
-      "View the measured performance in a visual format.",
-      "Compare the results in the context of the workload you need.",
+      "Look through the measurements in the visualizer.",
+      "Think about how those results relate to the work your server will do.",
     ],
     result:
       "A visual layer for investigating server performance. Benchmark results describe specific test conditions, not a guarantee for every workload.",
@@ -68,11 +68,11 @@ const projectFacts: Omit<Project, "headline" | "summary">[] = [
     slug: "arsenal",
     name: "Arsenal",
     category: "Less busywork",
-    why: "As I used AI more in development, prompts became reusable working material. Arsenal explores how to organize that material instead of leaving useful instructions scattered across conversations.",
+    why: "As I used AI more while building, I found myself wanting to keep certain prompts. Arsenal grew out of wanting somewhere to organize those instructions and come back to them.",
     steps: [
-      "Organize prompts around the work they support.",
+      "Keep your prompts with the work they belong to.",
       "Keep reusable instructions and project context together.",
-      "Return to those workflows as the project evolves.",
+      "Come back to the instructions as your project changes.",
     ],
     result:
       "A project focused on prompt management and repeatable agent-assisted development.",
@@ -83,7 +83,7 @@ const projectFacts: Omit<Project, "headline" | "summary">[] = [
     slug: "scatter",
     name: "Scatter",
     category: "Everyday delight",
-    why: "Scatter explores how small interactions can make a simple game satisfying: the way a ball falls, the response to a press, and the moment a result lands.",
+    why: "I wanted to see how much enjoyment I could get out of a simple interaction. With Scatter, I focused on the fall, the bounce and that moment when you see where the ball lands.",
     steps: [
       "Drop a ball into the board.",
       "Watch it bounce through the physical obstacles.",
@@ -97,11 +97,11 @@ const projectFacts: Omit<Project, "headline" | "summary">[] = [
     slug: "laundirii",
     name: "LaunDiri",
     category: "Less busywork",
-    why: "A laundry order moves between several people. This project brings those roles into one workflow so the handoffs are part of the product, rather than an afterthought.",
+    why: "We wanted to think through a laundry order from everyone’s side. The customer, courier and shop all have a part in it, so we brought those roles into the same project.",
     steps: [
       "A customer starts a laundry service request.",
-      "The courier and shop participate in the order workflow.",
-      "The service is coordinated across those roles.",
+      "The courier and shop each handle their part of the order.",
+      "Follow how the service moves between those people.",
     ],
     result:
       "A collaborative application project exploring laundry-service coordination.",
@@ -111,11 +111,11 @@ const projectFacts: Omit<Project, "headline" | "summary">[] = [
     slug: "techno-dynamic",
     name: "Techno Dynamic",
     category: "Learning & research",
-    why: "Course material and the questions learners ask belong together. This collaborative project explores content generation and FAQ-based suggestions in a learning workflow.",
+    why: "We wanted to connect what a student is reading with the questions they might ask next. That led us to explore generated content and FAQ-based suggestions alongside course material.",
     steps: [
       "Open the course learning material.",
       "Explore generated content and relevant suggestions.",
-      "Use the material to support further learning.",
+      "Use what you find to keep exploring the subject.",
     ],
     result:
       "An educational platform project combining a web interface and AI-assisted course content.",
@@ -125,11 +125,11 @@ const projectFacts: Omit<Project, "headline" | "summary">[] = [
     slug: "rad-ai",
     name: "Rad AI",
     category: "Learning & research",
-    why: "A machine-learning model needs an interface before people can explore its behavior. This project connects an image-classification experiment to a usable inference flow.",
+    why: "I wanted to make the classification experiment easier to inspect. An interface lets you follow what happens when an image goes into the model and a result comes back.",
     steps: [
       "Use a suitable research image as input.",
-      "Run the classification workflow.",
-      "Inspect the model output as an experimental result.",
+      "Run the image through the classifier.",
+      "Look at what the model returns as an experimental result.",
     ],
     result:
       "A research prototype, not a validated medical device or a tool for diagnosis.",
@@ -140,11 +140,11 @@ const projectFacts: Omit<Project, "headline" | "summary">[] = [
     slug: "jungle-guardians",
     name: "Jungle Guardians",
     category: "Learning & research",
-    why: "Image classification becomes easier to understand when you can give a model a picture and inspect its response. This project uses animal imagery to make that interaction tangible.",
+    why: "I wanted a familiar way to explore image classification. You can look at an animal picture yourself, then compare it with what the model thinks it sees.",
     steps: [
       "Choose an animal image.",
       "Run it through the classifier.",
-      "Explore the predicted category and the limits of the model.",
+      "Look at the prediction and consider where the model could be wrong.",
     ],
     result:
       "An image-classification learning project with an interactive interface.",
@@ -154,11 +154,11 @@ const projectFacts: Omit<Project, "headline" | "summary">[] = [
     slug: "contact-manager",
     name: "Contact Manager",
     category: "Less busywork",
-    why: "A contact list is useful only when the information is easy to maintain. This project centers the everyday work of viewing and managing those records.",
+    why: "I wanted to focus on the everyday work of finding contact details and maintaining them. Contact Manager gave me a focused project to build around that task.",
     steps: [
       "Browse contact records.",
       "Keep the stored details organized.",
-      "Return to the information when it is needed.",
+      "Come back to the record when you need the details.",
     ],
     result: "A contact-management project built with Angular and Supabase.",
     tags: ["Angular", "Supabase", "Web application"],

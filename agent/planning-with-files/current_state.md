@@ -11,3 +11,5 @@ Issue #2 complete: custom domain assigned, valid certificate approved and HTTPS 
 Issue #3: Fixed local BendMe preview image overflow. Native WebKit at 1440px and 390px verified both lid states contained, controls below the image, no horizontal overflow or JS errors. Screenshots inspected. Lint/tests/build and 14-route verification passed. Local development server remains on port 5173.
 
 Issue #4 complete locally: all ten project pages now lead with concrete experiences; shared cards and featured Links copy updated. Positioning doc includes three hero directions per product and separate verification gaps. 13 tests, lint/build and 14-route/181-link verification passed. All ten routes rendered in native WebKit at 390px/1440px without horizontal overflow, JS errors or failed images. Local server remains at 127.0.0.1:5173. Not pushed or deployed; ready for owner review.
+
+Issue #6: Owner reverted the prose-only redesign. Applied conversational wording only to nine projects, preserving the restored layout and visuals. App.tsx, App.css and preview component verified byte-identical to HEAD; BendMe facts and positioning unchanged. Changes local for review.

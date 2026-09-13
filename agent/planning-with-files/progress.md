@@ -15,3 +15,5 @@
 2026-09-13: Issue #3. Replaced intrinsic grid sizing with a bounded positioned image frame; caption raised to 13px. Native desktop/mobile checks passed in both lid states; full project checks passed.
 
 2026-09-13: Issue #4. Read supplied positioning prompt and applied it to ten portfolio project pages. Created structured messaging, product walkthrough layouts, specific CTAs, evidence/limitations and editorial deliverables. Full checks passed and 20 native desktop/mobile captures completed. Representative screenshots inspected.
+
+2026-09-13: Issue #6. Respected revert add2017. Updated only project copy and related documents, preserving all UI markup/styles/previews and BendMe. Verified unchanged files and content programmatically; project checks passed.

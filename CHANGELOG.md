@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Refine nine projects’ wording for natural spoken delivery while preserving restored visuals and approved BendMe content.
+
 - Rework all ten project pages around concrete experiences, evidence, limitations and clear next steps; align project cards and featured Links copy.
 - Add positioning summaries, hero alternatives and demonstration/verification guidance.
 

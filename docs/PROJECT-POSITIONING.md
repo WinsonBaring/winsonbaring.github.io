@@ -1,5 +1,7 @@
 # Project positioning and page copy
 
+Copy-only revision: conversational wording within the approved existing UI. All previews, visual panels and interactions are retained; BendMe is unchanged.
+
 Applies to the ten project pages in the portfolio, not the underlying applications. Based on the supplied product-positioning prompt and existing project descriptions, owner-provided BendMe material, public source links and prior verification. Audience and payoff are positioning choices, not customer research results. No new performance, pricing, integration or compatibility claims are introduced.
 
 The first hero direction is used in the UI. Source copy lives in `src/data/positioning.json`; project history, steps and URLs remain in `src/data/content.ts`. Existing project pages supply the complete rendered draft. Missing facts are tracked separately in [VERIFICATION-GAPS.md](VERIFICATION-GAPS.md).
@@ -55,16 +57,16 @@ The promise is specific to the project's described input or interaction. No user
 
 - User and situation: For job applicants turning work experience into an application.
 - Central promise: Turn scattered work notes into a resume draft.
-- Concrete experience: A rough account of your work becomes a draft you can read, edit and shape around a job. You check the claims before they become your resume.
-- Payoff: A clearer starting point when your experience is easier to remember than to write about.
-- Reason to believe: The example below shows the intended writing workflow using the same facts in both views. It is an illustration, not output from a running Resume AI service.
-- Main objection: Review every claim. AI-assisted wording does not establish that an achievement is true or that a resume will lead to an interview.
+- Concrete experience: You might have a few notes, an old resume and some projects you want to mention. Bring that experience together, then work on a draft you can edit until it sounds like you.
+- Payoff: It gives you somewhere to start when you know your experience but aren’t sure how to write about it.
+- Reason to believe: The example on this page shows how rough notes could become a draft. Both versions use the same facts. It’s an illustration of the idea, rather than a response from the live app.
+- Main objection: Before you apply, read through every claim and make sure it’s true. A clearer draft can help you explain your experience, but it can’t promise an interview.
 
 ### B. Three hero directions
 
-1. **Turn scattered work notes into a resume draft.** Bring together what you have done, use AI-assisted drafting to organize it for a role, then review the wording before you apply.
-2. **Your work experience, ready for a first draft.** A rough account of your work becomes a draft you can read, edit and shape around a job. You check the claims before they become your resume.
-3. **Start your next application with the work you have done.** AI-assisted drafting organizes work experience and skills into resume content.
+1. **Turn scattered work notes into a resume draft.** Resume AI helps you take the work you’ve done and put it into words. Start with your experience, work on a draft, then shape it around the job you’re applying for.
+2. **Your work experience, ready for a first draft.** You might have a few notes, an old resume and some projects you want to mention. Bring that experience together, then work on a draft you can edit until it sounds like you.
+3. **Start your next application with the work you have done.** AI-assisted writing helps organize your work and skills. You decide what belongs in the resume and how you want to say it.
 
 Recommended: direction 1. It gives the reader the clearest observable action and result at the scope supported by the project information. The other directions emphasize the recurring use situation and the product mechanism.
 
@@ -72,17 +74,17 @@ Recommended: direction 1. It gives the reader the clearest observable action and
 
 **Hero:** Turn scattered work notes into a resume draft.
 
-Bring together what you have done, use AI-assisted drafting to organize it for a role, then review the wording before you apply.
+Resume AI helps you take the work you’ve done and put it into words. Start with your experience, work on a draft, then shape it around the job you’re applying for.
 
 **Primary CTA:** See the writing example. Jumps to the on-page walkthrough; does not imply public product access.
 
-**Start with the experience you already have:** A rough account of your work becomes a draft you can read, edit and shape around a job. You check the claims before they become your resume.
+**Start with what you’ve done:** You might have a few notes, an old resume and some projects you want to mention. Bring that experience together, then work on a draft you can edit until it sounds like you.
 
-**How it works:** AI-assisted drafting organizes work experience and skills into resume content. The existing project steps are displayed as the short workflow.
+**How it works:** AI-assisted writing helps organize your work and skills. You decide what belongs in the resume and how you want to say it. The existing project steps are displayed as the short workflow.
 
-**What you can inspect:** The example below shows the intended writing workflow using the same facts in both views. It is an illustration, not output from a running Resume AI service.
+**What you can inspect:** The example on this page shows how rough notes could become a draft. Both versions use the same facts. It’s an illustration of the idea, rather than a response from the live app.
 
-**Before you try it:** Review every claim. AI-assisted wording does not establish that an achievement is true or that a resume will lead to an interview.
+**Before you try it:** Before you apply, read through every claim and make sure it’s true. A clearer draft can help you explain your experience, but it can’t promise an interview.
 
 **Closing CTA:** See the writing example. The original project motivation follows the experience and evidence, with team attribution retained where relevant.
 
@@ -100,16 +102,16 @@ The promise is specific to the project's described input or interaction. No user
 
 - User and situation: For developers comparing VPS benchmark results.
 - Central promise: Read your VPS benchmarks beyond the terminal.
-- Concrete experience: Start with benchmark output and look at the measured performance visually. Use those results as one part of choosing a machine.
-- Payoff: Less back-and-forth through terminal logs when comparing test results.
-- Reason to believe: The benchmark website and public source repository are linked here. Test results reflect the conditions under which they were recorded.
-- Main objection: A benchmark is not a guarantee for your application. Check the test conditions and consider your own workload.
+- Concrete experience: Start with your YABS results and look through the measurements visually. That gives you another way to think about which server might suit your work.
+- Payoff: You can spend more of your attention on what the results mean.
+- Reason to believe: You can open the benchmark site and look through the public source code. The measurements come from particular tests, so the conditions behind each result matter too.
+- Main objection: A benchmark gives you something to compare, but your own app may behave differently. Keep your workload in mind when you make the decision.
 
 ### B. Three hero directions
 
-1. **Read your VPS benchmarks beyond the terminal.** Turn YABS output into a visual view of measured server performance, then compare the results against the workload you have in mind.
-2. **Compare the measurements behind your VPS choice.** Start with benchmark output and look at the measured performance visually. Use those results as one part of choosing a machine.
-3. **Give YABS output a visual view.** A visualization layer presents the measurements recorded by YABS.
+1. **Read your VPS benchmarks beyond the terminal.** When you’re choosing a VPS, reading through benchmark logs can get repetitive. This visualizer helps you look through YABS results and compare what the machines measured.
+2. **Compare the measurements behind your VPS choice.** Start with your YABS results and look through the measurements visually. That gives you another way to think about which server might suit your work.
+3. **Give YABS output a visual view.** YABS runs the benchmarks. The visualizer presents those measurements so you can look through them without repeatedly scanning the terminal output.
 
 Recommended: direction 1. It gives the reader the clearest observable action and result at the scope supported by the project information. The other directions emphasize the recurring use situation and the product mechanism.
 
@@ -117,17 +119,17 @@ Recommended: direction 1. It gives the reader the clearest observable action and
 
 **Hero:** Read your VPS benchmarks beyond the terminal.
 
-Turn YABS output into a visual view of measured server performance, then compare the results against the workload you have in mind.
+When you’re choosing a VPS, reading through benchmark logs can get repetitive. This visualizer helps you look through YABS results and compare what the machines measured.
 
 **Primary CTA:** Open YABS Visualizer. Opens the existing project URL.
 
-**Make the measurements easier to inspect:** Start with benchmark output and look at the measured performance visually. Use those results as one part of choosing a machine.
+**Get a better look at the results:** Start with your YABS results and look through the measurements visually. That gives you another way to think about which server might suit your work.
 
-**How it works:** A visualization layer presents the measurements recorded by YABS. The existing project steps are displayed as the short workflow.
+**How it works:** YABS runs the benchmarks. The visualizer presents those measurements so you can look through them without repeatedly scanning the terminal output. The existing project steps are displayed as the short workflow.
 
-**What you can inspect:** The benchmark website and public source repository are linked here. Test results reflect the conditions under which they were recorded.
+**What you can inspect:** You can open the benchmark site and look through the public source code. The measurements come from particular tests, so the conditions behind each result matter too.
 
-**Before you try it:** A benchmark is not a guarantee for your application. Check the test conditions and consider your own workload.
+**Before you try it:** A benchmark gives you something to compare, but your own app may behave differently. Keep your workload in mind when you make the decision.
 
 **Closing CTA:** Open YABS Visualizer. The original project motivation follows the experience and evidence, with team attribution retained where relevant.
 
@@ -145,16 +147,16 @@ The promise is specific to the project's described input or interaction. No user
 
 - User and situation: For developers who reuse prompts across their work.
 - Central promise: Find the prompt you want to use again.
-- Concrete experience: Organize useful prompts with their project context. When similar work comes up, return to the instructions and adapt them to the task.
-- Payoff: Continuity between development sessions without treating every prompt as disposable.
-- Reason to believe: Arsenal is linked as a prompt-management project. This page describes the project scope; it does not claim measured improvements in AI results.
-- Main objection: A saved prompt still needs the right context and a review of the result it produces.
+- Concrete experience: Keep useful prompts with the work they belong to. When a similar task comes up, you can return to those instructions and adapt them instead of starting again.
+- Payoff: The instructions you want to keep have somewhere to go after the conversation ends.
+- Reason to believe: You can take a look at Arsenal through the link on this page. It’s a project about organizing prompts and the development work they support.
+- Main objection: You’ll still need to give the AI the right context and check what it produces. Reusing a prompt doesn’t remove that part of the work.
 
 ### B. Three hero directions
 
-1. **Find the prompt you want to use again.** Keep reusable AI development instructions organized around the work they support, so a useful prompt has a place beyond the original conversation.
-2. **Keep the instructions that worked.** Organize useful prompts with their project context. When similar work comes up, return to the instructions and adapt them to the task.
-3. **Give recurring development prompts a home.** Prompt management gives reusable instructions and development workflows a shared place in the project.
+1. **Find the prompt you want to use again.** Sometimes you write a prompt you want to use again. Arsenal gives those instructions a place to live, along with the project context that makes them useful.
+2. **Keep the instructions that worked.** Keep useful prompts with the work they belong to. When a similar task comes up, you can return to those instructions and adapt them instead of starting again.
+3. **Give recurring development prompts a home.** Arsenal organizes prompts and reusable development instructions around your projects.
 
 Recommended: direction 1. It gives the reader the clearest observable action and result at the scope supported by the project information. The other directions emphasize the recurring use situation and the product mechanism.
 
@@ -162,17 +164,17 @@ Recommended: direction 1. It gives the reader the clearest observable action and
 
 **Hero:** Find the prompt you want to use again.
 
-Keep reusable AI development instructions organized around the work they support, so a useful prompt has a place beyond the original conversation.
+Sometimes you write a prompt you want to use again. Arsenal gives those instructions a place to live, along with the project context that makes them useful.
 
 **Primary CTA:** Open Arsenal. Opens the existing project URL.
 
-**Return to instructions worth keeping:** Organize useful prompts with their project context. When similar work comes up, return to the instructions and adapt them to the task.
+**Come back to the instructions you want to keep:** Keep useful prompts with the work they belong to. When a similar task comes up, you can return to those instructions and adapt them instead of starting again.
 
-**How it works:** Prompt management gives reusable instructions and development workflows a shared place in the project. The existing project steps are displayed as the short workflow.
+**How it works:** Arsenal organizes prompts and reusable development instructions around your projects. The existing project steps are displayed as the short workflow.
 
-**What you can inspect:** Arsenal is linked as a prompt-management project. This page describes the project scope; it does not claim measured improvements in AI results.
+**What you can inspect:** You can take a look at Arsenal through the link on this page. It’s a project about organizing prompts and the development work they support.
 
-**Before you try it:** A saved prompt still needs the right context and a review of the result it produces.
+**Before you try it:** You’ll still need to give the AI the right context and check what it produces. Reusing a prompt doesn’t remove that part of the work.
 
 **Closing CTA:** Open Arsenal. The original project motivation follows the experience and evidence, with team attribution retained where relevant.
 
@@ -190,16 +192,16 @@ The promise is specific to the project's described input or interaction. No user
 
 - User and situation: For people who enjoy short, playful browser experiments.
 - Central promise: Drop a ball. Follow every bounce.
-- Concrete experience: Drop a ball into the board and follow its path through the obstacles. A different bounce gives you another reason to try again.
-- Payoff: Anticipation, movement and the satisfaction of seeing the result.
-- Reason to believe: This portfolio records Scatter as a physics-based browser game project. A playable build is not linked here.
-- Main objection: Presented as an interaction experiment. No prizes, payouts or odds are offered on this page.
+- Concrete experience: Send a ball into the board and follow its path through the obstacles. Once it lands, you can try another drop and see what happens.
+- Payoff: There’s a little anticipation in every drop.
+- Reason to believe: Scatter is a browser-game project I’m exploring. There isn’t a playable build linked on this page yet.
+- Main objection: It’s a game experiment. This page doesn’t offer prizes or payouts.
 
 ### B. Three hero directions
 
-1. **Drop a ball. Follow every bounce.** A browser-game experiment built around a simple moment: send a ball into a physics board and watch where it lands.
-2. **See where the next bounce takes you.** Drop a ball into the board and follow its path through the obstacles. A different bounce gives you another reason to try again.
-3. **One drop, a board full of possibilities.** Physics simulation turns a drop into a sequence of collisions and a landing.
+1. **Drop a ball. Follow every bounce.** You drop a ball into the board and watch where it goes. Scatter is a browser-game experiment built around the fun of following each bounce.
+2. **See where the next bounce takes you.** Send a ball into the board and follow its path through the obstacles. Once it lands, you can try another drop and see what happens.
+3. **One drop, a board full of possibilities.** The game uses physics to work out how the ball falls, hits the obstacles and reaches the bottom.
 
 Recommended: direction 1. It gives the reader the clearest observable action and result at the scope supported by the project information. The other directions emphasize the recurring use situation and the product mechanism.
 
@@ -207,17 +209,17 @@ Recommended: direction 1. It gives the reader the clearest observable action and
 
 **Hero:** Drop a ball. Follow every bounce.
 
-A browser-game experiment built around a simple moment: send a ball into a physics board and watch where it lands.
+You drop a ball into the board and watch where it goes. Scatter is a browser-game experiment built around the fun of following each bounce.
 
 **Primary CTA:** See the game flow. Jumps to the on-page walkthrough; does not imply public product access.
 
-**The fun is in the fall:** Drop a ball into the board and follow its path through the obstacles. A different bounce gives you another reason to try again.
+**The fun is watching what happens next:** Send a ball into the board and follow its path through the obstacles. Once it lands, you can try another drop and see what happens.
 
-**How it works:** Physics simulation turns a drop into a sequence of collisions and a landing. The existing project steps are displayed as the short workflow.
+**How it works:** The game uses physics to work out how the ball falls, hits the obstacles and reaches the bottom. The existing project steps are displayed as the short workflow.
 
-**What you can inspect:** This portfolio records Scatter as a physics-based browser game project. A playable build is not linked here.
+**What you can inspect:** Scatter is a browser-game project I’m exploring. There isn’t a playable build linked on this page yet.
 
-**Before you try it:** Presented as an interaction experiment. No prizes, payouts or odds are offered on this page.
+**Before you try it:** It’s a game experiment. This page doesn’t offer prizes or payouts.
 
 **Closing CTA:** See the game flow. The original project motivation follows the experience and evidence, with team attribution retained where relevant.
 
@@ -235,16 +237,16 @@ The promise is specific to the project's described input or interaction. No user
 
 - User and situation: For people exploring coordination in a laundry service.
 - Central promise: Follow a laundry order across three roles.
-- Concrete experience: A customer starts a request. The courier and shop take part in the same service flow, making each role part of the product design.
-- Payoff: A clearer view of how a service moves between people.
-- Reason to believe: A collaborative Android application project focused on laundry coordination. This page is a walkthrough, not an offer of an operating laundry service.
-- Main objection: No service area, delivery time or payment support is claimed. This is a team project.
+- Concrete experience: A customer starts a request, then the courier and shop take part in getting it through. We wanted each person’s part to fit into the same service flow.
+- Payoff: Everyone’s part in the service belongs in the design.
+- Reason to believe: LaunDiri is an Android project we built as a team to explore laundry-service coordination. The page shows the idea behind that work.
+- Main objection: This is a team project, rather than a laundry service you can book here. We aren’t offering delivery times or service coverage through this page.
 
 ### B. Three hero directions
 
-1. **Follow a laundry order across three roles.** LaunDiri brings the customer, courier and laundry shop into one service workflow, built as a collaborative Android project.
-2. **One laundry request, more than one person.** A customer starts a request. The courier and shop take part in the same service flow, making each role part of the product design.
-3. **Designing the handoffs behind laundry day.** Role-based order workflows connect the customer request with courier and shop participation.
+1. **Follow a laundry order across three roles.** A laundry order passes through a few people. In LaunDiri, we brought the customer, courier and shop into one Android project to explore how those handoffs could work.
+2. **One laundry request, more than one person.** A customer starts a request, then the courier and shop take part in getting it through. We wanted each person’s part to fit into the same service flow.
+3. **Designing the handoffs behind laundry day.** The app connects the customer’s request with the parts of the order handled by the courier and the shop.
 
 Recommended: direction 1. It gives the reader the clearest observable action and result at the scope supported by the project information. The other directions emphasize the recurring use situation and the product mechanism.
 
@@ -252,17 +254,17 @@ Recommended: direction 1. It gives the reader the clearest observable action and
 
 **Hero:** Follow a laundry order across three roles.
 
-LaunDiri brings the customer, courier and laundry shop into one service workflow, built as a collaborative Android project.
+A laundry order passes through a few people. In LaunDiri, we brought the customer, courier and shop into one Android project to explore how those handoffs could work.
 
 **Primary CTA:** See the service flow. Jumps to the on-page walkthrough; does not imply public product access.
 
-**Make the handoffs part of the order:** A customer starts a request. The courier and shop take part in the same service flow, making each role part of the product design.
+**Think about everyone handling the order:** A customer starts a request, then the courier and shop take part in getting it through. We wanted each person’s part to fit into the same service flow.
 
-**How it works:** Role-based order workflows connect the customer request with courier and shop participation. The existing project steps are displayed as the short workflow.
+**How it works:** The app connects the customer’s request with the parts of the order handled by the courier and the shop. The existing project steps are displayed as the short workflow.
 
-**What you can inspect:** A collaborative Android application project focused on laundry coordination. This page is a walkthrough, not an offer of an operating laundry service.
+**What you can inspect:** LaunDiri is an Android project we built as a team to explore laundry-service coordination. The page shows the idea behind that work.
 
-**Before you try it:** No service area, delivery time or payment support is claimed. This is a team project.
+**Before you try it:** This is a team project, rather than a laundry service you can book here. We aren’t offering delivery times or service coverage through this page.
 
 **Closing CTA:** See the service flow. The original project motivation follows the experience and evidence, with team attribution retained where relevant.
 
@@ -280,16 +282,16 @@ The promise is specific to the project's described input or interaction. No user
 
 - User and situation: For learners exploring technopreneurship course material.
 - Central promise: Explore course material through the questions it raises.
-- Concrete experience: Open course material, explore the generated content and use relevant suggestions to continue learning about the subject.
-- Payoff: A way to explore a topic beyond the first piece of course material.
-- Reason to believe: The documented project scope covers AI-assisted course content and suggestions. No learning-outcome study is supplied.
-- Main objection: Generated learning material needs review. The page does not promise factual accuracy or improved grades.
+- Concrete experience: Open the course material, look through the generated content and follow relevant suggestions when you want to understand more.
+- Payoff: There’s another way into the subject when the first explanation leaves you wanting more.
+- Reason to believe: We explored generated course content and question-based suggestions in this project. We haven’t established that it improves learning outcomes.
+- Main objection: Generated explanations still need checking. They can support your learning, but they shouldn’t replace reviewing the material carefully.
 
 ### B. Three hero directions
 
-1. **Explore course material through the questions it raises.** Techno Dynamic is a collaborative learning-platform project combining technopreneurship material, generated content and FAQ-based suggestions.
-2. **A course page with somewhere to take your questions.** Open course material, explore the generated content and use relevant suggestions to continue learning about the subject.
-3. **Bring technopreneurship material and questions together.** AI-assisted content generation and FAQ-based suggestions sit within a course-learning interface.
+1. **Explore course material through the questions it raises.** Sometimes a lesson leaves you with another question. Techno Dynamic is a team project exploring how course material and AI-assisted content can help you keep learning about technopreneurship.
+2. **A course page with somewhere to take your questions.** Open the course material, look through the generated content and follow relevant suggestions when you want to understand more.
+3. **Bring technopreneurship material and questions together.** The platform brings course material together with AI-assisted content and suggestions based on frequently asked questions.
 
 Recommended: direction 1. It gives the reader the clearest observable action and result at the scope supported by the project information. The other directions emphasize the recurring use situation and the product mechanism.
 
@@ -297,17 +299,17 @@ Recommended: direction 1. It gives the reader the clearest observable action and
 
 **Hero:** Explore course material through the questions it raises.
 
-Techno Dynamic is a collaborative learning-platform project combining technopreneurship material, generated content and FAQ-based suggestions.
+Sometimes a lesson leaves you with another question. Techno Dynamic is a team project exploring how course material and AI-assisted content can help you keep learning about technopreneurship.
 
 **Primary CTA:** See the learning flow. Jumps to the on-page walkthrough; does not imply public product access.
 
-**Keep the questions close to the lesson:** Open course material, explore the generated content and use relevant suggestions to continue learning about the subject.
+**Keep exploring the question:** Open the course material, look through the generated content and follow relevant suggestions when you want to understand more.
 
-**How it works:** AI-assisted content generation and FAQ-based suggestions sit within a course-learning interface. The existing project steps are displayed as the short workflow.
+**How it works:** The platform brings course material together with AI-assisted content and suggestions based on frequently asked questions. The existing project steps are displayed as the short workflow.
 
-**What you can inspect:** The documented project scope covers AI-assisted course content and suggestions. No learning-outcome study is supplied.
+**What you can inspect:** We explored generated course content and question-based suggestions in this project. We haven’t established that it improves learning outcomes.
 
-**Before you try it:** Generated learning material needs review. The page does not promise factual accuracy or improved grades.
+**Before you try it:** Generated explanations still need checking. They can support your learning, but they shouldn’t replace reviewing the material carefully.
 
 **Closing CTA:** See the learning flow. The original project motivation follows the experience and evidence, with team attribution retained where relevant.
 
@@ -325,16 +327,16 @@ The promise is specific to the project's described input or interaction. No user
 
 - User and situation: For people studying image-classification interfaces.
 - Central promise: Inspect an ultrasound classifier’s response to an image.
-- Concrete experience: A suitable research image goes into the classifier. The interface presents its output for inspection as an experimental result.
-- Payoff: A tangible way to inspect what a classification experiment returns.
-- Reason to believe: The project is documented as an ultrasound-classification prototype. No clinical validation or accuracy figures are supplied.
-- Main objection: Not a validated medical device. Do not use the output for diagnosis or clinical decisions.
+- Concrete experience: Give the classifier a suitable research image, then inspect the response. The output is an experimental result you can examine.
+- Payoff: You can follow the experiment from an image to its output.
+- Reason to believe: This project explores ultrasound image classification. I haven’t supplied clinical validation or accuracy figures on this page.
+- Main objection: Rad AI is a research prototype, not a validated medical device. It must not be used to diagnose someone or make clinical decisions.
 
 ### B. Three hero directions
 
-1. **Inspect an ultrasound classifier’s response to an image.** A research prototype that puts image input and model output into an interface you can examine. For research demonstration only, not diagnosis.
-2. **From an ultrasound image to an experimental prediction.** A suitable research image goes into the classifier. The interface presents its output for inspection as an experimental result.
-3. **Put a classification experiment where it can be inspected.** An interface connects image input to a machine-learning inference workflow.
+1. **Inspect an ultrasound classifier’s response to an image.** Rad AI lets you look at what an image-classification model returns for an ultrasound research image. I built it as a research interface, not a tool for diagnosis.
+2. **From an ultrasound image to an experimental prediction.** Give the classifier a suitable research image, then inspect the response. The output is an experimental result you can examine.
+3. **Put a classification experiment where it can be inspected.** The interface sends the image through the classification model and shows the result it returns.
 
 Recommended: direction 1. It gives the reader the clearest observable action and result at the scope supported by the project information. The other directions emphasize the recurring use situation and the product mechanism.
 
@@ -342,17 +344,17 @@ Recommended: direction 1. It gives the reader the clearest observable action and
 
 **Hero:** Inspect an ultrasound classifier’s response to an image.
 
-A research prototype that puts image input and model output into an interface you can examine. For research demonstration only, not diagnosis.
+Rad AI lets you look at what an image-classification model returns for an ultrasound research image. I built it as a research interface, not a tool for diagnosis.
 
 **Primary CTA:** See the research flow. Jumps to the on-page walkthrough; does not imply public product access.
 
-**See the inference workflow:** A suitable research image goes into the classifier. The interface presents its output for inspection as an experimental result.
+**See what the model returns:** Give the classifier a suitable research image, then inspect the response. The output is an experimental result you can examine.
 
-**How it works:** An interface connects image input to a machine-learning inference workflow. The existing project steps are displayed as the short workflow.
+**How it works:** The interface sends the image through the classification model and shows the result it returns. The existing project steps are displayed as the short workflow.
 
-**What you can inspect:** The project is documented as an ultrasound-classification prototype. No clinical validation or accuracy figures are supplied.
+**What you can inspect:** This project explores ultrasound image classification. I haven’t supplied clinical validation or accuracy figures on this page.
 
-**Before you try it:** Not a validated medical device. Do not use the output for diagnosis or clinical decisions.
+**Before you try it:** Rad AI is a research prototype, not a validated medical device. It must not be used to diagnose someone or make clinical decisions.
 
 **Closing CTA:** See the research flow. The original project motivation follows the experience and evidence, with team attribution retained where relevant.
 
@@ -370,16 +372,16 @@ The promise is specific to the project's described input or interaction. No user
 
 - User and situation: For learners exploring computer vision with animal images.
 - Central promise: Give an animal classifier a picture to work with.
-- Concrete experience: Provide an image and look at the category the model predicts. Compare that prediction with the image and consider where the model falls short.
-- Payoff: A concrete starting point for understanding predictions and mistakes.
-- Reason to believe: Documented as an interactive animal-image classification project. No accuracy benchmark is supplied.
-- Main objection: A prediction can be wrong. Supported species and model accuracy are not established here.
+- Concrete experience: Choose an animal image and look at the category the model returns. You can compare its answer with the picture and think about where it got things right or wrong.
+- Payoff: An animal picture gives you a familiar starting point for understanding a model’s response.
+- Reason to believe: Jungle Guardians is an interactive learning project about animal-image classification. I haven’t published an accuracy benchmark here.
+- Main objection: The prediction can be wrong. The page doesn’t establish which species the model can reliably identify.
 
 ### B. Three hero directions
 
-1. **Give an animal classifier a picture to work with.** Choose an animal image, inspect the predicted category and explore how a classification model responds.
-2. **See what a model makes of an animal photo.** Provide an image and look at the category the model predicts. Compare that prediction with the image and consider where the model falls short.
-3. **Explore animal classification one image at a time.** An interactive interface connects animal imagery to an image-classification model.
+1. **Give an animal classifier a picture to work with.** Give Jungle Guardians an animal image and see what category the model predicts. I built it as a way to explore image classification through something familiar.
+2. **See what a model makes of an animal photo.** Choose an animal image and look at the category the model returns. You can compare its answer with the picture and think about where it got things right or wrong.
+3. **Explore animal classification one image at a time.** The interface passes your image to a classifier, then shows the category it predicts.
 
 Recommended: direction 1. It gives the reader the clearest observable action and result at the scope supported by the project information. The other directions emphasize the recurring use situation and the product mechanism.
 
@@ -387,17 +389,17 @@ Recommended: direction 1. It gives the reader the clearest observable action and
 
 **Hero:** Give an animal classifier a picture to work with.
 
-Choose an animal image, inspect the predicted category and explore how a classification model responds.
+Give Jungle Guardians an animal image and see what category the model predicts. I built it as a way to explore image classification through something familiar.
 
 **Primary CTA:** See the classification flow. Jumps to the on-page walkthrough; does not imply public product access.
 
-**Make classification something you can try:** Provide an image and look at the category the model predicts. Compare that prediction with the image and consider where the model falls short.
+**Compare the picture with the prediction:** Choose an animal image and look at the category the model returns. You can compare its answer with the picture and think about where it got things right or wrong.
 
-**How it works:** An interactive interface connects animal imagery to an image-classification model. The existing project steps are displayed as the short workflow.
+**How it works:** The interface passes your image to a classifier, then shows the category it predicts. The existing project steps are displayed as the short workflow.
 
-**What you can inspect:** Documented as an interactive animal-image classification project. No accuracy benchmark is supplied.
+**What you can inspect:** Jungle Guardians is an interactive learning project about animal-image classification. I haven’t published an accuracy benchmark here.
 
-**Before you try it:** A prediction can be wrong. Supported species and model accuracy are not established here.
+**Before you try it:** The prediction can be wrong. The page doesn’t establish which species the model can reliably identify.
 
 **Closing CTA:** See the classification flow. The original project motivation follows the experience and evidence, with team attribution retained where relevant.
 
@@ -415,16 +417,16 @@ The promise is specific to the project's described input or interaction. No user
 
 - User and situation: For people maintaining a collection of contact records.
 - Central promise: Keep contact details ready to return to.
-- Concrete experience: Browse your contacts, maintain the stored information and return to the record when you need it.
-- Payoff: A dedicated place to work with contact information.
-- Reason to believe: The project is documented as a contact-management application built with Angular and Supabase. No scale or security audit is claimed.
-- Main objection: This walkthrough does not establish suitability for sensitive customer data.
+- Concrete experience: Look through your contacts, maintain the stored information and return to a record when you need the details again.
+- Payoff: Your contact records have a place you can return to.
+- Reason to believe: This is a contact-management application project built with Angular and Supabase. I haven’t published a security or scale assessment here.
+- Main objection: The project description alone isn’t enough to judge whether it’s suitable for sensitive customer information.
 
 ### B. Three hero directions
 
-1. **Keep contact details ready to return to.** A focused contact-management project for browsing records and maintaining the information stored in them.
-2. **Return to the contact record you need.** Browse your contacts, maintain the stored information and return to the record when you need it.
-3. **Give contact records a focused workspace.** An Angular interface and Supabase-backed project support the contact-record workflow.
+1. **Keep contact details ready to return to.** Sometimes you just need to find someone’s details and keep them up to date. Contact Manager is a focused project for working with those records.
+2. **Return to the contact record you need.** Look through your contacts, maintain the stored information and return to a record when you need the details again.
+3. **Give contact records a focused workspace.** I used Angular for the interface and Supabase for the data side of the contact-management project.
 
 Recommended: direction 1. It gives the reader the clearest observable action and result at the scope supported by the project information. The other directions emphasize the recurring use situation and the product mechanism.
 
@@ -432,17 +434,17 @@ Recommended: direction 1. It gives the reader the clearest observable action and
 
 **Hero:** Keep contact details ready to return to.
 
-A focused contact-management project for browsing records and maintaining the information stored in them.
+Sometimes you just need to find someone’s details and keep them up to date. Contact Manager is a focused project for working with those records.
 
 **Primary CTA:** See the contact workflow. Jumps to the on-page walkthrough; does not imply public product access.
 
-**Work with the details you need again:** Browse your contacts, maintain the stored information and return to the record when you need it.
+**Come back to the details you need:** Look through your contacts, maintain the stored information and return to a record when you need the details again.
 
-**How it works:** An Angular interface and Supabase-backed project support the contact-record workflow. The existing project steps are displayed as the short workflow.
+**How it works:** I used Angular for the interface and Supabase for the data side of the contact-management project. The existing project steps are displayed as the short workflow.
 
-**What you can inspect:** The project is documented as a contact-management application built with Angular and Supabase. No scale or security audit is claimed.
+**What you can inspect:** This is a contact-management application project built with Angular and Supabase. I haven’t published a security or scale assessment here.
 
-**Before you try it:** This walkthrough does not establish suitability for sensitive customer data.
+**Before you try it:** The project description alone isn’t enough to judge whether it’s suitable for sensitive customer information.
 
 **Closing CTA:** See the contact workflow. The original project motivation follows the experience and evidence, with team attribution retained where relevant.
 
