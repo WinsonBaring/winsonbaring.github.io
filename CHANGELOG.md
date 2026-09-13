@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Published approved portfolio revisions to portfolio.winson.codes; verified live pages and assets.
+
 - Center the featured-links heading on mobile.
 
 - Round Resume AI logo corners across the portfolio.

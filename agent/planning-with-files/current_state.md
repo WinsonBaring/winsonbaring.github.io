@@ -29,3 +29,5 @@ Issue #12: Shared Resume AI mark now has 10px rounded corners. Local only.
 Issue #13: Try something I made is centered on mobile. Desktop and other headings retain existing alignment. Local only.
 
 Issue #14: Publishing approved local updates. Domain portfolio.winson.codes retains HTTPS enforcement.
+
+Issue #14 complete: published approved updates to https://portfolio.winson.codes/. Workflow 34734034804 deployed 46ae07c. Home, Work, Links and Resume AI HTML match local build exactly; live JS/CSS match too. 15 tests and 14-route checks passed.

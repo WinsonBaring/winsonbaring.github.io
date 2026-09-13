@@ -33,3 +33,5 @@
 2026-09-13: Issue #13. Added scoped class and mobile alignment rule for featured-links heading.
 
 2026-09-13: Issue #14. User authorized publication. Checked clean worktree, remote ancestry and custom-domain configuration; release checks passed.
+
+2026-09-13: Issue #14 complete. Deployment succeeded and live HTML/assets verified against build.
