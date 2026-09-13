@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Center and simplify the Links profile on mobile; retain full desktop profile.
+
 - Reuse Resume AI’s existing brand mark across portfolio cards, project header and Links.
 
 - Feature BendMe and Resume AI by default; reveal archived projects with Show all projects.

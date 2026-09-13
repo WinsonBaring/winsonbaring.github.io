@@ -25,3 +25,5 @@
 2026-09-13: Issue #9. Added archive flags and featured collection, reversible Work toggle and navigation filtering. Added tests for default/show-all/reset behavior and Home/next-project links.
 
 2026-09-13: Issue #10. Searched Resume AI projects; found current mark in landing page/sidebar code. Implemented with existing Lucide dependency and matching colors. Full checks passed.
+
+2026-09-13: Issue #11. Added mobile-scoped Links profile CSS and verified native 390px screenshot.

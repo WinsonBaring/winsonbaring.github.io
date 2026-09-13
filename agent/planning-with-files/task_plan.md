@@ -47,3 +47,7 @@ Design: developer portfolio; DESIGN_VARIANCE 7, MOTION_INTENSITY 3, VISUAL_DENSI
 - [x] Locate brand in sibling Resume AI project.
 - [x] Reuse on cards, project identity and Links.
 - [x] Verify build and mobile rendering.
+
+## Issue #11: Mobile Links profile
+- [x] Center portrait/badge; hide requested profile text and copy controls on mobile.
+- [x] Inspect native mobile render; keep desktop rules unchanged.
