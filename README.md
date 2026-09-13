@@ -15,3 +15,5 @@ BendMe preview artwork stays inside its media frame; controls and caption remain
 Project pages now follow an experience-first product narrative. See [positioning and copy](docs/PROJECT-POSITIONING.md), [verification gaps](docs/VERIFICATION-GAPS.md), and [content editing](src/data/README.md).
 
 Project wording is conversational within the existing visual layouts. This copy revision preserves previews, interactions and approved BendMe content.
+
+The current project copy follows the owner’s human-voice prompt: complete explanations that make sense when read aloud. Visual layouts and approved BendMe copy are retained.

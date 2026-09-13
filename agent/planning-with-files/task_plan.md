@@ -27,3 +27,8 @@ Design: developer portfolio; DESIGN_VARIANCE 7, MOTION_INTENSITY 3, VISUAL_DENSI
 - [x] Respect owner revert and keep restored visual UI.
 - [x] Rewrite nine project descriptions, explanations and steps.
 - [x] Verify UI files and BendMe content unchanged; run project checks.
+
+## Issue #7: Apply human-voice prompt
+- [x] Read owner prompt and revise nine projects’ copy with complete, self-contained explanations.
+- [x] Preserve UI files and BendMe; update editorial copy and copy-sensitive tests.
+- [x] Run checks and inspect mobile headline layout.

@@ -52,7 +52,7 @@ const projectFacts: Omit<Project, "headline" | "summary">[] = [
     slug: "yabs",
     name: "YABS Visualizer",
     category: "Clearer decisions",
-    why: "I kept coming back to terminal logs when comparing servers. I built this to give the YABS results a visual home, so I could spend more time understanding the measurements.",
+    why: "I built the visualizer to make YABS output easier to work through. It gives the measurements a visual presentation when comparing servers.",
     steps: [
       "Start with YABS benchmark output.",
       "Look through the measurements in the visualizer.",
@@ -68,7 +68,7 @@ const projectFacts: Omit<Project, "headline" | "summary">[] = [
     slug: "arsenal",
     name: "Arsenal",
     category: "Less busywork",
-    why: "As I used AI more while building, I found myself wanting to keep certain prompts. Arsenal grew out of wanting somewhere to organize those instructions and come back to them.",
+    why: "I built Arsenal around the idea that development prompts can be reusable instructions. Keeping those instructions with their project context makes them easier to return to.",
     steps: [
       "Keep your prompts with the work they belong to.",
       "Keep reusable instructions and project context together.",

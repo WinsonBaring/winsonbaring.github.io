@@ -26,7 +26,7 @@ describe("Portfolio visitor paths", () => {
     ).toBeInTheDocument();
     expect(
       screen.queryByRole("heading", {
-        name: "Turn scattered work notes into a resume draft.",
+        name: "Resume AI helps you explain your work experience.",
       }),
     ).not.toBeInTheDocument();
   });
@@ -81,7 +81,7 @@ describe("Portfolio visitor paths", () => {
   it("provides the links hub and project stories", () => {
     render(<App initialPath="/links/" />);
     expect(
-      screen.getByRole("link", { name: /Resume AI: Turn/ }),
+      screen.getByRole("link", { name: /Resume AI: Resume AI/ }),
     ).toHaveAttribute("href", "/work/resume-ai/");
     expect(
       screen.getByRole("button", { name: "Copy this page" }),

@@ -30,3 +30,5 @@ Do not use sample summaries as quotations from real posts. A group can have mult
 Positioning fields drive the hero, audience, experience, mechanism, proof, limitations and CTA. `alternatives`, `demo`, and `gap` are editorial notes; do not display uncreated demonstrations as proof. Full copy directions are in ../../docs/PROJECT-POSITIONING.md.
 
 Use natural, spoken phrasing for project summaries and explanations while preserving verified claims. BendMe copy is approved and unchanged.
+
+Voice source: owner-provided prompts/human-voice.md in the parent workspace. Name the product, explain what it does, connect thoughts and preserve limitations. Do not invent first-person experiences.

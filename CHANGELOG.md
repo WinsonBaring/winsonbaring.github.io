@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Apply the human-voice prompt to nine project descriptions and headlines without changing visuals or BendMe.
+
 - Refine nine projects’ wording for natural spoken delivery while preserving restored visuals and approved BendMe content.
 
 - Rework all ten project pages around concrete experiences, evidence, limitations and clear next steps; align project cards and featured Links copy.
