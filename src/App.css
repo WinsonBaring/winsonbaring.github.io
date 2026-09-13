@@ -1375,5 +1375,121 @@ h2 {
     font-size: 18px;
   }
 }
-.links-profile>img{width:96px;height:96px;aspect-ratio:1;object-position:50% 58%}
-@media(max-width:639px){.hero h1{font-size:58px}.hero{gap:28px}.hero-photo{max-height:260px}.links-profile .copy-status{margin-bottom:0}.links-page{gap:24px}}
+.links-profile > img {
+  width: 96px;
+  height: 96px;
+  aspect-ratio: 1;
+  object-position: 50% 58%;
+}
+@media (max-width: 639px) {
+  .hero h1 {
+    font-size: 58px;
+  }
+  .hero {
+    gap: 28px;
+  }
+  .hero-photo {
+    max-height: 260px;
+  }
+  .links-profile .copy-status {
+    margin-bottom: 0;
+  }
+  .links-page {
+    gap: 24px;
+  }
+}
+
+/* Product pages keep the experience and evidence ahead of implementation details. */
+.product-identity {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+}
+.product-identity > span:first-child {
+  font-size: 18px;
+  font-weight: 600;
+}
+.case-intro .product-audience {
+  font-size: 14px;
+  margin-top: 22px;
+  color: var(--muted-foreground);
+}
+.product-experience {
+  scroll-margin-top: 100px;
+}
+.product-flow {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 60px;
+  background: var(--surface);
+  padding: 48px;
+  border-radius: 16px;
+}
+.product-flow h2 {
+  font-size: clamp(26px, 3vw, 40px);
+  line-height: 1.15;
+  letter-spacing: -0.035em;
+  margin: 20px 0;
+}
+.product-flow p {
+  color: var(--muted-foreground);
+  font-size: 16px;
+  line-height: 1.7;
+}
+.product-flow ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 24px;
+}
+.product-flow li {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+}
+.product-flow li > span {
+  color: var(--primary);
+  font-size: 14px;
+  flex-shrink: 0;
+}
+.product-flow li p {
+  margin: 0;
+}
+.product-payoff {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--muted-foreground);
+  margin: 20px 0;
+}
+.product-next-step {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  margin: 0 0 64px;
+  padding: 32px 0;
+}
+.product-next-step h2 {
+  font-size: 28px;
+  line-height: 1.2;
+}
+.product-next-step p {
+  color: var(--muted-foreground);
+  margin-top: 12px;
+}
+.product-next-step > a {
+  flex-shrink: 0;
+}
+@media (max-width: 767px) {
+  .product-flow {
+    grid-template-columns: minmax(0, 1fr);
+    padding: 24px;
+    gap: 24px;
+  }
+  .product-next-step {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

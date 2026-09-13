@@ -9,10 +9,9 @@ describe("Portfolio visitor paths", () => {
     expect(
       screen.getByRole("heading", { name: "Why I built it" }),
     ).toBeInTheDocument();
-    expect(screen.getByRole("link", { name: /Try BendMe/ })).toHaveAttribute(
-      "href",
-      "https://winsonbaring.github.io/bendme/",
-    );
+    expect(
+      screen.getAllByRole("link", { name: /Try BendMe/ })[0],
+    ).toHaveAttribute("href", "https://winsonbaring.github.io/bendme/");
     expect(screen.getByText(/Inspired by Bendy/)).toBeInTheDocument();
   });
   it("filters work by use case", async () => {
@@ -22,12 +21,12 @@ describe("Portfolio visitor paths", () => {
     expect(screen.getByRole("status")).toHaveTextContent("2 projects");
     expect(
       screen.getByRole("heading", {
-        name: "Make your desktop a little less flat.",
+        name: "Lower your lid. Watch your desktop fold.",
       }),
     ).toBeInTheDocument();
     expect(
       screen.queryByRole("heading", {
-        name: "Give your experience a clearer story.",
+        name: "Turn scattered work notes into a resume draft.",
       }),
     ).not.toBeInTheDocument();
   });
@@ -82,7 +81,7 @@ describe("Portfolio visitor paths", () => {
   it("provides the links hub and project stories", () => {
     render(<App initialPath="/links/" />);
     expect(
-      screen.getByRole("link", { name: /Resume AI: Give/ }),
+      screen.getByRole("link", { name: /Resume AI: Turn/ }),
     ).toHaveAttribute("href", "/work/resume-ai/");
     expect(
       screen.getByRole("button", { name: "Copy this page" }),
@@ -134,4 +133,26 @@ it("demonstrates Resume AI without inventing experience", async () => {
       "Same facts in both views. No invented results or achievements.",
     ),
   ).toBeInTheDocument();
+});
+
+it("gives every project an honest next step and decision context", () => {
+  for (const p of projects) {
+    const { unmount } = render(<App initialPath={`/work/${p.slug}/`} />);
+    expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent(
+      p.headline,
+    );
+    expect(
+      screen.getByRole("heading", { name: "Before you try it" }),
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", { name: "What you can inspect" }),
+    ).toBeInTheDocument();
+    if (!p.url) {
+      expect(
+        screen.queryByRole("link", { name: `Try ${p.name}` }),
+      ).not.toBeInTheDocument();
+      expect(document.querySelector('a[href="#experience"]')).toBeTruthy();
+    }
+    unmount();
+  }
 });

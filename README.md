@@ -11,3 +11,5 @@ A personal portfolio organized around what projects help people do. Built with R
 See [SETUP.md](SETUP.md) for running and publishing, [PROJECT.md](PROJECT.md) for architecture and design, and [src/data/README.md](src/data/README.md) for adding projects, profiles and real posts. Verification evidence lives in [docs/VERIFICATION.md](docs/VERIFICATION.md).
 
 BendMe preview artwork stays inside its media frame; controls and caption remain below it. The native renderer checks containment in both lid states.
+
+Project pages now follow an experience-first product narrative. See [positioning and copy](docs/PROJECT-POSITIONING.md), [verification gaps](docs/VERIFICATION-GAPS.md), and [content editing](src/data/README.md).

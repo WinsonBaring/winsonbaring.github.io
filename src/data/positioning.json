@@ -1,0 +1,222 @@
+{
+  "bendme": {
+    "slug": "bendme",
+    "headline": "Lower your lid. Watch your desktop fold.",
+    "summary": "BendMe turns a small movement of your MacBook lid into a live visual effect. Choose a style, start the effect and watch your screen change perspective.",
+    "audience": "For MacBook owners who enjoy a playful desktop.",
+    "experienceTitle": "Your lid becomes part of the effect",
+    "experience": "You gently lower the lid; the desktop bends with it. Open it again to return to the normal view.",
+    "mechanism": "A native Swift and Metal renderer uses screen capture and the lid sensor to draw the effect.",
+    "payoff": "The effect is the point. It adds a small moment of delight to a familiar machine.",
+    "cta": "Try BendMe",
+    "status": "Available for Mac",
+    "flowTitle": "See the lid effect",
+    "evidence": "BendMe’s public code, built-in artwork renders and the existing MacBook demo are available to inspect.",
+    "barrier": "Requires macOS 14+, Apple silicon and a compatible lid sensor. Screen Recording permission is needed. Pause in Appearance or the menu bar.",
+    "demoStatus": "Use existing evidence",
+    "demo": "Use the supplied lid demo and the two existing shader renders. The video shows physical lid movement; the artwork switch shows the visual states, not live tracking in the website.",
+    "gap": "Screen capture stays on the Mac according to the project source. Compatibility should be checked on each supported model; do not promise the global pause shortcut works.",
+    "alternatives": [
+      "A desktop that follows your MacBook lid.",
+      "A little lid movement. A visible bend."
+    ]
+  },
+  "resume-ai": {
+    "slug": "resume-ai",
+    "headline": "Turn scattered work notes into a resume draft.",
+    "summary": "Bring together what you have done, use AI-assisted drafting to organize it for a role, then review the wording before you apply.",
+    "audience": "For job applicants turning work experience into an application.",
+    "experienceTitle": "Start with the experience you already have",
+    "experience": "A rough account of your work becomes a draft you can read, edit and shape around a job. You check the claims before they become your resume.",
+    "mechanism": "AI-assisted drafting organizes work experience and skills into resume content.",
+    "payoff": "A clearer starting point when your experience is easier to remember than to write about.",
+    "cta": "See the writing example",
+    "status": "Product walkthrough",
+    "flowTitle": "From notes to a draft",
+    "evidence": "The example below shows the intended writing workflow using the same facts in both views. It is an illustration, not output from a running Resume AI service.",
+    "barrier": "Review every claim. AI-assisted wording does not establish that an achievement is true or that a resume will lead to an interview.",
+    "demoStatus": "Use existing evidence",
+    "demo": "Keep the clearly labeled notes-to-draft illustration. It explains the intended input and output but does not prove the production AI workflow.",
+    "gap": "User supplied resume-ai.winson.codes in the Vercel screenshot; end-to-end access, export formats, pricing and generation behavior have not been verified. Do not add a live CTA until checked.",
+    "alternatives": [
+      "Your work experience, ready for a first draft.",
+      "Start your next application with the work you have done."
+    ]
+  },
+  "yabs": {
+    "slug": "yabs",
+    "headline": "Read your VPS benchmarks beyond the terminal.",
+    "summary": "Turn YABS output into a visual view of measured server performance, then compare the results against the workload you have in mind.",
+    "audience": "For developers comparing VPS benchmark results.",
+    "experienceTitle": "Make the measurements easier to inspect",
+    "experience": "Start with benchmark output and look at the measured performance visually. Use those results as one part of choosing a machine.",
+    "mechanism": "A visualization layer presents the measurements recorded by YABS.",
+    "payoff": "Less back-and-forth through terminal logs when comparing test results.",
+    "cta": "Open YABS Visualizer",
+    "status": "Web project",
+    "flowTitle": "Measurements you can inspect",
+    "evidence": "The benchmark website and public source repository are linked here. Test results reflect the conditions under which they were recorded.",
+    "barrier": "A benchmark is not a guarantee for your application. Check the test conditions and consider your own workload.",
+    "demoStatus": "Needs to be created",
+    "demo": "Capture real YABS output beside the matching visualization. Highlight the same measurement in both so visitors can trace the source of a displayed value.",
+    "gap": "No performance figures, supported import formats or workload wins verified for this rewrite.",
+    "alternatives": [
+      "Compare the measurements behind your VPS choice.",
+      "Give YABS output a visual view."
+    ]
+  },
+  "arsenal": {
+    "slug": "arsenal",
+    "headline": "Find the prompt you want to use again.",
+    "summary": "Keep reusable AI development instructions organized around the work they support, so a useful prompt has a place beyond the original conversation.",
+    "audience": "For developers who reuse prompts across their work.",
+    "experienceTitle": "Return to instructions worth keeping",
+    "experience": "Organize useful prompts with their project context. When similar work comes up, return to the instructions and adapt them to the task.",
+    "mechanism": "Prompt management gives reusable instructions and development workflows a shared place in the project.",
+    "payoff": "Continuity between development sessions without treating every prompt as disposable.",
+    "cta": "Open Arsenal",
+    "status": "Web project",
+    "flowTitle": "A place for reusable instructions",
+    "evidence": "Arsenal is linked as a prompt-management project. This page describes the project scope; it does not claim measured improvements in AI results.",
+    "barrier": "A saved prompt still needs the right context and a review of the result it produces.",
+    "demoStatus": "Needs to be created",
+    "demo": "Record saving an actual development prompt and finding it for a second task. Confirm the available controls before scripting the recording.",
+    "gap": "Sharing, search controls, integrations, sync, pricing and workflow execution have not been verified.",
+    "alternatives": [
+      "Keep the instructions that worked.",
+      "Give recurring development prompts a home."
+    ]
+  },
+  "scatter": {
+    "slug": "scatter",
+    "headline": "Drop a ball. Follow every bounce.",
+    "summary": "A browser-game experiment built around a simple moment: send a ball into a physics board and watch where it lands.",
+    "audience": "For people who enjoy short, playful browser experiments.",
+    "experienceTitle": "The fun is in the fall",
+    "experience": "Drop a ball into the board and follow its path through the obstacles. A different bounce gives you another reason to try again.",
+    "mechanism": "Physics simulation turns a drop into a sequence of collisions and a landing.",
+    "payoff": "Anticipation, movement and the satisfaction of seeing the result.",
+    "cta": "See the game flow",
+    "status": "Game experiment",
+    "flowTitle": "Built around the bounce",
+    "evidence": "This portfolio records Scatter as a physics-based browser game project. A playable build is not linked here.",
+    "barrier": "Presented as an interaction experiment. No prizes, payouts or odds are offered on this page.",
+    "demoStatus": "Needs to be created",
+    "demo": "Record one uninterrupted ball drop in the actual build, from input to landing, with its real feedback. Show the board rather than a fabricated game screenshot.",
+    "gap": "Public build URL and supported devices have not been verified for the portfolio.",
+    "alternatives": [
+      "See where the next bounce takes you.",
+      "One drop, a board full of possibilities."
+    ]
+  },
+  "laundirii": {
+    "slug": "laundirii",
+    "headline": "Follow a laundry order across three roles.",
+    "summary": "LaunDiri brings the customer, courier and laundry shop into one service workflow, built as a collaborative Android project.",
+    "audience": "For people exploring coordination in a laundry service.",
+    "experienceTitle": "Make the handoffs part of the order",
+    "experience": "A customer starts a request. The courier and shop take part in the same service flow, making each role part of the product design.",
+    "mechanism": "Role-based order workflows connect the customer request with courier and shop participation.",
+    "payoff": "A clearer view of how a service moves between people.",
+    "cta": "See the service flow",
+    "status": "Team project",
+    "flowTitle": "Customer to courier to shop",
+    "evidence": "A collaborative Android application project focused on laundry coordination. This page is a walkthrough, not an offer of an operating laundry service.",
+    "barrier": "No service area, delivery time or payment support is claimed. This is a team project.",
+    "demoStatus": "Needs to be created",
+    "demo": "Capture the same test order from the customer, courier and shop views. Show only handoffs supported by the actual app.",
+    "gap": "Current availability, exact role permissions, order status updates, team contributions and operational rollout need confirmation.",
+    "alternatives": [
+      "One laundry request, more than one person.",
+      "Designing the handoffs behind laundry day."
+    ]
+  },
+  "techno-dynamic": {
+    "slug": "techno-dynamic",
+    "headline": "Explore course material through the questions it raises.",
+    "summary": "Techno Dynamic is a collaborative learning-platform project combining technopreneurship material, generated content and FAQ-based suggestions.",
+    "audience": "For learners exploring technopreneurship course material.",
+    "experienceTitle": "Keep the questions close to the lesson",
+    "experience": "Open course material, explore the generated content and use relevant suggestions to continue learning about the subject.",
+    "mechanism": "AI-assisted content generation and FAQ-based suggestions sit within a course-learning interface.",
+    "payoff": "A way to explore a topic beyond the first piece of course material.",
+    "cta": "See the learning flow",
+    "status": "Team project",
+    "flowTitle": "Material, questions and further reading",
+    "evidence": "The documented project scope covers AI-assisted course content and suggestions. No learning-outcome study is supplied.",
+    "barrier": "Generated learning material needs review. The page does not promise factual accuracy or improved grades.",
+    "demoStatus": "Needs to be created",
+    "demo": "Record a real course section with its associated FAQ suggestion and resulting content. Use a verified lesson and retain any review notices.",
+    "gap": "Live access, sources used for generation, educator review and specific team contributions need confirmation.",
+    "alternatives": [
+      "A course page with somewhere to take your questions.",
+      "Bring technopreneurship material and questions together."
+    ]
+  },
+  "rad-ai": {
+    "slug": "rad-ai",
+    "headline": "Inspect an ultrasound classifier’s response to an image.",
+    "summary": "A research prototype that puts image input and model output into an interface you can examine. For research demonstration only, not diagnosis.",
+    "audience": "For people studying image-classification interfaces.",
+    "experienceTitle": "See the inference workflow",
+    "experience": "A suitable research image goes into the classifier. The interface presents its output for inspection as an experimental result.",
+    "mechanism": "An interface connects image input to a machine-learning inference workflow.",
+    "payoff": "A tangible way to inspect what a classification experiment returns.",
+    "cta": "See the research flow",
+    "status": "Research prototype",
+    "flowTitle": "Image in, model output out",
+    "evidence": "The project is documented as an ultrasound-classification prototype. No clinical validation or accuracy figures are supplied.",
+    "barrier": "Not a validated medical device. Do not use the output for diagnosis or clinical decisions.",
+    "demoStatus": "Needs to be created",
+    "demo": "Use an authorized non-identifying research image and capture its actual model output. Keep the research-only notice visible. Do not invent confidence values.",
+    "gap": "Model metrics, datasets, evaluation method, current availability and clinical validity are unverified.",
+    "alternatives": [
+      "From an ultrasound image to an experimental prediction.",
+      "Put a classification experiment where it can be inspected."
+    ]
+  },
+  "jungle-guardians": {
+    "slug": "jungle-guardians",
+    "headline": "Give an animal classifier a picture to work with.",
+    "summary": "Choose an animal image, inspect the predicted category and explore how a classification model responds.",
+    "audience": "For learners exploring computer vision with animal images.",
+    "experienceTitle": "Make classification something you can try",
+    "experience": "Provide an image and look at the category the model predicts. Compare that prediction with the image and consider where the model falls short.",
+    "mechanism": "An interactive interface connects animal imagery to an image-classification model.",
+    "payoff": "A concrete starting point for understanding predictions and mistakes.",
+    "cta": "See the classification flow",
+    "status": "Learning project",
+    "flowTitle": "From picture to predicted category",
+    "evidence": "Documented as an interactive animal-image classification project. No accuracy benchmark is supplied.",
+    "barrier": "A prediction can be wrong. Supported species and model accuracy are not established here.",
+    "demoStatus": "Needs to be created",
+    "demo": "Record a permitted animal image and the actual returned category. Include a real failure case if available, without inventing predictions.",
+    "gap": "Supported categories, training data, evaluation and public access require verification.",
+    "alternatives": [
+      "See what a model makes of an animal photo.",
+      "Explore animal classification one image at a time."
+    ]
+  },
+  "contact-manager": {
+    "slug": "contact-manager",
+    "headline": "Keep contact details ready to return to.",
+    "summary": "A focused contact-management project for browsing records and maintaining the information stored in them.",
+    "audience": "For people maintaining a collection of contact records.",
+    "experienceTitle": "Work with the details you need again",
+    "experience": "Browse your contacts, maintain the stored information and return to the record when you need it.",
+    "mechanism": "An Angular interface and Supabase-backed project support the contact-record workflow.",
+    "payoff": "A dedicated place to work with contact information.",
+    "cta": "See the contact workflow",
+    "status": "Application project",
+    "flowTitle": "Records you can work with",
+    "evidence": "The project is documented as a contact-management application built with Angular and Supabase. No scale or security audit is claimed.",
+    "barrier": "This walkthrough does not establish suitability for sensitive customer data.",
+    "demoStatus": "Needs to be created",
+    "demo": "Use fictional contact details in an actual build. Show browsing a record and a supported edit, then confirm the saved value before presenting that capability.",
+    "gap": "Authentication, data access policies, supported edit operations, import/export and live availability need verification.",
+    "alternatives": [
+      "Return to the contact record you need.",
+      "Give contact records a focused workspace."
+    ]
+  }
+}

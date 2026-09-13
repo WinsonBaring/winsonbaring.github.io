@@ -17,3 +17,8 @@ Design: developer portfolio; DESIGN_VARIANCE 7, MOTION_INTENSITY 3, VISUAL_DENSI
 ## Issue #3: BendMe preview overflow
 - [x] Bound the image within its frame and increase caption readability.
 - [x] Verify desktop/mobile lid states and commit.
+
+## Issue #4: Product positioning across ten project pages
+- [x] Read supplied prompt; preserve factual boundaries and differentiate product availability.
+- [x] Draft positioning and three hero directions for each project.
+- [x] Update shared project UI and cards; verify all routes, links and responsive layouts.

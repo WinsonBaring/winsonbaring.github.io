@@ -1,12 +1,12 @@
 # Content editor guide
 
-Edit `content.ts`, then run `npm run check && npm run verify:site`.
+Edit `content.ts` for project facts and `positioning.json` for page messaging, then run `npm run check && npm run verify:site`.
 
 ## Project stories
 
 Every project has a unique slug, product name, use-case category, headline, summary, reason (`why`), workflow (`steps`) and outcome (`result`). Optional: tags, image filename under public/images, live URL, public repository URL and limitation note. Avoid unsupported outcome metrics. Do not link to a private repository as a public download.
 
-Add a project to `projects`; it automatically appears in Work, filtering, prerendered case-study routes and the sitemap. The first three projects are featured on Home. Distinct interactive stories are implemented in `src/components/use-case-preview.tsx`; customize the case page composition in App.tsx for other projects when useful.
+Add a project to `projectFacts` and a matching slug in `positioning.json`; it automatically appears in Work, filtering, prerendered case-study routes and the sitemap. The first three projects are featured on Home. Distinct interactive stories are implemented in `src/components/use-case-preview.tsx`; customize the case page composition in App.tsx for other projects when useful.
 
 ## Social profiles and links
 
@@ -26,3 +26,5 @@ The initial dataset is an archive preview, explicitly authorized as sample conte
 - `image`: optional image filename from public/images.
 
 Do not use sample summaries as quotations from real posts. A group can have multiple platforms or multiple entries on one platform. Filters apply before grouping, so a LinkedIn search shows only matching LinkedIn versions. Published entries show original-post links in the dialog. The preview notice disappears once all samples are replaced. Test fixtures may need updating as the published dataset replaces the initial samples.
+
+Positioning fields drive the hero, audience, experience, mechanism, proof, limitations and CTA. `alternatives`, `demo`, and `gap` are editorial notes; do not display uncreated demonstrations as proof. Full copy directions are in ../../docs/PROJECT-POSITIONING.md.

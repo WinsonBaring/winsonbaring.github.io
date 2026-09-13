@@ -9,3 +9,5 @@ Design: developer portfolio; variance 7, motion 3, density 3. Off-white/charcoal
 Privacy: no analytics, forms, third-party embeds or runtime API calls. A local theme preference is stored. Social links open externally. GitHub hosting has its own request processing. Only selected public-facing descriptions/media are included; private source code, contact phone numbers and unpublished social drafts are not copied.
 
 See SETUP.md for execution and src/data/README.md for content maintenance. No external service credentials required.
+
+Product messaging lives in src/data/positioning.json and is combined with project facts in content.ts. Shared page composition keeps unverified products as walkthroughs and retains existing labeled previews. No new dependencies.

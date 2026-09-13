@@ -1,5 +1,6 @@
+import positioning from "./positioning.json";
 export type Project = {
-  slug: string;
+  slug: keyof typeof positioning;
   name: string;
   category: string;
   headline: string;
@@ -13,14 +14,11 @@ export type Project = {
   source?: string;
   note?: string;
 };
-export const projects: Project[] = [
+const projectFacts: Omit<Project, "headline" | "summary">[] = [
   {
     slug: "bendme",
     name: "BendMe",
     category: "Everyday delight",
-    headline: "Make your desktop a little less flat.",
-    summary:
-      "A small Mac app that turns lowering your lid into a playful desktop effect.",
     why: "I saw Bendy making the rounds on X and wanted to try building the lid effect myself. BendMe is my own take, shared for free so other people can try it and explore the code.",
     steps: [
       "Install BendMe and allow Screen Recording for the live effect.",
@@ -39,9 +37,6 @@ export const projects: Project[] = [
     slug: "resume-ai",
     name: "Resume AI",
     category: "Less busywork",
-    headline: "Give your experience a clearer story.",
-    summary:
-      "Turn scattered work experience into a resume you can shape around a role.",
     why: "A general resume can hide the experience that matters for a particular job. I built Resume AI around that problem: start with what someone has actually done, then help them organize it for an application.",
     steps: [
       "Bring your experience together from your existing documents.",
@@ -57,8 +52,6 @@ export const projects: Project[] = [
     slug: "yabs",
     name: "YABS Visualizer",
     category: "Clearer decisions",
-    headline: "Compare servers without decoding a terminal.",
-    summary: "Give raw VPS benchmark results a readable home.",
     why: "Server specifications do not tell the whole story. I wanted a way to understand YABS benchmark output visually, so comparing machines would not mean repeatedly scanning terminal logs.",
     steps: [
       "Start with YABS benchmark output.",
@@ -75,8 +68,6 @@ export const projects: Project[] = [
     slug: "arsenal",
     name: "Arsenal",
     category: "Less busywork",
-    headline: "Keep useful prompts within reach.",
-    summary: "A home for prompts and repeatable AI development workflows.",
     why: "As I used AI more in development, prompts became reusable working material. Arsenal explores how to organize that material instead of leaving useful instructions scattered across conversations.",
     steps: [
       "Organize prompts around the work they support.",
@@ -92,9 +83,6 @@ export const projects: Project[] = [
     slug: "scatter",
     name: "Scatter",
     category: "Everyday delight",
-    headline: "Make a little room for play.",
-    summary:
-      "A physics-driven arcade experiment built around dropping, bouncing and anticipation.",
     why: "Scatter explores how small interactions can make a simple game satisfying: the way a ball falls, the response to a press, and the moment a result lands.",
     steps: [
       "Drop a ball into the board.",
@@ -109,8 +97,6 @@ export const projects: Project[] = [
     slug: "laundirii",
     name: "LaunDiri",
     category: "Less busywork",
-    headline: "Connect the people behind laundry day.",
-    summary: "A laundry-service workflow for customers, couriers and shops.",
     why: "A laundry order moves between several people. This project brings those roles into one workflow so the handoffs are part of the product, rather than an afterthought.",
     steps: [
       "A customer starts a laundry service request.",
@@ -125,8 +111,6 @@ export const projects: Project[] = [
     slug: "techno-dynamic",
     name: "Techno Dynamic",
     category: "Learning & research",
-    headline: "Help learning material meet the question.",
-    summary: "An AI-assisted learning platform for technopreneurship courses.",
     why: "Course material and the questions learners ask belong together. This collaborative project explores content generation and FAQ-based suggestions in a learning workflow.",
     steps: [
       "Open the course learning material.",
@@ -141,9 +125,6 @@ export const projects: Project[] = [
     slug: "rad-ai",
     name: "Rad AI",
     category: "Learning & research",
-    headline: "Move a model into an interface.",
-    summary:
-      "A research prototype for exploring ultrasound image classification.",
     why: "A machine-learning model needs an interface before people can explore its behavior. This project connects an image-classification experiment to a usable inference flow.",
     steps: [
       "Use a suitable research image as input.",
@@ -159,9 +140,6 @@ export const projects: Project[] = [
     slug: "jungle-guardians",
     name: "Jungle Guardians",
     category: "Learning & research",
-    headline: "Turn curiosity into a classification experiment.",
-    summary:
-      "An animal-image identification project for exploring machine learning.",
     why: "Image classification becomes easier to understand when you can give a model a picture and inspect its response. This project uses animal imagery to make that interaction tangible.",
     steps: [
       "Choose an animal image.",
@@ -176,8 +154,6 @@ export const projects: Project[] = [
     slug: "contact-manager",
     name: "Contact Manager",
     category: "Less busywork",
-    headline: "Keep contacts easier to work with.",
-    summary: "A focused application for managing contact records.",
     why: "A contact list is useful only when the information is easy to maintain. This project centers the everyday work of viewing and managing those records.",
     steps: [
       "Browse contact records.",
@@ -188,6 +164,11 @@ export const projects: Project[] = [
     tags: ["Angular", "Supabase", "Web application"],
   },
 ];
+export const projects: Project[] = projectFacts.map((project) => {
+  const message = positioning[project.slug as keyof typeof positioning];
+  return { ...project, headline: message.headline, summary: message.summary };
+});
+export { positioning };
 export const socialLinks = [
   {
     name: "GitHub",

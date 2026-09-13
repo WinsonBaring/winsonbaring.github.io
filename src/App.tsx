@@ -28,6 +28,7 @@ import {
 } from "@/components/ui/dialog";
 import {
   projects,
+  positioning,
   socialLinks,
   posts,
   platforms,
@@ -342,21 +343,31 @@ function Work() {
   );
 }
 function CaseStudy({ project: p }: { project: Project }) {
+  const message = positioning[p.slug as keyof typeof positioning];
+  const primary = p.url ? (
+    <External href={p.url} className={buttonVariants()}>
+      {message.cta}
+    </External>
+  ) : (
+    <a href="#experience" className={buttonVariants()}>
+      {message.cta}
+      <ArrowRight size={17} />
+    </a>
+  );
   return (
     <article className={`wrap case-study project-${p.slug}`}>
       <a className="text-link back" href="/work/">
         <ArrowLeft size={16} /> All work
       </a>
       <div className="case-intro">
-        <Badge variant="outline">{p.category}</Badge>
+        <div className="product-identity">
+          <span>{p.name}</span>
+          <Badge variant="outline">{message.status}</Badge>
+        </div>
         <h1>{p.headline}</h1>
         <p>{p.summary}</p>
         <div className="case-actions">
-          {p.url && (
-            <External href={p.url} className={buttonVariants()}>
-              Try {p.name}
-            </External>
-          )}
+          {primary}
           {p.source && (
             <External
               href={p.source}
@@ -366,19 +377,35 @@ function CaseStudy({ project: p }: { project: Project }) {
             </External>
           )}
         </div>
+        <p className="product-audience">{message.audience}</p>
       </div>
-      {p.slug === "bendme" ? (
-        <BendPreview />
-      ) : p.slug === "resume-ai" ? (
-        <ResumePreview />
-      ) : (
-        <div className="case-visual">
-          <ProjectImage project={p} />
-        </div>
-      )}
+      <section id="experience" className="product-experience">
+        {p.slug === "bendme" ? (
+          <BendPreview />
+        ) : p.slug === "resume-ai" ? (
+          <ResumePreview />
+        ) : (
+          <div className="product-flow">
+            <div>
+              <span className="eyebrow">Project walkthrough</span>
+              <h2>{message.flowTitle}</h2>
+              <p>{message.experience}</p>
+            </div>
+            <ol>
+              {p.steps.map((step, i) => (
+                <li key={step}>
+                  <span aria-hidden="true">{i + 1}</span>
+                  <p>{step}</p>
+                </li>
+              ))}
+            </ol>
+          </div>
+        )}
+      </section>
       <div className="story-layout">
         <aside>
           <strong>{p.name}</strong>
+          <p className="product-payoff">{message.payoff}</p>
           <div className="tag-list">
             {p.tags.map((t) => (
               <Badge key={t} variant="secondary">
@@ -389,48 +416,86 @@ function CaseStudy({ project: p }: { project: Project }) {
         </aside>
         <div className="story-body">
           <section>
-            <h2>Why I built it</h2>
-            <p>{p.why}</p>
+            <h2>{message.experienceTitle}</h2>
+            <p>
+              {p.slug === "bendme" || p.slug === "resume-ai"
+                ? message.experience
+                : message.mechanism}
+            </p>
           </section>
-          <section>
-            <h2>The use case</h2>
-            <ol>
-              {p.steps.map((s, i) => (
-                <li key={s}>
-                  <span>0{i + 1}</span>
-                  <p>{s}</p>
-                </li>
-              ))}
-            </ol>
-          </section>
-          <section>
-            <h2>What came out of it</h2>
-            <p>{p.result}</p>
-            {p.note && <p className="case-note">{p.note}</p>}
-          </section>
-          {p.slug === "bendme" && (
+          {(p.slug === "bendme" || p.slug === "resume-ai") && (
             <section>
-              <h2>A quick look</h2>
-              <video
-                controls
-                muted
-                playsInline
-                preload="none"
-                poster={asset("bendme-fold.png")}
-                aria-label="Silent excerpt showing the MacBook lid demonstration"
-              >
-                <source src="/media/bendme-demo.mp4" type="video/mp4" />
-              </video>
-              <p className="caption">
-                A silent excerpt from my demo. Bendy’s website appears in the
-                footage as the inspiration.
-              </p>
+              <h2>How it works</h2>
+              <p>{message.mechanism}</p>
+              <ol>
+                {p.steps.map((step, i) => (
+                  <li key={step}>
+                    <span>{i + 1}</span>
+                    <p>{step}</p>
+                  </li>
+                ))}
+              </ol>
             </section>
           )}
+          <section className="product-evidence">
+            <h2>What you can inspect</h2>
+            <p>{message.evidence}</p>
+            {p.slug === "bendme" && (
+              <>
+                <video
+                  controls
+                  muted
+                  playsInline
+                  preload="none"
+                  poster={asset("bendme-fold.png")}
+                  aria-label="Silent excerpt showing the MacBook lid demonstration"
+                >
+                  <source src="/media/bendme-demo.mp4" type="video/mp4" />
+                </video>
+                <p className="caption">
+                  From my MacBook demo. Bendy’s website appears as the
+                  inspiration.
+                </p>
+              </>
+            )}
+          </section>
+          <section>
+            <h2>Before you try it</h2>
+            <p>{message.barrier}</p>
+            {p.slug === "bendme" && (
+              <p className="case-note">
+                Inspired by Bendy; independent and unaffiliated. Free, open
+                source and distributed as an Apple-notarized download.
+              </p>
+            )}
+          </section>
+          <section>
+            <h2>
+              {p.tags.includes("Team project")
+                ? "Why we explored it"
+                : "Why I built it"}
+            </h2>
+            <p>{p.why}</p>
+          </section>
         </div>
       </div>
+      <section className="product-next-step">
+        <div>
+          <h2>
+            {p.url
+              ? `Try ${p.name} for yourself.`
+              : `Explore how ${p.name} works.`}
+          </h2>
+          <p>
+            {p.url
+              ? message.audience
+              : "The project walkthrough is available above."}
+          </p>
+        </div>
+        {primary}
+      </section>
       <div className="next-project">
-        <span>Another reason to build</span>
+        <span>Explore another project</span>
         <a
           href={`/work/${projects[(projects.indexOf(p) + 1) % projects.length].slug}/`}
         >
@@ -657,19 +722,19 @@ function Links() {
             <img src={asset("bendme-logo.png")} alt="" width="46" height="46" />
             <div>
               <strong>BendMe</strong>
-              <span>A little less flat. Free for Mac.</span>
+              <span>{positioning.bendme.headline} Free for Mac.</span>
             </div>
             <ArrowUpRight />
           </a>
           <a
             className="link-tile"
             href="/work/resume-ai/"
-            aria-label="Resume AI: Give your experience a clearer story"
+            aria-label={`Resume AI: ${positioning["resume-ai"].headline}`}
           >
             <span className="link-initial">R</span>
             <div>
               <strong>Resume AI</strong>
-              <span>Give your experience a clearer story.</span>
+              <span>{positioning["resume-ai"].headline}</span>
             </div>
             <ArrowRight />
           </a>

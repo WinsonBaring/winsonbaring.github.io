@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+- Rework all ten project pages around concrete experiences, evidence, limitations and clear next steps; align project cards and featured Links copy.
+- Add positioning summaries, hero alternatives and demonstration/verification guidance.
+
 - Fix BendMe preview artwork overlapping controls and case-study text; improve caption readability.
 
 - Connect portfolio.winson.codes and update canonical, sitemap, social image and share URLs.
