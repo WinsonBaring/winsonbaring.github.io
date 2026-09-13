@@ -18,7 +18,7 @@ describe("Portfolio visitor paths", () => {
     const user = userEvent.setup();
     render(<App initialPath="/work/" />);
     await user.click(screen.getByRole("button", { name: "Everyday delight" }));
-    expect(screen.getByRole("status")).toHaveTextContent("2 projects");
+    expect(screen.getByRole("status")).toHaveTextContent("1 project");
     expect(
       screen.getByRole("heading", {
         name: "Lower your lid. Watch your desktop fold.",
@@ -122,7 +122,9 @@ it("switches the real BendMe artwork preview", async () => {
 it("demonstrates Resume AI without inventing experience", async () => {
   const user = userEvent.setup();
   render(<App initialPath="/work/resume-ai/" />);
-  await user.click(screen.getByRole("button", { name: "Use the relevant details" }));
+  await user.click(
+    screen.getByRole("button", { name: "Use the relevant details" }),
+  );
   expect(
     screen.getByText(
       "Built a React interface for a support team’s internal tool.",
@@ -155,4 +157,34 @@ it("gives every project an honest next step and decision context", () => {
     }
     unmount();
   }
+});
+
+it("hides archived projects until requested and resets the category when hiding them", async () => {
+  const user = userEvent.setup();
+  render(<App initialPath="/work/" />);
+  expect(screen.getByRole("status")).toHaveTextContent("2 projects");
+  expect(
+    screen.queryByRole("heading", { name: /YABS Visualizer/ }),
+  ).not.toBeInTheDocument();
+  await user.click(screen.getByRole("button", { name: "Show all projects" }));
+  expect(screen.getByRole("status")).toHaveTextContent("10 projects");
+  await user.click(screen.getByRole("button", { name: "Learning & research" }));
+  expect(screen.getByRole("status")).toHaveTextContent("3 projects");
+  await user.click(
+    screen.getByRole("button", { name: "Show featured projects only" }),
+  );
+  expect(screen.getByRole("status")).toHaveTextContent("2 projects");
+  expect(
+    screen.queryByRole("button", { name: "Learning & research" }),
+  ).not.toBeInTheDocument();
+});
+it("keeps archived projects out of the home and featured next-project links", () => {
+  const home = render(<App initialPath="/" />);
+  expect(document.querySelector('a[href="/work/yabs/"]')).toBeNull();
+  home.unmount();
+  render(<App initialPath="/work/resume-ai/" />);
+  expect(document.querySelector(".next-project a")).toHaveAttribute(
+    "href",
+    "/work/bendme/",
+  );
 });

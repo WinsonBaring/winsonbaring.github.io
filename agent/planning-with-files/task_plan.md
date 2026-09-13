@@ -37,3 +37,8 @@ Design: developer portfolio; DESIGN_VARIANCE 7, MOTION_INTENSITY 3, VISUAL_DENSI
 - [x] Read owner-supplied product notes and update Resume AI messaging.
 - [x] Retain UI structure; align illustrative example with selecting relevant experience.
 - [x] Run checks and inspect mobile view.
+
+## Issue #9: Default project visibility
+- [x] Archive eight projects; feature BendMe and Resume AI.
+- [x] Add Show all projects toggle and keep direct routes.
+- [x] Test filtering, reset and featured navigation.

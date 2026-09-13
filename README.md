@@ -19,3 +19,5 @@ Project wording is conversational within the existing visual layouts. This copy 
 The current project copy follows the owner’s human-voice prompt: complete explanations that make sense when read aloud. Visual layouts and approved BendMe copy are retained.
 
 Resume AI messaging reflects the owner’s full-experience-record concept: unstructured detail, job-description relevance and positioning rationale. The preview remains explicitly illustrative.
+
+Only BendMe and Resume AI are featured by default. Work’s Show all projects button reveals the eight archived projects. Archive pages remain available by direct URL.

@@ -3,3 +3,5 @@
 React pages and hydration entry points. App.tsx composes Work, stories, Posts and Links; App.css owns the editorial layout. See data/README.md for editing content.
 
 CaseStudy renders product-specific positioning, labeled previews or workflow explanations, evidence, decision barriers and an appropriate next step. Cards and the Links hub share the same headlines.
+
+Work has a reversible Show all projects toggle. Category resets to All when visibility changes; new visits start with featured projects only.

@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Feature BendMe and Resume AI by default; reveal archived projects with Show all projects.
+
 - Clarify Resume AI’s full experience record, role-specific selection and positioning rationale; align illustrative preview.
 
 - Apply the human-voice prompt to nine project descriptions and headlines without changing visuals or BendMe.

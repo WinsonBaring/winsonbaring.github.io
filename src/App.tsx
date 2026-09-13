@@ -28,6 +28,7 @@ import {
 } from "@/components/ui/dialog";
 import {
   projects,
+  activeProjects,
   positioning,
   socialLinks,
   posts,
@@ -256,7 +257,7 @@ function Home() {
           </p>
         </div>
         <div className="featured-grid">
-          {projects.slice(0, 3).map((p, i) => (
+          {activeProjects.slice(0, 3).map((p, i) => (
             <ProjectCard key={p.slug} project={p} index={i} />
           ))}
         </div>
@@ -302,8 +303,10 @@ function Home() {
 }
 function Work() {
   const [category, setCategory] = useState("All");
-  const categories = ["All", ...new Set(projects.map((p) => p.category))];
-  const visible = projects.filter(
+  const [showAll, setShowAll] = useState(false);
+  const collection = showAll ? projects : activeProjects;
+  const categories = ["All", ...new Set(collection.map((p) => p.category))];
+  const visible = collection.filter(
     (p) => category === "All" || p.category === category,
   );
   return (
@@ -319,6 +322,18 @@ function Work() {
           Useful tools, playful experiments, and the problems that started them.
         </p>
       </div>
+      <div className="project-visibility">
+        <Button
+          variant="outline"
+          aria-pressed={showAll}
+          onClick={() => {
+            setShowAll(!showAll);
+            setCategory("All");
+          }}
+        >
+          {showAll ? "Show featured projects only" : "Show all projects"}
+        </Button>
+      </div>
       <div className="filter-row" aria-label="Filter projects by use case">
         {categories.map((c) => (
           <Button
@@ -332,7 +347,7 @@ function Work() {
         ))}
       </div>
       <p className="result-count" role="status">
-        {visible.length} projects
+        {visible.length} {visible.length === 1 ? "project" : "projects"}
       </p>
       <div className="work-grid">
         {visible.map((p) => (
@@ -343,6 +358,9 @@ function Work() {
   );
 }
 function CaseStudy({ project: p }: { project: Project }) {
+  const nextCollection = p.archived ? projects : activeProjects;
+  const nextProject =
+    nextCollection[(nextCollection.indexOf(p) + 1) % nextCollection.length];
   const message = positioning[p.slug as keyof typeof positioning];
   const primary = p.url ? (
     <External href={p.url} className={buttonVariants()}>
@@ -496,10 +514,8 @@ function CaseStudy({ project: p }: { project: Project }) {
       </section>
       <div className="next-project">
         <span>Explore another project</span>
-        <a
-          href={`/work/${projects[(projects.indexOf(p) + 1) % projects.length].slug}/`}
-        >
-          {projects[(projects.indexOf(p) + 1) % projects.length].name}
+        <a href={`/work/${nextProject.slug}/`}>
+          {nextProject.name}
           <ArrowRight />
         </a>
       </div>

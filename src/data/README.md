@@ -34,3 +34,5 @@ Use natural, spoken phrasing for project summaries and explanations while preser
 Voice source: owner-provided prompts/human-voice.md in the parent workspace. Name the product, explain what it does, connect thoughts and preserve limitations. Do not invent first-person experiences.
 
 Resume AI product intent is supplied in the parent prompts/projects-info/resume-ia/readme.md. Do not reduce it to polishing an existing resume or imply unlimited storage as a verified feature.
+
+Set `archived: true` on project facts to hide a project from default collections. `activeProjects` drives Home and featured next-project links. Work can reveal all projects; this is a display filter, not access control or search-engine removal.

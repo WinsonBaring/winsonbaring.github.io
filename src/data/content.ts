@@ -1,6 +1,7 @@
 import positioning from "./positioning.json";
 export type Project = {
   slug: keyof typeof positioning;
+  archived?: boolean;
   name: string;
   category: string;
   headline: string;
@@ -50,6 +51,7 @@ const projectFacts: Omit<Project, "headline" | "summary">[] = [
   },
   {
     slug: "yabs",
+    archived: true,
     name: "YABS Visualizer",
     category: "Clearer decisions",
     why: "I built the visualizer to make YABS output easier to work through. It gives the measurements a visual presentation when comparing servers.",
@@ -66,6 +68,7 @@ const projectFacts: Omit<Project, "headline" | "summary">[] = [
   },
   {
     slug: "arsenal",
+    archived: true,
     name: "Arsenal",
     category: "Less busywork",
     why: "I built Arsenal around the idea that development prompts can be reusable instructions. Keeping those instructions with their project context makes them easier to return to.",
@@ -81,6 +84,7 @@ const projectFacts: Omit<Project, "headline" | "summary">[] = [
   },
   {
     slug: "scatter",
+    archived: true,
     name: "Scatter",
     category: "Everyday delight",
     why: "I wanted to see how much enjoyment I could get out of a simple interaction. With Scatter, I focused on the fall, the bounce and that moment when you see where the ball lands.",
@@ -95,6 +99,7 @@ const projectFacts: Omit<Project, "headline" | "summary">[] = [
   },
   {
     slug: "laundirii",
+    archived: true,
     name: "LaunDiri",
     category: "Less busywork",
     why: "We wanted to think through a laundry order from everyone’s side. The customer, courier and shop all have a part in it, so we brought those roles into the same project.",
@@ -109,6 +114,7 @@ const projectFacts: Omit<Project, "headline" | "summary">[] = [
   },
   {
     slug: "techno-dynamic",
+    archived: true,
     name: "Techno Dynamic",
     category: "Learning & research",
     why: "We wanted to connect what a student is reading with the questions they might ask next. That led us to explore generated content and FAQ-based suggestions alongside course material.",
@@ -123,6 +129,7 @@ const projectFacts: Omit<Project, "headline" | "summary">[] = [
   },
   {
     slug: "rad-ai",
+    archived: true,
     name: "Rad AI",
     category: "Learning & research",
     why: "I wanted to make the classification experiment easier to inspect. An interface lets you follow what happens when an image goes into the model and a result comes back.",
@@ -138,6 +145,7 @@ const projectFacts: Omit<Project, "headline" | "summary">[] = [
   },
   {
     slug: "jungle-guardians",
+    archived: true,
     name: "Jungle Guardians",
     category: "Learning & research",
     why: "I wanted a familiar way to explore image classification. You can look at an animal picture yourself, then compare it with what the model thinks it sees.",
@@ -152,6 +160,7 @@ const projectFacts: Omit<Project, "headline" | "summary">[] = [
   },
   {
     slug: "contact-manager",
+    archived: true,
     name: "Contact Manager",
     category: "Less busywork",
     why: "I wanted to focus on the everyday work of finding contact details and maintaining them. Contact Manager gave me a focused project to build around that task.",
@@ -168,6 +177,7 @@ export const projects: Project[] = projectFacts.map((project) => {
   const message = positioning[project.slug as keyof typeof positioning];
   return { ...project, headline: message.headline, summary: message.summary };
 });
+export const activeProjects = projects.filter((project) => !project.archived);
 export { positioning };
 export const socialLinks = [
   {

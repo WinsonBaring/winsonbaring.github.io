@@ -21,3 +21,5 @@
 2026-09-13: Issue #7. Read human-voice.md, revised project copy and synchronized positioning doc. UI files verified byte-identical, BendMe positioning unchanged, full checks passed.
 
 2026-09-13: Issue #8. Read prompts/projects-info/resume-ia/readme.md and aligned Resume AI copy, example and editorial docs. Lint/tests/build and 14-route/181-link validation passed.
+
+2026-09-13: Issue #9. Added archive flags and featured collection, reversible Work toggle and navigation filtering. Added tests for default/show-all/reset behavior and Home/next-project links.
