@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Open the Links hub at the portfolio root; retain the previous introduction at /home/.
+
 - Published Affiliatour and updated Links entries with Iconnek’s app icon.
 
 - Use Iconnek’s existing green leaf logo in Links.

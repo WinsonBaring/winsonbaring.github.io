@@ -25,3 +25,5 @@ Only BendMe and Resume AI are featured by default. Work’s Show all projects bu
 Resume AI uses the existing document-on-dark-square brand mark from its application in project cards, project identity and Links.
 
 Affiliatour joins BendMe and Resume AI as a featured project, with its official App Store link and icon.
+
+The root URL now opens the Links hub. /links/ remains available; the previous introduction page is retained at /home/.

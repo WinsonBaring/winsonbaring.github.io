@@ -49,6 +49,7 @@ export const routes = [
   "/work/",
   "/posts/",
   "/links/",
+  "/home/",
   ...projects.map((p) => `/work/${p.slug}/`),
 ];
 export function pageMeta(path: string) {
@@ -58,7 +59,7 @@ export function pageMeta(path: string) {
       ? `${p.name}: ${p.headline} | Winson Baring`
       : path === "/posts/"
         ? "Posts & field notes | Winson Baring"
-        : path === "/links/"
+        : (path === "/links/" || path === "/")
           ? "All my links | Winson Baring"
           : path === "/work/"
             ? "Work, with a reason | Winson Baring"
@@ -821,9 +822,11 @@ export default function App({ initialPath }: { initialPath?: string }) {
       <a className="skip-link" href="#main">
         Skip to content
       </a>
-      <Header path={path} />
+      <Header path={path === "/" ? "/links/" : path} />
       <main id="main">
         {path === "/" ? (
+          <Links />
+        ) : path === "/home/" ? (
           <Home />
         ) : path === "/work/" ? (
           <Work />

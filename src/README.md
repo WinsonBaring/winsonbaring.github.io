@@ -19,3 +19,5 @@ Affiliatour appears in featured cards, its case-study route and Links, using its
 Featured Links order: Affiliatour, Iconnek, BendMe, Resume AI, then All the work. Iconnek uses its public landing URL.
 
 Iconnek’s Links tile uses the existing green leaf app icon with rounded corners.
+
+Root renders Links directly for immediate entry without a redirect. /home/ retains the previous Home component.

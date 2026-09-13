@@ -179,7 +179,7 @@ it("hides archived projects until requested and resets the category when hiding 
   ).not.toBeInTheDocument();
 });
 it("keeps archived projects out of the home and featured next-project links", () => {
-  const home = render(<App initialPath="/" />);
+  const home = render(<App initialPath="/home/" />);
   expect(document.querySelector('a[href="/work/yabs/"]')).toBeNull();
   home.unmount();
   render(<App initialPath="/work/resume-ai/" />);
@@ -194,4 +194,10 @@ it("shows the requested featured link order and the public Iconnek URL", () => {
  const names = [...container.querySelectorAll('.link-collection section:first-child .link-tile strong')].map(el => el.textContent);
  expect(names).toEqual(['Affiliatour', 'Iconnek', 'BendMe', 'Resume AI', 'All the work']);
  expect(screen.getByRole('link', { name: /Iconnek/ })).toHaveAttribute('href', 'https://iconnek-landing.vercel.app');
+});
+
+it("opens the Links hub at the portfolio root", () => {
+ render(<App initialPath="/" />);
+ expect(screen.getByRole('heading', { name: 'Try something I made' })).toBeInTheDocument();
+ expect(screen.getByRole('link', { name: /Iconnek/ })).toBeInTheDocument();
 });

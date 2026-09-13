@@ -77,3 +77,7 @@ Design: developer portfolio; DESIGN_VARIANCE 7, MOTION_INTENSITY 3, VISUAL_DENSI
 ## Issue #18: Publish latest updates
 - [x] Run release checks.
 - [x] Push and verify live Pages content. Workflow 34736224577 deployed 034fc14.
+
+## Issue #19: Links as entry page
+- [x] Render Links at root; retain /links and /home.
+- [ ] Publish and verify root.
