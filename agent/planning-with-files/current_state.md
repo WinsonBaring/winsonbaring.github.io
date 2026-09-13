@@ -43,3 +43,5 @@ Issue #18: Publishing approved Affiliatour and Links/logo changes. User-created 
 Issue #18 complete: workflow 34736224577 deployed 034fc14. Home/Work/Links/Affiliatour return HTTPS 200 with expected HTML (build asset filenames differ). Referenced JS/CSS load successfully; logo bytes match local originals. 16 tests passed.
 
 Issue #19: Links is now the root page with matching title/navigation. Former home retained at /home/. Publishing after checks.
+
+Issue #19 complete: 77d4d86 deployed via 34736449966. Live root and /links/ return 200 with Links; /home/ returns 200 with former introduction.

@@ -47,3 +47,5 @@
 2026-09-13: Issue #18 publication verified. Initial strict HTML comparison differed only in generated JS/CSS filenames; normalized page content matches and all live assets load.
 
 2026-09-13: Issue #19. Updated root route and metadata, preserved old homepage at /home, added root regression test.
+
+2026-09-13: Issue #19 deployment and all three URLs verified successfully.
