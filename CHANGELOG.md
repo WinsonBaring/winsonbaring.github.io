@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Use Iconnek’s existing green leaf logo in Links.
+
 - Add Iconnek to Links and order featured links as Affiliatour, Iconnek, BendMe, Resume AI.
 
 - Add Affiliatour as a featured project with official App Store icon, project page and Links entry.

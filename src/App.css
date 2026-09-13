@@ -1526,3 +1526,5 @@ h2 {
 .affiliatour-brand-cover { display: grid; place-items: center; height: 100%; min-height: 220px; background: var(--surface); }
 .affiliatour-brand-cover img { width: 120px; height: 120px; object-fit: contain; border-radius: 24px; }
 .affiliatour-logo { border-radius: 10px; flex-shrink: 0; object-fit: contain; }
+
+.iconnek-logo { border-radius: 10px; flex-shrink: 0; object-fit: contain; }

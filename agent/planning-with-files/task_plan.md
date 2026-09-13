@@ -70,3 +70,6 @@ Design: developer portfolio; DESIGN_VARIANCE 7, MOTION_INTENSITY 3, VISUAL_DENSI
 ## Issue #16: Featured Links order
 - [x] Add public Iconnek link and set requested order.
 - [x] Verify order test and full checks.
+
+## Issue #17: Iconnek logo
+- [x] Find existing app asset and replace Links placeholder.

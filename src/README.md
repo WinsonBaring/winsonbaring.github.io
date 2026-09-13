@@ -17,3 +17,5 @@ The featured-links heading is centered on mobile only.
 Affiliatour appears in featured cards, its case-study route and Links, using its official App Store icon.
 
 Featured Links order: Affiliatour, Iconnek, BendMe, Resume AI, then All the work. Iconnek uses its public landing URL.
+
+Iconnek’s Links tile uses the existing green leaf app icon with rounded corners.

@@ -748,7 +748,7 @@ function Links() {
             <div><strong>Affiliatour</strong><span>Make a batch of product videos from your clips.</span></div><ArrowUpRight />
           </a>
           <a className="link-tile" href="https://iconnek-landing.vercel.app">
-            <span className="link-initial" aria-hidden="true">I</span>
+            <img className="iconnek-logo" src={asset("iconnek-logo.png")} alt="" width="46" height="46" />
             <div><strong>Iconnek</strong><span>Meet people who share your interests and goals.</span></div>
             <ArrowUpRight />
           </a>

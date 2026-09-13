@@ -35,3 +35,5 @@ Issue #14 complete: published approved updates to https://portfolio.winson.codes
 Issue #15 complete locally: Affiliatour added as third featured project with official icon and App Store link. Eleven total projects; eight remain archived by default. Checks passed: 15 routes and 193 local links/assets. Not published.
 
 Issue #16 complete locally: Links order is Affiliatour, Iconnek, BendMe, Resume AI. Public Iconnek landing returned HTTP 200; management URL not exposed. Tests/build passed. Not published.
+
+Issue #17: Iconnek Links tile uses its existing green leaf app icon, copied from the owner’s repo. Local only.
