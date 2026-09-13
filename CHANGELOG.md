@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Show GitHub, TikTok and LinkedIn logos in social links.
+
 - Open the Links hub at the portfolio root; retain the previous introduction at /home/.
 
 - Published Affiliatour and updated Links entries with Iconnek’s app icon.

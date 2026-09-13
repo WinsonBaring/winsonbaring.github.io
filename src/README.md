@@ -21,3 +21,5 @@ Featured Links order: Affiliatour, Iconnek, BendMe, Resume AI, then All the work
 Iconnek’s Links tile uses the existing green leaf app icon with rounded corners.
 
 Root renders Links directly for immediate entry without a redirect. /home/ retains the previous Home component.
+
+Social links display locally hosted platform logos with accessible alt names; descriptions and destinations are retained.

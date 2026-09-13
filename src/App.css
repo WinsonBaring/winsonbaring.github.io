@@ -1528,3 +1528,6 @@ h2 {
 .affiliatour-logo { border-radius: 10px; flex-shrink: 0; object-fit: contain; }
 
 .iconnek-logo { border-radius: 10px; flex-shrink: 0; object-fit: contain; }
+
+.social-platform-logo { display: block; width: 28px; height: 28px; object-fit: contain; margin-bottom: 10px; }
+.dark .social-platform-logo { filter: invert(1); }

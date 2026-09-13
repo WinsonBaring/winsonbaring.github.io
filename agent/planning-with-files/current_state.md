@@ -45,3 +45,5 @@ Issue #18 complete: workflow 34736224577 deployed 034fc14. Home/Work/Links/Affil
 Issue #19: Links is now the root page with matching title/navigation. Former home retained at /home/. Publishing after checks.
 
 Issue #19 complete: 77d4d86 deployed via 34736449966. Live root and /links/ return 200 with Links; /home/ returns 200 with former introduction.
+
+Issue #20: Social platform names replaced by logos; descriptions and links retained, dark-mode contrast handled. Local only.

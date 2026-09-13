@@ -81,3 +81,7 @@ Design: developer portfolio; DESIGN_VARIANCE 7, MOTION_INTENSITY 3, VISUAL_DENSI
 ## Issue #19: Links as entry page
 - [x] Render Links at root; retain /links and /home.
 - [x] Publish and verify root. Workflow 34736449966 succeeded.
+
+## Issue #20: Social logos
+- [x] Replace text names with local SVG logos and retain accessible names.
+- [x] Verify rendering and build.

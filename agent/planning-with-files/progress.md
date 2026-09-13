@@ -49,3 +49,5 @@
 2026-09-13: Issue #19. Updated root route and metadata, preserved old homepage at /home, added root regression test.
 
 2026-09-13: Issue #19 deployment and all three URLs verified successfully.
+
+2026-09-13: Issue #20. Downloaded three Simple Icons SVGs; added accessible images and theme styling.

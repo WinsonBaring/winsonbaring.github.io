@@ -798,7 +798,7 @@ function Links() {
               rel="noreferrer"
             >
               <div>
-                <strong>{l.name}</strong>
+                <img className="social-platform-logo" src={asset(`social/${l.name.toLowerCase()}.svg`)} alt={l.name} width="28" height="28" />
                 <span>{l.detail}</span>
               </div>
               <ArrowUpRight />
