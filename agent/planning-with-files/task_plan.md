@@ -73,3 +73,7 @@ Design: developer portfolio; DESIGN_VARIANCE 7, MOTION_INTENSITY 3, VISUAL_DENSI
 
 ## Issue #17: Iconnek logo
 - [x] Find existing app asset and replace Links placeholder.
+
+## Issue #18: Publish latest updates
+- [x] Run release checks.
+- [ ] Push and verify live Pages content.

@@ -41,3 +41,5 @@
 2026-09-13: Issue #16. Read owner Iconnek context, verified public landing, reordered links and added order/URL test. Preserved user-created projects-info files.
 
 2026-09-13: Issue #17. Inspected both Iconnek icon assets and selected the green leaf matching the landing brand. Replaced letter placeholder.
+
+2026-09-13: Issue #18. User authorized publication; verified remote ancestry and ran checks.

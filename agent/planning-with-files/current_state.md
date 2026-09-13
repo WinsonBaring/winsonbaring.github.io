@@ -37,3 +37,5 @@ Issue #15 complete locally: Affiliatour added as third featured project with off
 Issue #16 complete locally: Links order is Affiliatour, Iconnek, BendMe, Resume AI. Public Iconnek landing returned HTTP 200; management URL not exposed. Tests/build passed. Not published.
 
 Issue #17: Iconnek Links tile uses its existing green leaf app icon, copied from the owner’s repo. Local only.
+
+Issue #18: Publishing approved Affiliatour and Links/logo changes. User-created projects-info notes remain untracked.
