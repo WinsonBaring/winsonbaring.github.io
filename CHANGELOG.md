@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Publish approved project covers, Iconnek Work entry, messaging and social logos.
+
 - Add coordinated generated illustrations to the four featured project cards.
 
 - Feature Iconnek in Work and align Iconnek, Affiliatour and Resume AI copy with owner project notes.

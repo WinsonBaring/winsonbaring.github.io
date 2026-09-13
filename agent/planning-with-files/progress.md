@@ -57,3 +57,5 @@
 Issue #22: Generating conceptual cover artwork for four featured projects using built-in image generation.
 
 Issue #22: Generated and inspected four covers; compressed JPEG delivery assets, stored exact prompts/provenance. Verified 18 tests, build, static routes and native WebKit 1440/390px Work layouts. Local commit; no deployment.
+
+Issue #23: Publishing three approved local commits; user project notes remain untracked.

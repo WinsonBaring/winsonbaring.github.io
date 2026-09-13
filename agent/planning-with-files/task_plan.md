@@ -94,3 +94,7 @@ Design: developer portfolio; DESIGN_VARIANCE 7, MOTION_INTENSITY 3, VISUAL_DENSI
 ## Issue #22: Illustrated project covers
 - [x] Generate four coordinated covers and preserve brand assets.
 - [x] Integrate, verify responsive rendering, and commit locally.
+
+## Issue #23: Publish portfolio
+- [x] Verify local checks.
+- [ ] Deploy and verify live pages/assets.
