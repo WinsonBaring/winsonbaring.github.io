@@ -91,12 +91,11 @@ function ResumeLogo() {
 }
 function ProjectImage({ project }: { project: Project }) {
   const [failed, setFailed] = useState(false);
-  if (project.slug === "resume-ai") return (
-    <div className="resume-brand-cover" aria-label="Resume AI">
-      <ResumeLogo /><span>Resume AI</span>
-    </div>
+  if (project.cover && !failed) return (
+    <img className="project-cover" src={asset(project.cover.image)}
+      alt={project.cover.alt} width={1536} height={1024}
+      loading="lazy" decoding="async" onError={() => setFailed(true)} />
   );
-  if ((project.slug === "affiliatour" || project.slug === "iconnek") && !failed) return <div className="affiliatour-brand-cover"><img src={asset(project.image!)} alt={`${project.name} app icon`} onError={() => setFailed(true)} /></div>;
   return project.image && !failed ? (
     <img
       src={asset(project.image)}

@@ -11,6 +11,7 @@ export type Project = {
   result: string;
   tags: string[];
   image?: string;
+  cover?: { image: string; alt: string };
   url?: string;
   source?: string;
   note?: string;
@@ -18,6 +19,7 @@ export type Project = {
 const projectFacts: Omit<Project, "headline" | "summary">[] = [
   {
     slug: "bendme",
+    cover: { image: "bendme-cover.jpg", alt: "Illustration of a laptop screen folding forward like a sheet of landscape artwork" },
     name: "BendMe",
     category: "Everyday delight",
     why: "I saw Bendy making the rounds on X and wanted to try building the lid effect myself. BendMe is my own take, shared for free so other people can try it and explore the code.",
@@ -36,6 +38,7 @@ const projectFacts: Omit<Project, "headline" | "summary">[] = [
   },
   {
     slug: "resume-ai",
+    cover: { image: "resume-ai-cover.jpg", alt: "Illustration of detailed notes coming together into one resume" },
     name: "Resume AI",
     category: "Less busywork",
     why: "I wanted a resume to draw from everything someone has done, including details they might forget or leave out of a template. Keeping the experience in unstructured notes gives the AI more context to work with when a different job calls for different strengths.",
@@ -51,6 +54,7 @@ const projectFacts: Omit<Project, "headline" | "summary">[] = [
   },
   {
     slug: "affiliatour",
+    cover: { image: "affiliatour-cover.jpg", alt: "Illustration of product video frames arranged along an editing ribbon" },
     name: "Affiliatour",
     category: "Less busywork",
     why: "I’m a video editor, and repeating similar edits takes time. Seeing creators reuse a short introduction followed by product shots led me to build a way to prepare those variations in batches.",
@@ -62,6 +66,7 @@ const projectFacts: Omit<Project, "headline" | "summary">[] = [
   },
   {
     slug: "iconnek",
+    cover: { image: "iconnek-cover.jpg", alt: "Illustration of green organic shapes gathering around a shared ring" },
     name: "Iconnek",
     category: "Shared interests",
     why: "I want to build a business, and finding people with a similar mindset has been difficult. I built Iconnek around describing who you are and finding people who share your interests, even when those interests are outside your industry.",
@@ -239,6 +244,7 @@ export type Post = {
   url?: string;
   sample: boolean;
   image?: string;
+  cover?: { image: string; alt: string };
 };
 // User-authorized examples. Replace with real posts/URLs and set sample:false when available.
 export const posts: Post[] = [

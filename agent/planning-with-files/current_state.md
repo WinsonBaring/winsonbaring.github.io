@@ -49,3 +49,5 @@ Issue #19 complete: 77d4d86 deployed via 34736449966. Live root and /links/ retu
 Issue #20: Social platform names replaced by logos; descriptions and links retained, dark-mode contrast handled. Local only.
 
 Issue #21 complete locally: four featured projects including Iconnek, twelve total. Updated Affiliatour/Resume AI/Iconnek messaging from owner notes; YABS empty so unchanged. Preserved current visuals and BendMe. Tests/build and 17-route/246-link validation passed. Not published.
+
+Issue #22 complete locally: four generated conceptual covers integrated in Work/Home. Real logos and previews preserved. JPEG assets total about 1.1 MB. 18 tests, production build, 17 routes/244 local references passed. Native WebKit desktop/mobile checked without overflow or JS errors. Not published.

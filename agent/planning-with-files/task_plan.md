@@ -90,3 +90,7 @@ Design: developer portfolio; DESIGN_VARIANCE 7, MOTION_INTENSITY 3, VISUAL_DENSI
 - [x] Read projects-info and human-voice prompt.
 - [x] Feature Iconnek with route/logo; align three supplied product stories.
 - [x] Preserve visuals/BendMe and verify tests/build.
+
+## Issue #22: Illustrated project covers
+- [x] Generate four coordinated covers and preserve brand assets.
+- [x] Integrate, verify responsive rendering, and commit locally.

@@ -314,7 +314,7 @@ h2 {
   object-fit: cover;
   transition: transform 0.4s;
 }
-.project-bendme .project-media img {
+.project-bendme .project-media img:not(.project-cover) {
   object-fit: contain;
   padding: 15px;
   background: #e9eaf0;
@@ -1499,10 +1499,6 @@ h2 {
 /* Same mark and colors as the existing Resume AI application. */
 .resume-brand-mark { border-radius: 10px; overflow: hidden; display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; flex-shrink: 0; color: #f3f0e8; background: #1d1d1d; border: 1px solid rgb(0 0 0 / 15%); }
 .resume-brand-mark svg { width: 16px; height: 16px; }
-.resume-brand-cover { display: flex; align-items: center; justify-content: center; gap: 20px; width: 100%; height: 100%; min-height: 220px; background: #f3f0e8; color: #161616; }
-.resume-brand-cover > span:last-child { font-size: 28px; font-weight: 600; }
-.resume-brand-cover .resume-brand-mark { width: 64px; height: 64px; }
-.resume-brand-cover .resume-brand-mark svg { width: 26px; height: 26px; }
 .resume-brand-mark > svg, .link-tile .resume-brand-mark > svg { color: #f3f0e8; }
 
 @media (max-width: 639px) {
@@ -1523,11 +1519,15 @@ h2 {
   .featured-links-heading { text-align: center; }
 }
 
-.affiliatour-brand-cover { display: grid; place-items: center; height: 100%; min-height: 220px; background: var(--surface); }
-.affiliatour-brand-cover img { width: 120px; height: 120px; object-fit: contain; border-radius: 24px; }
 .affiliatour-logo { border-radius: 10px; flex-shrink: 0; object-fit: contain; }
 
 .iconnek-logo { border-radius: 10px; flex-shrink: 0; object-fit: contain; }
 
 .social-platform-logo { display: block; width: 28px; height: 28px; object-fit: contain; margin-bottom: 10px; }
 .dark .social-platform-logo { filter: invert(1); }
+
+/* Generated editorial covers retain their composition in the tall Home card. */
+.featured-grid > .project-card:first-child .project-cover {
+  object-fit: contain;
+  background: #e8e7f0;
+}

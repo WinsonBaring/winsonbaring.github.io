@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Add coordinated generated illustrations to the four featured project cards.
+
 - Feature Iconnek in Work and align Iconnek, Affiliatour and Resume AI copy with owner project notes.
 
 - Show GitHub, TikTok and LinkedIn logos in social links.

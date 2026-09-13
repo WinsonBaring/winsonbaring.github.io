@@ -25,3 +25,5 @@ Root renders Links directly for immediate entry without a redirect. /home/ retai
 Social links display locally hosted platform logos with accessible alt names; descriptions and destinations are retained.
 
 All active projects appear in the introduction’s featured collection; Iconnek has a case-study route.
+
+Featured project cover artwork is configured through `Project.cover` in data/content.ts; brand icons and interactive previews remain independent.
