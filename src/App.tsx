@@ -743,6 +743,15 @@ function Links() {
       <div className="link-collection">
         <section>
           <h2 className="featured-links-heading">Try something I made</h2>
+          <a className="link-tile" href="https://apps.apple.com/ph/app/affiliatour/id6769322267">
+            <img className="affiliatour-logo" src={asset("affiliatour-logo.jpg")} alt="" width="46" height="46" />
+            <div><strong>Affiliatour</strong><span>Make a batch of product videos from your clips.</span></div><ArrowUpRight />
+          </a>
+          <a className="link-tile" href="https://iconnek-landing.vercel.app">
+            <span className="link-initial" aria-hidden="true">I</span>
+            <div><strong>Iconnek</strong><span>Meet people who share your interests and goals.</span></div>
+            <ArrowUpRight />
+          </a>
           <a
             className="link-tile featured-link"
             href="https://winsonbaring.github.io/bendme/"
@@ -765,10 +774,6 @@ function Links() {
               <span>{positioning["resume-ai"].headline}</span>
             </div>
             <ArrowRight />
-          </a>
-          <a className="link-tile" href="https://apps.apple.com/ph/app/affiliatour/id6769322267">
-            <img className="affiliatour-logo" src={asset("affiliatour-logo.jpg")} alt="" width="46" height="46" />
-            <div><strong>Affiliatour</strong><span>Make a batch of product videos from your clips.</span></div><ArrowUpRight />
           </a>
           <a className="link-tile" href="/work/">
             <span className="link-initial">

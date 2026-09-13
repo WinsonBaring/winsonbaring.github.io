@@ -188,3 +188,10 @@ it("keeps archived projects out of the home and featured next-project links", ()
     "/work/affiliatour/",
   );
 });
+
+it("shows the requested featured link order and the public Iconnek URL", () => {
+ const { container } = render(<App initialPath="/links/" />);
+ const names = [...container.querySelectorAll('.link-collection section:first-child .link-tile strong')].map(el => el.textContent);
+ expect(names).toEqual(['Affiliatour', 'Iconnek', 'BendMe', 'Resume AI', 'All the work']);
+ expect(screen.getByRole('link', { name: /Iconnek/ })).toHaveAttribute('href', 'https://iconnek-landing.vercel.app');
+});

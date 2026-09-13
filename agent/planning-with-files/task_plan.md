@@ -66,3 +66,7 @@ Design: developer portfolio; DESIGN_VARIANCE 7, MOTION_INTENSITY 3, VISUAL_DENSI
 - [x] Read Apple listing and download official icon.
 - [x] Add featured project, route, Links entry and update collection counts.
 - [x] Verify build/tests and mobile rendering.
+
+## Issue #16: Featured Links order
+- [x] Add public Iconnek link and set requested order.
+- [x] Verify order test and full checks.

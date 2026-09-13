@@ -37,3 +37,5 @@
 2026-09-13: Issue #14 complete. Deployment succeeded and live HTML/assets verified against build.
 
 2026-09-13: Issue #15. Apple web-tool page failed; official Apple lookup endpoint returned listing and icon successfully. Added Affiliatour from verified listing facts. Tests/build/route checks passed.
+
+2026-09-13: Issue #16. Read owner Iconnek context, verified public landing, reordered links and added order/URL test. Preserved user-created projects-info files.

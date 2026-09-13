@@ -33,3 +33,5 @@ Issue #14: Publishing approved local updates. Domain portfolio.winson.codes reta
 Issue #14 complete: published approved updates to https://portfolio.winson.codes/. Workflow 34734034804 deployed 46ae07c. Home, Work, Links and Resume AI HTML match local build exactly; live JS/CSS match too. 15 tests and 14-route checks passed.
 
 Issue #15 complete locally: Affiliatour added as third featured project with official icon and App Store link. Eleven total projects; eight remain archived by default. Checks passed: 15 routes and 193 local links/assets. Not published.
+
+Issue #16 complete locally: Links order is Affiliatour, Iconnek, BendMe, Resume AI. Public Iconnek landing returned HTTP 200; management URL not exposed. Tests/build passed. Not published.
