@@ -32,3 +32,8 @@ Design: developer portfolio; DESIGN_VARIANCE 7, MOTION_INTENSITY 3, VISUAL_DENSI
 - [x] Read owner prompt and revise nine projects’ copy with complete, self-contained explanations.
 - [x] Preserve UI files and BendMe; update editorial copy and copy-sensitive tests.
 - [x] Run checks and inspect mobile headline layout.
+
+## Issue #8: Resume AI product clarification
+- [x] Read owner-supplied product notes and update Resume AI messaging.
+- [x] Retain UI structure; align illustrative example with selecting relevant experience.
+- [x] Run checks and inspect mobile view.

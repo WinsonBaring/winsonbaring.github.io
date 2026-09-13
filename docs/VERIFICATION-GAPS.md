@@ -8,7 +8,7 @@ Screen capture stays on the Mac according to the project source. Compatibility s
 
 ## resume-ai
 
-User supplied resume-ai.winson.codes in the Vercel screenshot; end-to-end access, export formats, pricing and generation behavior have not been verified. Do not add a live CTA until checked.
+The owner supplied the intended workflow: extensive unstructured experience, job-description matching and positioning rationale. The implementation of storage, selection, rationale controls, export and end-to-end generation still needs verification.
 
 ## yabs
 

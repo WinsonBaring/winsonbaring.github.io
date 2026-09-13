@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Clarify Resume AI’s full experience record, role-specific selection and positioning rationale; align illustrative preview.
+
 - Apply the human-voice prompt to nine project descriptions and headlines without changing visuals or BendMe.
 
 - Refine nine projects’ wording for natural spoken delivery while preserving restored visuals and approved BendMe content.

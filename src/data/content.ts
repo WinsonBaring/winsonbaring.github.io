@@ -37,11 +37,11 @@ const projectFacts: Omit<Project, "headline" | "summary">[] = [
     slug: "resume-ai",
     name: "Resume AI",
     category: "Less busywork",
-    why: "I wanted to help people explain the work they’ve already done. Resume AI starts there, then helps organize that experience for the job they want to apply for.",
+    why: "I wanted a resume to draw from everything someone has done, including details they might forget or leave out of a template. Keeping the experience in unstructured notes gives the AI more context to work with when a different job calls for different strengths.",
     steps: [
-      "Start with the experience in your notes and existing documents.",
-      "Let AI-assisted writing help you organize your work and skills.",
-      "Read through the draft and make it fit the job before you apply.",
+      "Write down your experience in detail, including what you did within each job or project.",
+      "Provide the job description and explain how you want to position yourself.",
+      "Review a draft built around the relevant details, then adjust what it emphasizes.",
     ],
     result:
       "A resume-building workflow focused on making unstructured experience easier to work with. The person applying stays responsible for checking every claim.",

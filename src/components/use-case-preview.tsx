@@ -49,32 +49,33 @@ export function ResumePreview() {
       <div className="resume-preview-intro">
         <span>An example of the use case</span>
         <h2>
-          Same experience.
-          <br />A clearer starting point.
+          Keep the details.
+          <br />Choose what fits.
         </h2>
         <p>
-          Organize the facts you already have. Keep the final wording yours.
+          For a role asking for technical and communication skills, useful details can come from different jobs.
         </p>
       </div>
       <div className="resume-example">
         <div className="example-label">
-          {organized ? "Organized experience" : "Scattered notes"}
+          {organized ? "Relevant experience" : "Full experience notes"}
           <span>Illustrative example</span>
         </div>
         {organized ? (
           <div className="organized-note">
-            <h3>Internal support tool</h3>
+            <h3>Technical work and customer support</h3>
             <p>Built a React interface for a support team’s internal tool.</p>
-            <p>Maintained the interface and resolved reported bugs.</p>
+            <p>Handled customer calls and explained how to resolve their issues.</p>
           </div>
         ) : (
           <p className="rough-note">
-            Worked on the support tool. React UI. Helped maintain it. Fixed bugs
-            the team reported.
+            Built a React interface for an internal support tool. Maintained it
+            and fixed bugs. In another job, handled customer calls and explained
+            how to resolve their issues.
           </p>
         )}
         <Button variant="outline" onClick={() => setOrganized(!organized)}>
-          {organized ? "See original notes" : "Organize the notes"}
+          {organized ? "See all the notes" : "Use the relevant details"}
           <ArrowRight size={16} />
         </Button>
         <p className="example-footnote">

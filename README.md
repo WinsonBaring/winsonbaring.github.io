@@ -17,3 +17,5 @@ Project pages now follow an experience-first product narrative. See [positioning
 Project wording is conversational within the existing visual layouts. This copy revision preserves previews, interactions and approved BendMe content.
 
 The current project copy follows the owner’s human-voice prompt: complete explanations that make sense when read aloud. Visual layouts and approved BendMe copy are retained.
+
+Resume AI messaging reflects the owner’s full-experience-record concept: unstructured detail, job-description relevance and positioning rationale. The preview remains explicitly illustrative.

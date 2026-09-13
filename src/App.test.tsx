@@ -26,7 +26,7 @@ describe("Portfolio visitor paths", () => {
     ).toBeInTheDocument();
     expect(
       screen.queryByRole("heading", {
-        name: "Resume AI helps you explain your work experience.",
+        name: "Keep the full story of your work. Choose what fits the job.",
       }),
     ).not.toBeInTheDocument();
   });
@@ -81,7 +81,7 @@ describe("Portfolio visitor paths", () => {
   it("provides the links hub and project stories", () => {
     render(<App initialPath="/links/" />);
     expect(
-      screen.getByRole("link", { name: /Resume AI: Resume AI/ }),
+      screen.getByRole("link", { name: /Resume AI: Keep/ }),
     ).toHaveAttribute("href", "/work/resume-ai/");
     expect(
       screen.getByRole("button", { name: "Copy this page" }),
@@ -122,7 +122,7 @@ it("switches the real BendMe artwork preview", async () => {
 it("demonstrates Resume AI without inventing experience", async () => {
   const user = userEvent.setup();
   render(<App initialPath="/work/resume-ai/" />);
-  await user.click(screen.getByRole("button", { name: "Organize the notes" }));
+  await user.click(screen.getByRole("button", { name: "Use the relevant details" }));
   expect(
     screen.getByText(
       "Built a React interface for a support team’s internal tool.",

@@ -15,3 +15,5 @@ Issue #4 complete locally: all ten project pages now lead with concrete experien
 Issue #6: Owner reverted the prose-only redesign. Applied conversational wording only to nine projects, preserving the restored layout and visuals. App.tsx, App.css and preview component verified byte-identical to HEAD; BendMe facts and positioning unchanged. Changes local for review.
 
 Issue #7 complete locally: applied prompts/human-voice.md to nine projects’ messaging, retained BendMe and all UI implementation, removed unsupported personal anecdotes. Lint/tests/build and 14-route/181-link checks passed. Native mobile Jungle Guardians render checked for long-headline layout. Not published.
+
+Issue #8 complete locally: Resume AI centers on detailed unstructured experience, job-description relevance and positioning rationale. Existing UI retained; illustrative preview copy now combines technical and customer-support experience. Checks passed. Not published.

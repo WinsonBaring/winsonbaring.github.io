@@ -19,3 +19,5 @@
 2026-09-13: Issue #6. Respected revert add2017. Updated only project copy and related documents, preserving all UI markup/styles/previews and BendMe. Verified unchanged files and content programmatically; project checks passed.
 
 2026-09-13: Issue #7. Read human-voice.md, revised project copy and synchronized positioning doc. UI files verified byte-identical, BendMe positioning unchanged, full checks passed.
+
+2026-09-13: Issue #8. Read prompts/projects-info/resume-ia/readme.md and aligned Resume AI copy, example and editorial docs. Lint/tests/build and 14-route/181-link validation passed.

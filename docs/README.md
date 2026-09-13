@@ -8,3 +8,5 @@ Validation records and known content limitations. See VERIFICATION.md.
 The positioning draft reflects the latest copy-only revision; retain the approved visuals.
 
 PROJECT-POSITIONING.md includes the current human-voice revision of the nine non-BendMe projects.
+
+Resume AI positioning and verification gaps incorporate the owner’s full-experience-record clarification.
