@@ -76,4 +76,4 @@ Design: developer portfolio; DESIGN_VARIANCE 7, MOTION_INTENSITY 3, VISUAL_DENSI
 
 ## Issue #18: Publish latest updates
 - [x] Run release checks.
-- [ ] Push and verify live Pages content.
+- [x] Push and verify live Pages content. Workflow 34736224577 deployed 034fc14.
