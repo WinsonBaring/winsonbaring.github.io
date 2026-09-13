@@ -9,3 +9,5 @@ Work has a reversible Show all projects toggle. Category resets to All when visi
 ResumeLogo reuses the existing Resume AI mark: Lucide FileText, cream #f3f0e8 on #1d1d1d. Source: sibling resume-ai/apps/frontend/src/components/block/landing-page.tsx and app-sidebar.tsx. No new asset or dependency.
 
 At widths up to 639px, Links centers its portrait and badge and hides the profile name, introduction and copy controls. Desktop keeps the full profile.
+
+Resume AI marks share a 10px corner radius across their placements.

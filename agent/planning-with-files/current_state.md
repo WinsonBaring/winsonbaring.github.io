@@ -23,3 +23,5 @@ Issue #9 complete locally: only BendMe and Resume AI appear by default on Home/W
 Issue #10: Reused existing Resume AI FileText brand mark from sibling app source. Applied to cards, project header and Links; wording/preview unchanged. Checks passed. Local only.
 
 Issue #11 complete locally: mobile Links profile shows centered photo/badge, with name, intro, copy button and status space hidden below 640px. Native 390px render inspected, no overflow or JS errors. Desktop styles retained. Not published.
+
+Issue #12: Shared Resume AI mark now has 10px rounded corners. Local only.

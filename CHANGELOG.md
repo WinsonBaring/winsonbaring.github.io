@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Round Resume AI logo corners across the portfolio.
+
 - Center and simplify the Links profile on mobile; retain full desktop profile.
 
 - Reuse Resume AI’s existing brand mark across portfolio cards, project header and Links.

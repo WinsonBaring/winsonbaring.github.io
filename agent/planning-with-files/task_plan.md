@@ -51,3 +51,6 @@ Design: developer portfolio; DESIGN_VARIANCE 7, MOTION_INTENSITY 3, VISUAL_DENSI
 ## Issue #11: Mobile Links profile
 - [x] Center portrait/badge; hide requested profile text and copy controls on mobile.
 - [x] Inspect native mobile render; keep desktop rules unchanged.
+
+## Issue #12: Resume AI logo corners
+- [x] Apply 10px radius to shared brand mark.
