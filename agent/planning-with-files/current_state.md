@@ -27,3 +27,5 @@ Issue #11 complete locally: mobile Links profile shows centered photo/badge, wit
 Issue #12: Shared Resume AI mark now has 10px rounded corners. Local only.
 
 Issue #13: Try something I made is centered on mobile. Desktop and other headings retain existing alignment. Local only.
+
+Issue #14: Publishing approved local updates. Domain portfolio.winson.codes retains HTTPS enforcement.

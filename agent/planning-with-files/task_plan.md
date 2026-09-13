@@ -57,3 +57,7 @@ Design: developer portfolio; DESIGN_VARIANCE 7, MOTION_INTENSITY 3, VISUAL_DENSI
 
 ## Issue #13: Center mobile featured heading
 - [x] Center only the requested heading below 640px.
+
+## Issue #14: Publish portfolio updates
+- [x] Run checks and confirm remote history/domain.
+- [ ] Push and verify Pages deployment and live content.

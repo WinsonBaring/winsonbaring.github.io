@@ -31,3 +31,5 @@
 2026-09-13: Issue #12. Rounded shared Resume AI mark to 10px; existing sizes and colors retained.
 
 2026-09-13: Issue #13. Added scoped class and mobile alignment rule for featured-links heading.
+
+2026-09-13: Issue #14. User authorized publication. Checked clean worktree, remote ancestry and custom-domain configuration; release checks passed.
