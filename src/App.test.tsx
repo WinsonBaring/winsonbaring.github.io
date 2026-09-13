@@ -26,7 +26,7 @@ describe("Portfolio visitor paths", () => {
     ).toBeInTheDocument();
     expect(
       screen.queryByRole("heading", {
-        name: "Turn scattered work notes into a resume draft.",
+        name: "You know the work you’ve done. Let’s put it into words.",
       }),
     ).not.toBeInTheDocument();
   });
@@ -81,7 +81,7 @@ describe("Portfolio visitor paths", () => {
   it("provides the links hub and project stories", () => {
     render(<App initialPath="/links/" />);
     expect(
-      screen.getByRole("link", { name: /Resume AI: Turn/ }),
+      screen.getByRole("link", { name: /Resume AI: You know/ }),
     ).toHaveAttribute("href", "/work/resume-ai/");
     expect(
       screen.getByRole("button", { name: "Copy this page" }),
@@ -119,40 +119,29 @@ it("switches the real BendMe artwork preview", async () => {
     screen.getByAltText("Open-lid view of the same built-in artwork"),
   ).toHaveAttribute("src", "/images/bendme-open.png");
 });
-it("demonstrates Resume AI without inventing experience", async () => {
-  const user = userEvent.setup();
-  render(<App initialPath="/work/resume-ai/" />);
-  await user.click(screen.getByRole("button", { name: "Organize the notes" }));
-  expect(
-    screen.getByText(
-      "Built a React interface for a support team’s internal tool.",
-    ),
-  ).toBeInTheDocument();
-  expect(
-    screen.getByText(
-      "Same facts in both views. No invented results or achievements.",
-    ),
-  ).toBeInTheDocument();
-});
-
-it("gives every project an honest next step and decision context", () => {
-  for (const p of projects) {
-    const { unmount } = render(<App initialPath={`/work/${p.slug}/`} />);
+it("keeps the other project stories conversational without visual demos", () => {
+  for (const p of projects.filter((project) => project.slug !== "bendme")) {
+    const { container, unmount } = render(
+      <App initialPath={`/work/${p.slug}/`} />,
+    );
     expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent(
       p.headline,
     );
+    expect(container.querySelectorAll(".conversation-body > p")).toHaveLength(
+      3,
+    );
     expect(
-      screen.getByRole("heading", { name: "Before you try it" }),
-    ).toBeInTheDocument();
-    expect(
-      screen.getByRole("heading", { name: "What you can inspect" }),
-    ).toBeInTheDocument();
-    if (!p.url) {
-      expect(
-        screen.queryByRole("link", { name: `Try ${p.name}` }),
-      ).not.toBeInTheDocument();
-      expect(document.querySelector('a[href="#experience"]')).toBeTruthy();
-    }
+      container.querySelector(
+        ".product-flow, .resume-preview, video, figcaption",
+      ),
+    ).toBeNull();
+    expect(screen.queryByText("What you can inspect")).not.toBeInTheDocument();
+    if (p.url)
+      expect(container.querySelector(`a[href="${p.url}"]`)).toBeTruthy();
     unmount();
   }
+});
+it("keeps the research boundary in the conversation", () => {
+  render(<App initialPath="/work/rad-ai/" />);
+  expect(screen.getByText(/must not be used to diagnose/)).toBeInTheDocument();
 });

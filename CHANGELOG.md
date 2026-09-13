@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+- Rewrite nine project pages as conversational stories; remove their staged previews and caption-like sections. Preserve BendMe.
+
+
 - Rework all ten project pages around concrete experiences, evidence, limitations and clear next steps; align project cards and featured Links copy.
 - Add positioning summaries, hero alternatives and demonstration/verification guidance.
 
