@@ -53,3 +53,5 @@ Issue #21 complete locally: four featured projects including Iconnek, twelve tot
 Issue #22 complete locally: four generated conceptual covers integrated in Work/Home. Real logos and previews preserved. JPEG assets total about 1.1 MB. 18 tests, production build, 17 routes/244 local references passed. Native WebKit desktop/mobile checked without overflow or JS errors. Not published.
 
 Issue #23 complete: b9734cc deployed successfully through workflow 34769575647. Root, Work, Iconnek, Links and Home HTML match the local build after normalizing build filenames; all four live cover images match local bytes. 18 tests and 17-route checks passed.
+
+Issue #24: Mobile Links carousel implemented locally using four existing apps (Affiliatour, Iconnek, BendMe, Resume AI). Owner clarification about category slides/automations remains pending. Desktop unchanged. 2.5-second timer, hold/swipe, keyboard pause, reduced motion and tab visibility handled. Native WebKit 390/1440 layouts have no overflow or errors. Source notes committed separately for recovery. Not published.

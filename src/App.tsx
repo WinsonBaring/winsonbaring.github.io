@@ -1,3 +1,4 @@
+import { MobileCarousel } from "./components/mobile-carousel";
 import { useState } from "react";
 import {
   FileText,
@@ -744,6 +745,7 @@ function Links() {
       <div className="link-collection">
         <section>
           <h2 className="featured-links-heading">Try something I made</h2>
+          <MobileCarousel>
           <a className="link-tile" href="https://apps.apple.com/ph/app/affiliatour/id6769322267">
             <img className="affiliatour-logo" src={asset("affiliatour-logo.jpg")} alt="" width="46" height="46" />
             <div><strong>Affiliatour</strong><span>Make several product videos without repeating every edit.</span></div><ArrowUpRight />
@@ -776,6 +778,7 @@ function Links() {
             </div>
             <ArrowRight />
           </a>
+          </MobileCarousel>
           <a className="link-tile" href="/work/">
             <span className="link-initial">
               <Layers />

@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Add mobile Links carousel with timed slides, hold pause, swipe and accessible controls.
+
 - Publish approved project covers, Iconnek Work entry, messaging and social logos.
 
 - Add coordinated generated illustrations to the four featured project cards.

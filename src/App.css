@@ -1531,3 +1531,17 @@ h2 {
   object-fit: contain;
   background: #e8e7f0;
 }
+
+/* Mobile Links carousel; desktop remains an ordinary list. */
+.carousel-controls { display: flex; align-items: center; justify-content: center; gap: 8px; margin-bottom: 12px; }
+.carousel-controls button { display: grid; place-items: center; width: 36px; height: 36px; border: 1px solid var(--border); border-radius: 50%; background: var(--background); color: var(--foreground); cursor: pointer; }
+.carousel-controls button:disabled { opacity: .5; cursor: default; }
+.carousel-controls span { min-width: 42px; text-align: center; font-size: 12px; color: var(--muted-foreground); }
+@media (max-width: 639px) {
+  .link-collection { min-width: 0; }
+  .carousel-viewport { overflow: hidden; touch-action: pan-y pinch-zoom; }
+  .carousel-track { display: flex; transition: transform 350ms ease; }
+  .carousel-slide { flex: 0 0 100%; min-width: 0; display: flex; }
+  .carousel-slide .link-tile { width: 100%; min-height: 158px; box-sizing: border-box; }
+}
+@media (prefers-reduced-motion: reduce) { .carousel-track { transition: none; } }

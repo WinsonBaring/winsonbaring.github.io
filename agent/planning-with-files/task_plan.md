@@ -98,3 +98,8 @@ Design: developer portfolio; DESIGN_VARIANCE 7, MOTION_INTENSITY 3, VISUAL_DENSI
 ## Issue #23: Publish portfolio
 - [x] Verify local checks.
 - [x] Deploy and verify live pages/assets.
+
+## Issue #24: Mobile Links carousel
+- [x] Build 2.5-second rotation, hold pause, swipe and accessible manual controls.
+- [x] Verify and commit the existing-app carousel.
+- [ ] Resolve owner clarification about category grouping/automation content.

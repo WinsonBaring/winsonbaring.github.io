@@ -61,3 +61,7 @@ Issue #22: Generated and inspected four covers; compressed JPEG delivery assets,
 Issue #23: Publishing three approved local commits; user project notes remain untracked.
 
 Issue #23 complete: b9734cc deployed successfully through workflow 34769575647. Root, Work, Iconnek, Links and Home HTML match the local build after normalizing build filenames; all four live cover images match local bytes. 18 tests and 17-route checks passed.
+
+Issue #24: Added mobile-only carousel. Desktop list retained. Existing owner notes checkpointed separately. WAI carousel guidance informed keyboard pause and reduced-motion handling.
+
+Issue #24 verification: 23 tests passed with one worker and 30s timeout after initial machine-speed timeouts; lint, production build and 17-route validation passed. Native WebKit mobile/desktop inspected. Pending category interpretation is recorded; implementation uses existing four apps.
