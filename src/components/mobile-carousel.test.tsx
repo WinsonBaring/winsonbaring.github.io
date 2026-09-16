@@ -31,7 +31,7 @@ it("does not rotate with reduced motion and supports manual next", () => {
   mount(true, true);
   act(() => vi.advanceTimersByTime(10000));
   expect(screen.getByRole("link", { name: "One" })).toBeVisible();
-  fireEvent.click(screen.getByRole("button", { name: "Next slide" }));
+  fireEvent.keyDown(screen.getByLabelText(/Swipe to change section/), { key: "ArrowRight" });
   expect(screen.getByRole("link", { name: "Two" })).toBeVisible();
 });
 it("shows every link on desktop without carousel controls", () => {

@@ -1,5 +1,5 @@
 import { Children, useEffect, useRef, useState, type ReactNode } from "react";
-import { ArrowLeft, ArrowRight, Pause, Play } from "lucide-react";
+
 
 /** Keeps the desktop list intact and progressively enhances narrow screens. */
 export function MobileCarousel({ children }: { children: ReactNode }) {
@@ -11,7 +11,7 @@ export function MobileCarousel({ children }: { children: ReactNode }) {
   const [held, setHeld] = useState(false);
   const [hovered, setHovered] = useState(false);
   const [visible, setVisible] = useState(true);
-  const gesture = useRef<{ x: number; y: number; moved: boolean } | null>(null);
+  const gesture = useRef<{ x: number; y: number; moved: boolean; startedAt: number } | null>(null);
   const suppressClick = useRef(false);
   const move = (step: number) => setIndex(i => (i + step + slides.length) % slides.length);
 
@@ -24,7 +24,10 @@ export function MobileCarousel({ children }: { children: ReactNode }) {
     narrow.addEventListener("change", update);
     motion.addEventListener("change", update);
     document.addEventListener("visibilitychange", visibility);
-    const release = () => { setHeld(false); gesture.current = null; };
+    const release = () => {
+      if (gesture.current && Date.now() - gesture.current.startedAt > 400) suppressClick.current = true;
+      setHeld(false); gesture.current = null;
+    };
     window.addEventListener("pointerup", release);
     window.addEventListener("pointercancel", release);
     window.addEventListener("blur", release);
@@ -45,24 +48,27 @@ export function MobileCarousel({ children }: { children: ReactNode }) {
   }, [playing, index, slides.length]);
 
   return <div className="mobile-carousel" role={mobile ? "region" : undefined}
-    aria-roledescription={mobile ? "carousel" : undefined} aria-label={mobile ? "Featured projects" : undefined}>
-    {mobile && <div className="carousel-controls">
-      <button type="button" onClick={() => setPaused(p => !p)} disabled={reduced}
-        aria-label={reduced ? "Automatic slides disabled for reduced motion" : paused ? "Play slideshow" : "Pause slideshow"}>
-        {paused || reduced ? <Play size={16} /> : <Pause size={16} />}
-      </button>
-      <button type="button" aria-label="Previous slide" onClick={() => { setPaused(true); move(-1); }}><ArrowLeft size={16} /></button>
-      <span aria-live={playing ? "off" : "polite"}>{index + 1} / {slides.length}</span>
-      <button type="button" aria-label="Next slide" onClick={() => { setPaused(true); move(1); }}><ArrowRight size={16} /></button>
+    aria-roledescription={mobile ? "carousel" : undefined} aria-label={mobile ? "Applications, work experience and automation services" : undefined}>
+    {mobile && <div className="carousel-indicators" aria-hidden="true">
+      {slides.map((_, i) => <span key={i} className={i === index ? "active" : ""} />)}
     </div>}
-    <div className="carousel-viewport"
+    {mobile && <button className="carousel-accessible-pause" type="button" onClick={() => setPaused(p => !p)} disabled={reduced}>
+      {paused ? "Play slideshow" : "Pause slideshow"}
+    </button>}
+    <div className="carousel-viewport" tabIndex={mobile ? 0 : undefined}
+      aria-label={mobile ? "Swipe to change section, or use left and right arrow keys" : undefined}
+      onKeyDown={e => {
+        if (mobile && (e.key === "ArrowLeft" || e.key === "ArrowRight")) {
+          e.preventDefault(); setPaused(true); move(e.key === "ArrowLeft" ? -1 : 1);
+        }
+      }}
       onFocusCapture={() => { if (mobile && !held) setPaused(true); }}
       onPointerEnter={e => { if (e.pointerType === "mouse") setHovered(true); }}
       onPointerLeave={() => setHovered(false)}
       onPointerDown={e => {
         if (!mobile) return;
         setHeld(true); suppressClick.current = false;
-        gesture.current = { x: e.clientX, y: e.clientY, moved: false };
+        gesture.current = { x: e.clientX, y: e.clientY, moved: false, startedAt: Date.now() };
       }}
       onPointerMove={e => {
         const start = gesture.current;

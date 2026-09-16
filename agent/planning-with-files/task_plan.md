@@ -102,4 +102,6 @@ Design: developer portfolio; DESIGN_VARIANCE 7, MOTION_INTENSITY 3, VISUAL_DENSI
 ## Issue #24: Mobile Links carousel
 - [x] Build 2.5-second rotation, hold pause, swipe and accessible manual controls.
 - [x] Verify and commit the existing-app carousel.
-- [ ] Resolve owner clarification about category grouping/automation content.
+- [x] Resolve owner clarification: three grouped sections including sourced experience and automation services.
+
+Issue #24 clarification implemented: three group slides, Sprooks included with actual local logo, swipe/hold interaction without visible navigation controls. Work experience sourced from modern-portfolio/data/experience.ts; services derived from existing workflow work. Not published.

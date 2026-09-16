@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Group mobile Links into Applications, Work experience and Automation services; remove carousel arrows and add Sprooks.
+
 - Add mobile Links carousel with timed slides, hold pause, swipe and accessible controls.
 
 - Publish approved project covers, Iconnek Work entry, messaging and social logos.

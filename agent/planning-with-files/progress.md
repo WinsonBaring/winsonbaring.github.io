@@ -65,3 +65,7 @@ Issue #23 complete: b9734cc deployed successfully through workflow 34769575647. 
 Issue #24: Added mobile-only carousel. Desktop list retained. Existing owner notes checkpointed separately. WAI carousel guidance informed keyboard pause and reduced-motion handling.
 
 Issue #24 verification: 23 tests passed with one worker and 30s timeout after initial machine-speed timeouts; lint, production build and 17-route validation passed. Native WebKit mobile/desktop inspected. Pending category interpretation is recorded; implementation uses existing four apps.
+
+Issue #24 clarification implemented: three group slides, Sprooks included with actual local logo, swipe/hold interaction without visible navigation controls. Work experience sourced from modern-portfolio/data/experience.ts; services derived from existing workflow work. Not published.
+
+Verified 24 tests, lint, production build, 17 routes/248 local references. Sprooks responds HTTP 200. Native mobile render shows all five app links with no horizontal overflow, broken images or JS errors.

@@ -192,17 +192,26 @@ it("keeps archived projects out of the home and featured next-project links", ()
 it("shows the requested featured link order and the public Iconnek URL", () => {
  const { container } = render(<App initialPath="/links/" />);
  const names = [...container.querySelectorAll('.link-collection section:first-child .link-tile strong')].map(el => el.textContent);
- expect(names).toEqual(['Affiliatour', 'Iconnek', 'BendMe', 'Resume AI', 'All the work']);
+ expect(names).toEqual(['Affiliatour', 'Iconnek', 'BendMe', 'Resume AI', 'Sprooks', 'My professional background', 'Let’s talk about your workflow', 'All the work']);
  expect(screen.getByRole('link', { name: /Iconnek/ })).toHaveAttribute('href', 'https://iconnek-landing.vercel.app');
 });
 
 it("opens the Links hub at the portfolio root", () => {
  render(<App initialPath="/" />);
- expect(screen.getByRole('heading', { name: 'Try something I made' })).toBeInTheDocument();
+ expect(screen.getByRole('heading', { name: 'Explore my work' })).toBeInTheDocument();
  expect(screen.getByRole('link', { name: /Iconnek/ })).toBeInTheDocument();
 });
 
 it("features Iconnek in Work with its own project page", () => {
  render(<App initialPath="/work/" />);
  expect(document.querySelector('a[href="/work/iconnek/"]')).toBeTruthy();
+});
+
+it("groups Links into apps, experience and services with Sprooks", () => {
+  render(<App initialPath="/links/" />);
+  for (const name of ["Applications", "Work experience", "Automation services"]) {
+    expect(screen.getByRole("heading", { name })).toBeInTheDocument();
+  }
+  expect(screen.getByRole("link", { name: /Sprooks/ })).toHaveAttribute("href", "https://sprooks.com");
+  expect(screen.queryByRole("button", { name: "Next slide" })).toBeNull();
 });

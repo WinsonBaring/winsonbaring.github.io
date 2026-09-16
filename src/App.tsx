@@ -744,8 +744,10 @@ function Links() {
       </div>
       <div className="link-collection">
         <section>
-          <h2 className="featured-links-heading">Try something I made</h2>
+          <h2 className="featured-links-heading">Explore my work</h2>
           <MobileCarousel>
+          <section className="links-group" aria-label="Applications">
+          <h3>Applications</h3>
           <a className="link-tile" href="https://apps.apple.com/ph/app/affiliatour/id6769322267">
             <img className="affiliatour-logo" src={asset("affiliatour-logo.jpg")} alt="" width="46" height="46" />
             <div><strong>Affiliatour</strong><span>Make several product videos without repeating every edit.</span></div><ArrowUpRight />
@@ -778,6 +780,30 @@ function Links() {
             </div>
             <ArrowRight />
           </a>
+          <a className="link-tile" href="https://sprooks.com">
+            <img className="iconnek-logo" src={asset("sprooks-logo.svg")} alt="" width="46" height="46" />
+            <div><strong>Sprooks</strong><span>Find people to play with and plan your next game.</span></div>
+          </a>
+          </section>
+          <section className="links-group" aria-label="Work experience">
+            <h3>Work experience</h3>
+            <p>A little about the teams I’ve worked with and what I’ve built.</p>
+            <article className="experience-entry"><h4>Accenture</h4><span>Associate Software Engineer</span>
+              <p>I work on software in an enterprise environment, translating business requirements into maintainable applications.</p>
+            </article>
+            <article className="experience-entry"><h4>Hatchit Solutions</h4><span>Software Developer</span>
+              <p>I built reservation workflows with automated calls, content-managed forms, and a chatbot that helps people find answers in documents.</p>
+            </article>
+            <a className="link-tile" href="https://www.linkedin.com/in/winson-baring-a1329b219/"><div><strong>My professional background</strong><span>View my experience on LinkedIn.</span></div></a>
+          </section>
+          <section className="links-group" aria-label="Automation services">
+            <h3>Automation services</h3>
+            <p>If you’re repeating the same steps every day, I can help you work out what to automate.</p>
+            <article className="experience-entry"><h4>Connected workflows</h4><p>Connect your tools so information moves between them without copying it by hand.</p></article>
+            <article className="experience-entry"><h4>Reservations and follow-ups</h4><p>Build workflows for bookings, reminders, and automated calls.</p></article>
+            <article className="experience-entry"><h4>Answers from your documents</h4><p>Make your existing documents easier to search with an AI-assisted question-and-answer tool.</p></article>
+            <a className="link-tile" href="https://www.linkedin.com/in/winson-baring-a1329b219/"><div><strong>Let’s talk about your workflow</strong><span>Get in touch on LinkedIn.</span></div></a>
+          </section>
           </MobileCarousel>
           <a className="link-tile" href="/work/">
             <span className="link-initial">

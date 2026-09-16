@@ -13,3 +13,5 @@ Archived projects use typographic treatments until a verified screenshot is supp
 See social/README.md for social platform SVG provenance.
 
 Featured card covers: bendme-cover.jpg, resume-ai-cover.jpg, affiliatour-cover.jpg, iconnek-cover.jpg. Generated with the built-in image generation tool on 2026-09-13; conceptual editorial illustrations, not application screenshots. Original PNGs remain in Codex generated_images; JPEG copies are compressed for the site. Exact prompts are in cover-prompts.json. Actual logos and interactive previews remain separate.
+
+`sprooks-logo.svg`: copied unmodified from sprooks/apps/landing/public/brand.svg, the owner’s official Sprooks landing brand asset.
