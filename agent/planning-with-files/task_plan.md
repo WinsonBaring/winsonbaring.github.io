@@ -105,3 +105,5 @@ Design: developer portfolio; DESIGN_VARIANCE 7, MOTION_INTENSITY 3, VISUAL_DENSI
 - [x] Resolve owner clarification: three grouped sections including sourced experience and automation services.
 
 Issue #24 clarification implemented: three group slides, Sprooks included with actual local logo, swipe/hold interaction without visible navigation controls. Work experience sourced from modern-portfolio/data/experience.ts; services derived from existing workflow work. Not published.
+
+Issue #25 complete locally: grouped carousel enabled at all viewport sizes, desktop drag supported without native image/link dragging. 24 tests, lint/build and 17-route/248-reference checks passed. Native WebKit desktop reported no overflow or errors. Not published.

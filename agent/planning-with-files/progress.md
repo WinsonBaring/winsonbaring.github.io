@@ -69,3 +69,5 @@ Issue #24 verification: 23 tests passed with one worker and 30s timeout after in
 Issue #24 clarification implemented: three group slides, Sprooks included with actual local logo, swipe/hold interaction without visible navigation controls. Work experience sourced from modern-portfolio/data/experience.ts; services derived from existing workflow work. Not published.
 
 Verified 24 tests, lint, production build, 17 routes/248 local references. Sprooks responds HTTP 200. Native mobile render shows all five app links with no horizontal overflow, broken images or JS errors.
+
+Issue #25 complete locally: grouped carousel enabled at all viewport sizes, desktop drag supported without native image/link dragging. 24 tests, lint/build and 17-route/248-reference checks passed. Native WebKit desktop reported no overflow or errors. Not published.

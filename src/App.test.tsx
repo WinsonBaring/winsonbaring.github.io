@@ -210,7 +210,7 @@ it("features Iconnek in Work with its own project page", () => {
 it("groups Links into apps, experience and services with Sprooks", () => {
   render(<App initialPath="/links/" />);
   for (const name of ["Applications", "Work experience", "Automation services"]) {
-    expect(screen.getByRole("heading", { name })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name, hidden: true })).toBeInTheDocument();
   }
   expect(screen.getByRole("link", { name: /Sprooks/ })).toHaveAttribute("href", "https://sprooks.com");
   expect(screen.queryByRole("button", { name: "Next slide" })).toBeNull();

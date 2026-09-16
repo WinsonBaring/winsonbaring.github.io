@@ -1532,14 +1532,12 @@ h2 {
   background: #e8e7f0;
 }
 
-/* Mobile Links carousel; desktop remains an ordinary list. */
-@media (max-width: 639px) {
+/* Links carousel across desktop and mobile. */
   .link-collection { min-width: 0; }
   .carousel-viewport { overflow: hidden; touch-action: pan-y pinch-zoom; }
   .carousel-track { display: flex; transition: transform 350ms ease; }
   .carousel-slide { flex: 0 0 100%; min-width: 0; display: flex; }
   .carousel-slide .link-tile { width: 100%; box-sizing: border-box; }
-}
 @media (prefers-reduced-motion: reduce) { .carousel-track { transition: none; } }
 
 .links-group { width: 100%; min-width: 0; margin-bottom: 28px; }
@@ -1554,3 +1552,7 @@ h2 {
 .carousel-accessible-pause:not(:focus) { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
 .carousel-accessible-pause:focus { padding: 8px 12px; margin-bottom: 12px; }
 @media(max-width:639px) { .links-group h3 { text-align: center; } .carousel-slide { align-items: flex-start; } }
+
+.carousel-viewport { cursor: grab; }
+.carousel-viewport:active { cursor: grabbing; user-select: none; }
+.carousel-slide { align-items: flex-start; }
