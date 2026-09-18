@@ -109,3 +109,5 @@ Issue #24 clarification implemented: three group slides, Sprooks included with a
 Issue #25 complete locally: grouped carousel enabled at all viewport sizes, desktop drag supported without native image/link dragging. 24 tests, lint/build and 17-route/248-reference checks passed. Native WebKit desktop reported no overflow or errors. Not published.
 
 Issue #26: Publish approved grouped carousel and Sprooks. Local lint, 24 tests, build and 17-route validation passed. Deployment/live verification pending.
+
+Issue #26 complete: workflow 35311050123 deployed 7488ca8. Live root, Links and Work HTML match the local build; live JS/CSS and Sprooks logo match local bytes. 24 tests and 17-route validation passed.

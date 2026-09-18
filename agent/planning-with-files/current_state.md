@@ -59,3 +59,5 @@ Issue #24: Mobile Links carousel implemented locally using four existing apps (A
 Issue #24 clarification implemented: three group slides, Sprooks included with actual local logo, swipe/hold interaction without visible navigation controls. Work experience sourced from modern-portfolio/data/experience.ts; services derived from existing workflow work. Not published.
 
 Issue #25 complete locally: grouped carousel enabled at all viewport sizes, desktop drag supported without native image/link dragging. 24 tests, lint/build and 17-route/248-reference checks passed. Native WebKit desktop reported no overflow or errors. Not published.
+
+Issue #26 complete: workflow 35311050123 deployed 7488ca8. Live root, Links and Work HTML match the local build; live JS/CSS and Sprooks logo match local bytes. 24 tests and 17-route validation passed.
