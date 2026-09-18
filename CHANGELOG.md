@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Publish grouped desktop/mobile Links carousel, work experience, automation services and Sprooks.
+
 - Enable the grouped Links carousel on desktop with mouse dragging and pause support.
 
 - Group mobile Links into Applications, Work experience and Automation services; remove carousel arrows and add Sprooks.

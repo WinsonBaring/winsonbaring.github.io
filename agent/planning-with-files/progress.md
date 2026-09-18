@@ -71,3 +71,5 @@ Issue #24 clarification implemented: three group slides, Sprooks included with a
 Verified 24 tests, lint, production build, 17 routes/248 local references. Sprooks responds HTTP 200. Native mobile render shows all five app links with no horizontal overflow, broken images or JS errors.
 
 Issue #25 complete locally: grouped carousel enabled at all viewport sizes, desktop drag supported without native image/link dragging. 24 tests, lint/build and 17-route/248-reference checks passed. Native WebKit desktop reported no overflow or errors. Not published.
+
+Issue #26: Publish approved grouped carousel and Sprooks. Local lint, 24 tests, build and 17-route validation passed. Deployment/live verification pending.
